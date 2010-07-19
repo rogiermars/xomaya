@@ -71,4 +71,16 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <target name="init">
+        <property name="distDir" value="C:\dist\xomaya-v1.19"></property>
+        <property name="outputDir" value="dist"></property>
+    </target>
+    <target name="clean" depends="init">
+        <deltree dir="${distDir}"></deltree>
+    </target>
+    <target name="dist" depends="clean">
+        <copydir src="${outputDir}" dest="${distDir}"></copydir>
+        <copyfile src="README.txt" dest="${distDir}"></copyfile>
+        <copyfile src="LICENSE.txt" dest="${distDir}"></copyfile>
+    </target>
 </project>
