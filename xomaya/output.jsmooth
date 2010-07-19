@@ -13,7 +13,7 @@
 <embeddedJar>true</embeddedJar>
 <executableName>xomaya.exe</executableName>
 <initialMemoryHeap>-1</initialMemoryHeap>
-<jarLocation>xomaya.jar</jarLocation>
+<jarLocation>dist\xomaya.jar</jarLocation>
 <mainClassName>xomaya.application.Application</mainClassName>
 <maximumMemoryHeap>-1</maximumMemoryHeap>
 <maximumVersion>1.6</maximumVersion>
