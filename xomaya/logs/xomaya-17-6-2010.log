@@ -1,0 +1,278 @@
+2010-07-17:15:16:56:xomaya.application.Application:System starting...
+2010-07-17:15:16:57:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:15:16:57:xomaya.application.Application:--------------------------
+2010-07-17:15:16:57:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:15:16:59:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:15:17:00:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:15:17:00:xomaya.application.Application:Loaded DLL:656
+2010-07-17:15:17:00:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:15:17:02:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279394222296,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@5f6303,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:15:17:02:xomaya.controllers.Controller:Started!
+2010-07-17:15:17:02:xomaya.components.Xomaya:RGB
+2010-07-17:15:17:02:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:15:17:02:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:15:17:02:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-07-17:15:17:02:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:15:17:02:xomaya.components.Xomaya:Could not create DS
+2010-07-17:15:18:26:xomaya.application.Application:System starting...
+2010-07-17:15:18:26:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:15:18:26:xomaya.application.Application:--------------------------
+2010-07-17:15:18:27:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:15:18:29:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:15:18:30:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:15:18:30:xomaya.application.Application:Loaded DLL:672
+2010-07-17:15:18:30:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:15:18:32:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279394312343,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@331059,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:15:18:32:xomaya.controllers.Controller:Started!
+2010-07-17:15:18:32:xomaya.components.Xomaya:RGB
+2010-07-17:15:18:32:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:15:18:32:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:15:18:32:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-07-17:15:18:32:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:15:18:32:xomaya.components.Xomaya:Could not create DS
+2010-07-17:19:41:12:xomaya.application.Application:System starting...
+2010-07-17:19:41:12:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:19:41:12:xomaya.application.Application:--------------------------
+2010-07-17:19:41:12:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:19:41:15:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:19:41:20:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:19:41:21:xomaya.application.Application:Loaded DLL:672
+2010-07-17:19:41:21:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:19:41:24:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279410084156,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@39e5b5,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:19:41:24:xomaya.controllers.Controller:Started!
+2010-07-17:19:41:24:xomaya.util.Utility:RGB
+2010-07-17:19:41:24:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:19:41:24:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:41:24:xomaya.util.Utility:! No Devices for RGB, FrameRate=8.0
+2010-07-17:19:41:24:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:41:24:xomaya.components.Xomaya:Could not create DS
+2010-07-17:19:43:56:xomaya.application.Application:System starting...
+2010-07-17:19:43:56:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:19:43:56:xomaya.application.Application:--------------------------
+2010-07-17:19:43:57:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:19:43:59:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:19:44:04:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:19:44:04:xomaya.application.Application:Loaded DLL:656
+2010-07-17:19:44:04:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:19:44:07:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279410247218,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@5d9084,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:19:44:07:xomaya.controllers.Controller:Started!
+2010-07-17:19:44:07:xomaya.util.Utility:RGB
+2010-07-17:19:44:07:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-17:19:44:08:xomaya.components.Xomaya:The input media does not contain a video track.
+2010-07-17:19:58:23:xomaya.application.Application:System starting...
+2010-07-17:19:58:23:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:19:58:23:xomaya.application.Application:--------------------------
+2010-07-17:19:58:24:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:19:58:26:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:19:58:31:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:19:58:31:xomaya.application.Application:Loaded DLL:656
+2010-07-17:19:58:31:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:19:58:33:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279411113750,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@39e5b5,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:19:58:33:xomaya.controllers.Controller:Started!
+2010-07-17:19:58:33:xomaya.util.Utility:TRYING:RGB
+2010-07-17:19:58:33:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:19:58:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:58:33:xomaya.util.Utility:! No Devices for RGB, 720x480, FrameRate=8.0
+2010-07-17:19:58:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:58:33:xomaya.util.Utility:TRYING:YUV
+2010-07-17:19:58:33:xomaya.util.Utility:! No Devices for YUV, FrameRate=8.0
+2010-07-17:19:58:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:58:33:xomaya.util.Utility:! No Devices for YUV, 720x480, FrameRate=8.0
+2010-07-17:19:58:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:19:58:33:xomaya.components.Xomaya:Could not create DS
+2010-07-17:20:10:23:xomaya.application.Application:System starting...
+2010-07-17:20:10:23:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:10:23:xomaya.application.Application:--------------------------
+2010-07-17:20:10:23:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:10:25:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:10:30:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:10:31:xomaya.application.Application:Loaded DLL:657
+2010-07-17:20:10:31:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:10:33:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279411833265,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@13e58d4,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:10:33:xomaya.controllers.Controller:Started!
+2010-07-17:20:10:33:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:10:33:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:20:10:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:10:33:xomaya.util.Utility:! No Devices for RGB, 720x480, FrameRate=8.0
+2010-07-17:20:10:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:10:33:xomaya.util.Utility:TRYING:YUV
+2010-07-17:20:10:33:xomaya.util.Utility:! No Devices for YUV, FrameRate=8.0
+2010-07-17:20:10:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:10:33:xomaya.util.Utility:! No Devices for YUV, 720x480, FrameRate=8.0
+2010-07-17:20:10:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:10:33:xomaya.components.Xomaya:Could not create DS
+2010-07-17:20:11:59:xomaya.application.Application:System starting...
+2010-07-17:20:11:59:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:11:59:xomaya.application.Application:--------------------------
+2010-07-17:20:11:59:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:12:01:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:12:06:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:12:07:xomaya.application.Application:Loaded DLL:640
+2010-07-17:20:12:07:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:12:08:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279411928968,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@5f6303,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:12:09:xomaya.controllers.Controller:Started!
+2010-07-17:20:12:09:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:12:09:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:20:12:09:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:12:09:xomaya.util.Utility:! No Devices for RGB, 720x480, FrameRate=8.0
+2010-07-17:20:12:09:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:12:09:xomaya.util.Utility:TRYING:YUV
+2010-07-17:20:12:09:xomaya.util.Utility:! No Devices for YUV, FrameRate=8.0
+2010-07-17:20:12:09:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:12:09:xomaya.util.Utility:! No Devices for YUV, 720x480, FrameRate=8.0
+2010-07-17:20:12:09:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:12:09:xomaya.util.Utility:! No Devices for YUV
+2010-07-17:20:12:09:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:12:09:xomaya.components.Xomaya:Could not create DS
+2010-07-17:20:13:49:xomaya.application.Application:System starting...
+2010-07-17:20:13:49:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:13:49:xomaya.application.Application:--------------------------
+2010-07-17:20:13:49:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:13:51:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:13:55:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:13:56:xomaya.application.Application:Loaded DLL:656
+2010-07-17:20:13:56:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:13:59:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279412039187,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@766a24,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:13:59:xomaya.controllers.Controller:Started!
+2010-07-17:20:13:59:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:13:59:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:20:13:59:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:13:59:xomaya.util.Utility:! No Devices for RGB, 720x480, FrameRate=8.0
+2010-07-17:20:13:59:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:13:59:xomaya.util.Utility:TRYING:YUV
+2010-07-17:20:13:59:xomaya.util.Utility:! No Devices for YUV, FrameRate=8.0
+2010-07-17:20:13:59:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:13:59:xomaya.util.Utility:! No Devices for YUV, 720x480, FrameRate=8.0
+2010-07-17:20:13:59:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:13:59:xomaya.util.Utility:! No Devices for YUV
+2010-07-17:20:13:59:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:13:59:xomaya.components.Xomaya:Could not create DS
+2010-07-17:20:24:30:xomaya.application.Application:System starting...
+2010-07-17:20:24:30:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:24:30:xomaya.application.Application:--------------------------
+2010-07-17:20:24:30:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:24:33:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:24:38:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:24:38:xomaya.application.Application:Loaded DLL:656
+2010-07-17:20:24:38:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:24:40:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279412680921,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1b5340c,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:24:40:xomaya.controllers.Controller:Started!
+2010-07-17:20:24:40:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:24:40:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:20:24:40:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:24:40:xomaya.util.Utility:! No Devices for RGB, 720x480, FrameRate=8.0
+2010-07-17:20:24:41:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:24:41:xomaya.util.Utility:TRYING:YUV
+2010-07-17:20:24:45:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-17:20:24:46:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-17:20:24:46:xomaya.components.Xomaya:Middle?
+2010-07-17:20:24:47:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-17:20:24:47:xomaya.components.effects.GraphicEffect:RGB, 160x120, FrameRate=8.0, Length=57600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=480, Flipped
+2010-07-17:20:24:48:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-17:20:24:50:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-17:20:24:50:xomaya.components.JavaSoundStream:2375
+2010-07-17:20:24:50:xomaya.components.Xomaya:TU:157
+2010-07-17:20:24:50:xomaya.components.Xomaya:TT:1279412690718
+2010-07-17:20:24:51:xomaya.components.STimerTask:Delay:16|0
+2010-07-17:20:25:27:xomaya.components.STimerTask:Delay:16|16
+2010-07-17:20:25:38:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279412738484,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1b5340c,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@20fa83,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-17:20:25:38:xomaya.controllers.Controller:Stopped!
+2010-07-17:20:25:38:xomaya.components.Xomaya:Total Time:47797
+2010-07-17:20:25:40:xomaya.components.Xomaya:Stopped and closed
+2010-07-17:20:25:40:xomaya.controllers.Controller:Total time:59063
+2010-07-17:20:27:34:xomaya.application.Application:System starting...
+2010-07-17:20:27:34:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:27:34:xomaya.application.Application:--------------------------
+2010-07-17:20:27:35:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:27:37:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:27:42:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:27:43:xomaya.application.Application:Loaded DLL:688
+2010-07-17:20:27:43:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:27:45:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279412865625,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@16c163f,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:27:45:xomaya.controllers.Controller:Started!
+2010-07-17:20:27:45:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:27:45:xomaya.util.Utility:! No Devices for RGB, 640x480, FrameRate=8.0
+2010-07-17:20:27:45:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-07-17:20:27:45:xomaya.components.Xomaya:Could not create DS
+2010-07-17:20:28:13:xomaya.application.Application:System starting...
+2010-07-17:20:28:13:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:28:13:xomaya.application.Application:--------------------------
+2010-07-17:20:28:14:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:28:17:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:28:21:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:28:22:xomaya.application.Application:Loaded DLL:657
+2010-07-17:20:28:22:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:28:24:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279412904359,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@12884e0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:28:24:xomaya.controllers.Controller:Started!
+2010-07-17:20:28:24:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:28:27:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-17:20:28:29:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-17:20:28:29:xomaya.components.Xomaya:Middle?
+2010-07-17:20:28:29:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-17:20:28:29:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-17:20:28:30:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-17:20:28:33:xomaya.components.Xomaya:TU:157
+2010-07-17:20:28:33:xomaya.components.Xomaya:TT:1279412912843
+2010-07-17:20:28:33:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-17:20:28:33:xomaya.components.JavaSoundStream:2344
+2010-07-17:20:28:43:xomaya.components.STimerTask:Delay:16|0
+2010-07-17:20:28:51:xomaya.components.STimerTask:Delay:15|16
+2010-07-17:20:29:05:xomaya.components.STimerTask:Delay:16|31
+2010-07-17:20:29:20:xomaya.components.STimerTask:Delay:16|47
+2010-07-17:20:29:28:xomaya.components.STimerTask:Delay:15|63
+2010-07-17:20:29:33:xomaya.components.STimerTask:Delay:47|78
+2010-07-17:20:29:33:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279412973156,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@c6eff5,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-17:20:29:40:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279412980484,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@12884e0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@39c8c1,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-17:20:29:40:xomaya.controllers.Controller:Stopped!
+2010-07-17:20:29:40:xomaya.components.Xomaya:Total Time:67641
+2010-07-17:20:29:44:xomaya.components.Xomaya:Stopped and closed
+2010-07-17:20:29:44:xomaya.controllers.Controller:Total time:80313
+2010-07-17:20:30:36:xomaya.application.Application:System starting...
+2010-07-17:20:30:36:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-17:20:30:36:xomaya.application.Application:--------------------------
+2010-07-17:20:30:37:xomaya.util.Utility:Invalid License Key: ERROR CODE 5
+2010-07-17:20:30:39:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-17:20:30:44:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-17:20:30:45:xomaya.application.Application:Loaded DLL:656
+2010-07-17:20:30:45:xomaya.application.Application:Application validated:EXPRESS
+2010-07-17:20:30:48:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279413048765,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-17:20:30:48:xomaya.controllers.Controller:Started!
+2010-07-17:20:30:48:xomaya.util.Utility:TRYING:RGB
+2010-07-17:20:30:48:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+MJPG, 640x480, Length=921600 0 extra bytes
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+
+2010-07-17:20:30:52:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-17:20:30:52:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-17:20:30:52:xomaya.components.Xomaya:Middle?
+2010-07-17:20:30:53:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-17:20:30:53:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-17:20:30:54:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-17:20:30:56:xomaya.components.Xomaya:TU:156
+2010-07-17:20:30:56:xomaya.components.Xomaya:TT:1279413056609
+2010-07-17:20:30:56:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-17:20:30:56:xomaya.components.JavaSoundStream:2375
+2010-07-17:20:31:07:xomaya.components.STimerTask:Delay:15|0
+2010-07-17:20:31:08:xomaya.components.STimerTask:Delay:16|15
+2010-07-17:20:31:27:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279413087546,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1a78071,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-17:20:31:36:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279413096421,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@e8a021,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-17:20:31:36:xomaya.controllers.Controller:Stopped!
+2010-07-17:20:31:36:xomaya.components.Xomaya:Total Time:39812
+2010-07-17:20:31:38:xomaya.components.Xomaya:Stopped and closed
+2010-07-17:20:31:38:xomaya.controllers.Controller:Total time:49438

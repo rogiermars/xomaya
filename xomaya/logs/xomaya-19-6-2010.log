@@ -1,0 +1,421 @@
+2010-07-19:19:24:55:xomaya.application.Application:System starting...
+2010-07-19:19:24:55:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:19:24:55:xomaya.application.Application:--------------------------
+2010-07-19:19:24:55:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:19:24:56:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:19:25:00:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:19:25:05:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:19:25:06:xomaya.application.Application:Loaded DLL:1437
+2010-07-19:19:25:06:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:19:25:10:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279581910375,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@12884e0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:19:25:10:xomaya.controllers.Controller:Started!
+2010-07-19:19:25:10:xomaya.util.Utility:TRYING:RGB
+2010-07-19:19:25:10:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:19:25:14:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:19:25:15:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:19:25:15:xomaya.components.Xomaya:Middle?
+2010-07-19:19:25:18:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:19:25:18:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:19:25:19:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:19:25:21:xomaya.components.Xomaya:TU:203
+2010-07-19:19:25:21:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:19:25:21:xomaya.components.JavaSoundStream:2453
+2010-07-19:19:25:21:xomaya.components.Xomaya:TT:1279581921703
+2010-07-19:19:25:24:xomaya.components.STimerTask:Delay:15|0
+2010-07-19:19:25:26:xomaya.components.STimerTask:Delay:16|15
+2010-07-19:19:25:38:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279581938625,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@d1e233,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:19:25:44:xomaya.components.STimerTask:Delay:15|31
+2010-07-19:19:25:59:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=SMOOTH_SWITCH,when=1279581959015,modifiers=Button1] on javax.swing.JRadioButton[,0,38,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@d1e233,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Smooth Switch]
+2010-07-19:19:26:02:xomaya.components.STimerTask:Delay:15|46
+2010-07-19:19:26:07:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=SCREEN_ONLY,when=1279581967046,modifiers=Button1] on javax.swing.JRadioButton[,0,19,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@d1e233,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Screen Capture]
+2010-07-19:19:26:25:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279581985421,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@d1e233,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:19:26:34:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279581994187,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@12884e0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@1bbdd48,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:19:26:34:xomaya.controllers.Controller:Stopped!
+2010-07-19:19:26:34:xomaya.components.Xomaya:Total Time:72484
+2010-07-19:19:26:35:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:19:26:35:xomaya.controllers.Controller:Total time:85110
+2010-07-19:19:30:15:xomaya.application.Application:System starting...
+2010-07-19:19:30:15:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:19:30:15:xomaya.application.Application:--------------------------
+2010-07-19:19:30:15:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:19:30:15:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:19:30:18:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:19:30:22:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:19:30:23:xomaya.application.Application:Loaded DLL:734
+2010-07-19:19:30:23:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:19:30:25:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279582225187,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@194d372,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:19:30:25:xomaya.controllers.Controller:Started!
+2010-07-19:19:30:25:xomaya.util.Utility:TRYING:RGB
+2010-07-19:19:30:25:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:19:30:28:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:19:30:28:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:19:30:28:xomaya.components.Xomaya:Middle?
+2010-07-19:19:30:29:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:19:30:29:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:19:30:30:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:19:30:32:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:19:30:32:xomaya.components.JavaSoundStream:2391
+2010-07-19:19:30:32:xomaya.components.Xomaya:TU:156
+2010-07-19:19:30:32:xomaya.components.Xomaya:TT:1279582232625
+2010-07-19:19:30:35:xomaya.components.STimerTask:Delay:15|0
+2010-07-19:19:30:40:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279582240500,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1551b0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:19:30:56:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=SCREEN_ONLY,when=1279582256203,modifiers=Button1] on javax.swing.JRadioButton[,0,19,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1551b0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Screen Capture]
+2010-07-19:19:31:07:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279582267843,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1551b0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:19:31:14:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279582274046,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@194d372,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@dec8b3,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:19:31:14:xomaya.controllers.Controller:Stopped!
+2010-07-19:19:31:14:xomaya.components.Xomaya:Total Time:41421
+2010-07-19:19:31:15:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:19:31:15:xomaya.controllers.Controller:Total time:50078
+2010-07-19:19:33:02:xomaya.application.Application:System starting...
+2010-07-19:19:33:02:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:19:33:02:xomaya.application.Application:--------------------------
+2010-07-19:19:33:02:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:19:33:02:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:19:33:05:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:19:33:09:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:19:33:10:xomaya.application.Application:Loaded DLL:672
+2010-07-19:19:33:10:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:19:33:12:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279582392828,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@16c163f,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:19:33:12:xomaya.controllers.Controller:Started!
+2010-07-19:19:33:12:xomaya.util.Utility:TRYING:RGB
+2010-07-19:19:33:12:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:19:33:15:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:19:33:16:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:19:33:16:xomaya.components.Xomaya:Middle?
+2010-07-19:19:33:17:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:19:33:17:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:19:33:18:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:19:33:20:xomaya.components.Xomaya:TU:282
+2010-07-19:19:33:20:xomaya.components.Xomaya:TT:1279582400343
+2010-07-19:19:33:20:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:19:33:20:xomaya.components.JavaSoundStream:2578
+2010-07-19:19:33:35:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279582415578,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19b46dc,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:19:34:34:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=SCREEN_ONLY,when=1279582474109,modifiers=Button1] on javax.swing.JRadioButton[,0,19,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19b46dc,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Screen Capture]
+2010-07-19:19:34:38:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279582478484,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@16c163f,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@1226a77,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:19:34:38:xomaya.controllers.Controller:Stopped!
+2010-07-19:19:34:38:xomaya.components.Xomaya:Total Time:78141
+2010-07-19:19:34:42:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:19:34:42:xomaya.controllers.Controller:Total time:89781
+2010-07-19:20:00:01:xomaya.application.Application:System starting...
+2010-07-19:20:00:01:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:00:01:xomaya.application.Application:--------------------------
+2010-07-19:20:00:01:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:00:01:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:00:04:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:00:09:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:00:10:xomaya.application.Application:Loaded DLL:1000
+2010-07-19:20:00:10:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:00:13:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279584013828,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1c5fde0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:00:13:xomaya.controllers.Controller:Started!
+2010-07-19:20:00:13:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:00:13:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:00:17:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:00:18:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:00:18:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:00:18:xomaya.components.JavaSoundStream:1279584018421
+2010-07-19:20:00:19:xomaya.components.Xomaya:Middle?
+2010-07-19:20:00:20:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:00:20:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:00:20:xomaya.components.Xomaya:Cannot create the DataSink: java.io.FileNotFoundException: .\out\movie.avi (Access is denied)
+2010-07-19:20:00:21:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:00:35:xomaya.application.Application:System starting...
+2010-07-19:20:00:35:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:00:35:xomaya.application.Application:--------------------------
+2010-07-19:20:00:35:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:00:35:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:00:39:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:00:40:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:00:40:xomaya.application.Application:Loaded DLL:734
+2010-07-19:20:00:40:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:00:43:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279584043359,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@384065,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:00:43:xomaya.controllers.Controller:Started!
+2010-07-19:20:00:43:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:00:43:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:00:46:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:00:47:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:00:47:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:00:47:xomaya.components.JavaSoundStream:1279584047093
+2010-07-19:20:00:47:xomaya.components.Xomaya:Middle?
+2010-07-19:20:00:47:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:00:47:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:00:48:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:00:49:xomaya.components.Xomaya:TU:31
+2010-07-19:20:00:49:xomaya.components.Xomaya:TT:1279584049390
+2010-07-19:20:00:59:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279584059906,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@caf6c1,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:20:01:12:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279584072328,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@384065,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@199939,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:20:01:12:xomaya.controllers.Controller:Stopped!
+2010-07-19:20:01:12:xomaya.components.Xomaya:Total Time:22985
+2010-07-19:20:01:16:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:20:01:16:xomaya.controllers.Controller:Total time:33125
+2010-07-19:20:05:56:xomaya.application.Application:System starting...
+2010-07-19:20:05:56:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:05:56:xomaya.application.Application:--------------------------
+2010-07-19:20:05:56:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:05:57:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:06:00:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:06:04:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:06:05:xomaya.application.Application:Loaded DLL:719
+2010-07-19:20:06:05:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:06:07:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279584367671,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:06:07:xomaya.controllers.Controller:Started!
+2010-07-19:20:06:07:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:06:07:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:06:10:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:06:11:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:06:11:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:06:11:xomaya.components.JavaSoundStream:1279584371656
+2010-07-19:20:06:12:xomaya.components.Xomaya:Middle?
+2010-07-19:20:06:13:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:06:13:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:06:14:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:06:14:xomaya.components.Xomaya:TU:31
+2010-07-19:20:06:14:xomaya.components.Xomaya:TT:1279584374812
+2010-07-19:20:06:23:xomaya.components.STimerTask:Delay:16|0
+2010-07-19:20:06:35:xomaya.components.STimerTask:Delay:15|16
+2010-07-19:20:06:57:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279584417875,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@3aff84,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:20:06:57:xomaya.controllers.Controller:Stopped!
+2010-07-19:20:06:57:xomaya.components.Xomaya:Total Time:43079
+2010-07-19:20:06:59:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:20:06:59:xomaya.controllers.Controller:Total time:51531
+2010-07-19:20:07:58:xomaya.application.Application:System starting...
+2010-07-19:20:07:58:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:07:58:xomaya.application.Application:--------------------------
+2010-07-19:20:07:58:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:07:58:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:08:02:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:08:07:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:08:08:xomaya.application.Application:Loaded DLL:672
+2010-07-19:20:08:08:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:08:13:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279584493109,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1c5fde0,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:20:08:14:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279584494296,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@db4fa2,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:08:14:xomaya.controllers.Controller:Started!
+2010-07-19:20:08:14:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:08:14:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:08:17:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:08:18:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:08:18:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:08:18:xomaya.components.JavaSoundStream:1279584498328
+2010-07-19:20:08:19:xomaya.components.Xomaya:Middle?
+2010-07-19:20:08:19:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:08:19:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:08:20:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:08:21:xomaya.components.Xomaya:TU:0
+2010-07-19:20:08:21:xomaya.components.Xomaya:TT:1279584501593
+2010-07-19:20:08:25:xomaya.components.STimerTask:Delay:16|0
+2010-07-19:20:08:34:xomaya.components.STimerTask:Delay:15|16
+2010-07-19:20:08:35:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279584515812,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@db4fa2,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@4fc2e8,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:20:08:35:xomaya.controllers.Controller:Stopped!
+2010-07-19:20:08:35:xomaya.components.Xomaya:Total Time:14235
+2010-07-19:20:08:40:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:20:08:40:xomaya.controllers.Controller:Total time:25718
+2010-07-19:20:11:10:xomaya.application.Application:System starting...
+2010-07-19:20:11:10:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:11:10:xomaya.application.Application:--------------------------
+2010-07-19:20:11:10:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:11:11:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:11:13:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:11:18:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:11:19:xomaya.application.Application:Loaded DLL:719
+2010-07-19:20:11:19:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:11:22:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279584682140,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:11:22:xomaya.controllers.Controller:Started!
+2010-07-19:20:11:22:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:11:22:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:11:25:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:11:25:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:11:25:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:11:25:xomaya.components.JavaSoundStream:1279584685953
+2010-07-19:20:11:26:xomaya.components.Xomaya:Middle?
+2010-07-19:20:11:27:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:11:27:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:11:28:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:11:29:xomaya.components.Xomaya:TU:0
+2010-07-19:20:11:29:xomaya.components.Xomaya:TT:1279584689203
+2010-07-19:20:12:23:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279584743156,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@186dda3,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:20:12:30:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279584750046,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@17cf6b6,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:20:12:30:xomaya.controllers.Controller:Stopped!
+2010-07-19:20:12:30:xomaya.components.Xomaya:Total Time:60843
+2010-07-19:20:12:31:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:20:12:31:xomaya.controllers.Controller:Total time:69204
+2010-07-19:20:18:03:xomaya.application.Application:System starting...
+2010-07-19:20:18:03:xomaya.application.Application:xomaya 1.19 copyright (c) 2010. All Rights Reserved.
+2010-07-19:20:18:03:xomaya.application.Application:--------------------------
+2010-07-19:20:18:03:xomaya.application.Application:License Key:EXPRESS
+2010-07-19:20:18:03:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-19:20:18:06:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-19:20:18:11:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-19:20:18:12:xomaya.application.Application:Loaded DLL:656
+2010-07-19:20:18:12:xomaya.application.Application:Application validated:EXPRESS
+2010-07-19:20:18:14:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1279585094468,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-19:20:18:14:xomaya.controllers.Controller:Started!
+2010-07-19:20:18:14:xomaya.util.Utility:TRYING:RGB
+2010-07-19:20:18:14:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-07-19:20:18:17:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-07-19:20:18:18:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-19:20:18:18:xomaya.components.JavaSoundStream:JavaSoundStream.read called
+2010-07-19:20:18:19:xomaya.components.Xomaya:Middle?
+2010-07-19:20:18:19:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-19:20:18:19:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-19:20:18:20:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-07-19:20:18:21:xomaya.components.Xomaya:TU:0
+2010-07-19:20:18:21:xomaya.components.Xomaya:TT GA:766
+2010-07-19:20:18:21:xomaya.components.Xomaya:TT :0
+2010-07-19:20:18:29:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1279585109203,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@157ea4a,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-07-19:20:18:45:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1279585125640,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@19e8329,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@6a3960,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-19:20:18:45:xomaya.controllers.Controller:Stopped!
+2010-07-19:20:18:45:xomaya.components.Xomaya:Total Time:24140
+2010-07-19:20:18:46:xomaya.components.Xomaya:Stopped and closed
+2010-07-19:20:18:46:xomaya.controllers.Controller:Total time:32406

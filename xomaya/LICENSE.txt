@@ -1,0 +1,34 @@
+User License Agreement - SHAREWARE VERSION
+
+IMPORTANT NOTICE
+Read this License Agreement carefully before using this Software. BY USING THIS SOFTWARE IN ANY WAY YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTAND AND AGREE TO THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THIS SOFTWARE IN ANY WAY, AND PROMPTLY RETURN IT OR DELETE ANY COPIES OF THIS SOFTWARE IN YOUR POSSESSION.
+
+LICENSE GRANT
+Xomaya.com ("Xomaya") grants you a non-exclusive license to test this software in Shareware version, and any associated documentation ("The Shareware"), as indicated herein.
+
+You MAY:
+(a) install and use the Shareware for personal enjoyment purpose;
+(b) Redistribute the Shareware by any mean (CDROM, Cover Disc, Web site...) as long as you do not change the original package and distribute only the original install package.
+
+RESTRICTIONS
+
+You MAY NOT:
+(a) sell this Shareware package (except for shipment and handling charges);
+(b) cause or permit reverse engineering, disassembly, decompilation or alteration of this Software;
+(c) remove any product identification, copyright notices, or other notices or proprietary restrictions from this Software;
+(d) copy the documentation accompanying the software.
+
+SHAREWARE DISTRIBUTION
+You are hereby licensed to make as many copies of the Shareware as you wish and distribute it to anyone provided that all files are intact. You must distribute the install form of the Shareware (you must distribute the INSTALL file, not the files resulting of an installation). You are not allowed to sell the Shareware (except for shipment and handling charges). Press is authorized to distribute it on any Cover Disk, CD-ROM without permission from Xomaya Software. Shareware Catalog Web sites are authorized to distribute it as a download file (hosted or linked to Xomaya site) without permission from Xomaya Software.
+
+TERM
+This License is effective until terminated. You may terminate it at any time by destroying the Shareware, together with all copies thereof. This License will also terminate if you fail to comply with any term or condition of this Agreement. Upon such termination, you agree to destroy the Shareware, together with all copies thereof.
+
+COPYRIGHT/OWNERSHIP
+This Shareware and its source code are proprietary products of Xomaya Software and are protected by copyright and other intellectual property laws.
+
+DISCLAIMER OF WARRANTIES
+The Shareware is supplied Xomaya Software disclaims all warranties, expressed or implied, including, without limitation, the warranties of merchantability and of fitness for any purpose. The user must assume the entire risk of using the Shareware.
+
+DISCLAIMER OF DAMAGES
+Xomaya Software assumes no liability for damages, direct or consequential, which may result from the use of the Shareware, even if Xomaya has been advised of the possibility of such damages.

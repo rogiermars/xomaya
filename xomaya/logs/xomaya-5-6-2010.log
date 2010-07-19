@@ -1,0 +1,58 @@
+2010-07-05:09:32:32:xomaya.application.Application:System starting...
+2010-07-05:09:32:32:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-05:09:32:32:xomaya.application.Application:--------------------------
+2010-07-05:09:32:33:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-05:09:32:36:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-05:09:32:42:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-05:09:32:43:xomaya.application.Application:Loaded DLL:687
+2010-07-05:09:32:43:xomaya.application.Application:Application validated:EXPRESS
+2010-07-05:09:41:34:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1278337294562,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@cf66b,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-05:09:41:34:xomaya.controllers.Controller:Started!
+2010-07-05:09:41:38:xomaya.util.Utility:Setting format RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-05:09:41:39:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-05:09:41:39:xomaya.components.FrameAccess:Middle?
+2010-07-05:09:41:40:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-05:09:41:40:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-05:09:41:41:xomaya.components.effects.GraphicEffect:GraphicsEffect mm called
+2010-07-05:09:41:43:xomaya.components.JavaSoundStream:JavaSoundStream mm called
+2010-07-05:09:41:43:xomaya.components.JavaSoundStream:2328
+2010-07-05:09:41:43:xomaya.components.FrameAccess:TU:0
+2010-07-05:09:41:43:xomaya.components.FrameAccess:TV:0
+2010-07-05:09:42:03:xomaya.components.STimerTask:Delay:15|0
+2010-07-05:09:43:42:xomaya.components.STimerTask:Delay:16|15
+2010-07-05:09:45:03:xomaya.components.STimerTask:Delay:16|31
+2010-07-05:09:46:01:xomaya.components.STimerTask:Delay:16|47
+2010-07-05:09:47:23:xomaya.components.STimerTask:Delay:16|63
+2010-07-05:09:47:48:xomaya.components.STimerTask:Delay:31|79
+2010-07-05:09:47:53:xomaya.components.STimerTask:Delay:32|110
+2010-07-05:09:48:09:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1278337689593,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@cf66b,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@df83e5,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-05:09:48:09:xomaya.controllers.Controller:Stopped!
+2010-07-05:09:48:09:xomaya.components.FrameAccess:Total Time:386594
+2010-07-05:09:48:14:xomaya.components.FrameAccess:Stopped and closed
+2010-07-05:09:48:14:xomaya.controllers.Controller:Total time:400032
+2010-07-05:09:58:48:xomaya.application.Application:System starting...
+2010-07-05:09:58:48:xomaya.application.Application:xomaya 1.18 copyright (c) 2010. All Rights Reserved.
+2010-07-05:09:58:48:xomaya.application.Application:--------------------------
+2010-07-05:09:58:49:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-07-05:09:58:49:xomaya.components.DirectSoundAudo:DirectSound Capture Supported = true
+2010-07-05:09:58:54:xomaya.components.DirectSoundAudo:DirectSoundAuto: Committed ok
+2010-07-05:09:58:55:xomaya.application.Application:Loaded DLL:1094
+2010-07-05:09:58:55:xomaya.application.Application:Application validated:EXPRESS
+2010-07-05:09:59:04:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1278338344734,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1e57e8f,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-07-05:09:59:04:xomaya.controllers.Controller:Started!
+2010-07-05:09:59:08:xomaya.util.Utility:Setting format RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-05:09:59:09:xomaya.components.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-07-05:09:59:09:xomaya.components.FrameAccess:Middle?
+2010-07-05:09:59:10:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-07-05:09:59:10:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=8.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-07-05:09:59:11:xomaya.components.effects.GraphicEffect:GraphicsEffect mm called
+2010-07-05:09:59:14:xomaya.components.JavaSoundStream:JavaSoundStream mm called
+2010-07-05:09:59:14:xomaya.components.JavaSoundStream:2406
+2010-07-05:09:59:14:xomaya.components.FrameAccess:TU:0
+2010-07-05:09:59:14:xomaya.components.FrameAccess:TV:0
+2010-07-05:10:05:47:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1278338747093,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1e57e8f,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@17e4dee,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-07-05:10:05:47:xomaya.controllers.Controller:Stopped!
+2010-07-05:10:05:47:xomaya.components.FrameAccess:Total Time:393328
+2010-07-05:10:05:51:xomaya.components.STimerTask:Delay:16|0
+2010-07-05:10:05:53:xomaya.components.FrameAccess:Stopped and closed
+2010-07-05:10:05:53:xomaya.controllers.Controller:Total time:408250
