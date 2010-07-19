@@ -32,7 +32,8 @@ Version:
 xomaya 1.19
 
 Limitations:
-The current system (version 1.19) does not support linux or MacOS. Future editions may include full support if enough interest warrants the effort.
+The current system (version 1.19) does not support linux or MacOS. Future
+editions may include full support if enough interest warrants the effort.
 
 Requirements:
 Win32
@@ -58,7 +59,7 @@ A) You are not connected to the internet. Please connect your system to the inte
 
 B) that your license key is invalid.
 
-If you have already paid for a copy please contact xomaya.support@gmail.com to obtain a new key. Please
+If you have already paid for a copy please contact support@xomaya.com to obtain a new key. Please
 include your original Receipt# in the email, as well as your name, phone number and any other information.
 
 * Make sure your application has write access to the location that you choose to save files.
@@ -74,3 +75,6 @@ you need to copy the classpath elements to the lib folder manually after the bui
 Contact:
 http://www.xomaya.com
 support@xomaya.com
+
+Support Notice:
+Please include your SERIAL KEY in the body of your message.
