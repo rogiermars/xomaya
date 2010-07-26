@@ -72,7 +72,7 @@
 
     -->
     <target name="init">
-        <property name="distDir" value="C:\dist\xomaya-v1.19"></property>
+        <property name="distDir" value="C:\dist\xomaya-v1.20"></property>
         <property name="outputDir" value="dist"></property>
     </target>
     <target name="clean" depends="init">

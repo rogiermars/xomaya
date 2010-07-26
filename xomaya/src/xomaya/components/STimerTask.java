@@ -37,14 +37,16 @@ import java.awt.RenderingHints;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.util.Date;
-import java.util.Iterator;
 import java.util.TimerTask;
 import java.util.Vector;
 import xomaya.application.Mode;
 import xomaya.logging.Log;
 
 /**
+ * This class is responsible for taking snapshots of the computer screen
+ * and translating them into a format which the class @see GraphicEffect
+ * can translate into video.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
@@ -58,7 +60,7 @@ public class STimerTask extends TimerTask {
     Toolkit tk = null;
     Robot robot = null;
     Dimension dim = null;
-    Rectangle rect = null; //new Rectangle(0, 0, dim.width, dim.height);
+    Rectangle rect = null; 
     BufferedImage scaledImage = new BufferedImage(Globals.captureWidth, Globals.captureHeight, 1);
     GraphicEffect target = null;
 
@@ -108,9 +110,9 @@ public class STimerTask extends TimerTask {
             target.screenCaptureEnabled = false;
         } else if (newState == State.ONLINE) {
             //BEFORE YOU OPTOMIZE ANYMORE - MAKE A DAMN COPY!
-            //if( target.store == null ){
-            //    return;
-            //}
+            if( target.store == null ){
+                return;
+            }
             BufferedImage img = robot.createScreenCapture(rect);
             int mx = MouseInfo.getPointerInfo().getLocation().x;
             int my = MouseInfo.getPointerInfo().getLocation().y;
@@ -121,7 +123,8 @@ public class STimerTask extends TimerTask {
             Graphics2D graphics2D = scaledImage.createGraphics();
             graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
             graphics2D.drawImage(img, 0, 0, Globals.captureWidth, Globals.captureHeight, null);
-            
+            //graphics2D.drawImage(img, 0, 0, 640, 480, null);
+            //graphics2D.drawImage(img, mx, my, mx, my, mx, my, mx, my, null);
             int w = Globals.captureWidth;
             int h = Globals.captureHeight;
 

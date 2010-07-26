@@ -31,7 +31,9 @@ import javax.media.format.*;
 import javax.media.control.*;
 import java.util.Vector;
 import xomaya.application.Globals;
+import xomaya.components.CaptureFormatSelector;
 import xomaya.components.JavaSoundDataSource;
+import xomaya.components.SelectableVideoFormat;
 
 /**
  * This documentation is part of the Xomaya Express software suite.
@@ -74,11 +76,38 @@ public class Utility {
         return null;
     }
 
+    public static Vector getVideoFormats()
+    {
+        DataSource ds;
+        Vector devices;
+        CaptureDeviceInfo cdi;
+        MediaLocator ml;
+
+        // Find devices for format
+
+        devices = CaptureDeviceManager.getDeviceList(new VideoFormat(null));
+        for (int i = 0; i < devices.size(); i++) {
+            logger.println(devices.get(i));
+        }
+        //devices = CaptureDeviceManager.getDeviceList(null);
+        if (devices.size() < 1) {
+            logger.println("! No Devices for " + null);
+            return null;
+        }
+        return devices;
+    }
+
     public static DataSource getCaptureDS() {
-        logger.println("TRYING:" + Globals.encoding);
+        logger.println("TRYING:YUV");
         Dimension size = new Dimension(Globals.captureWidth, Globals.captureHeight);
         VideoFormat vf = new VideoFormat("YUV", size, Format.NOT_SPECIFIED, null, Globals.fps);
 
+        SelectableVideoFormat svf = Globals.selectedVideoFormat;
+        logger.println("Selected format:" + svf);
+        vf = svf.getFormat();
+        Dimension dim = svf.getFormat().getSize();
+        Globals.captureHeight = dim.height;
+        Globals.captureWidth = dim.width;
         //AudioFormat af = null;
         //new AudioFormat(AudioFormat.LINEAR, 44100, 8, 2);
         // new AudioFormat(AudioFormat.LINEAR, 44100, 4, 4);

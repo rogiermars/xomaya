@@ -24,15 +24,19 @@
 package xomaya.application;
 
 import java.util.Hashtable;
+import java.util.Properties;
 import javax.media.Buffer;
 import javax.media.Manager;
 import javax.media.TimeBase;
 import javax.media.protocol.FileTypeDescriptor;
+import xomaya.components.SelectableVideoFormat;
 
 // Referenced classes of package xomaya.application:
 //            Application
 
 /**
+ * This class is used for storing global variables in the application.
+ * 
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
@@ -48,7 +52,7 @@ public class Globals
     public static long ttga = 0;
     public static String copyright = "copyright (c) 2010. All Rights Reserved.";
     public static String name = "xomaya";
-    public static double version = 1.19D;
+    public static double version = 1.20D;
     public static long snap = 0L;
     public static long tt = 0L;
     public static boolean compress = false;
@@ -73,8 +77,11 @@ public class Globals
     public static boolean recording = false;
     public static long ts = 0;
 
+    public static SelectableVideoFormat selectedVideoFormat = null;
+
     public static String encoding = "RGB";
     public static String videoExt = "avi";
+    public static String videoName = "xomaya";
     public static String fileTypeDescriptor = FileTypeDescriptor.MSVIDEO;
 
     // key frames seemed to work.

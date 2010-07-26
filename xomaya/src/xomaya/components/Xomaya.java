@@ -254,7 +254,7 @@ public class Xomaya extends JPanel implements ControllerListener {
                 waitSync.notifyAll();
             }
             try {
-                DataSink sink = createDataSink(p, new MediaLocator("file:./out/movie." + Globals.videoExt));
+                DataSink sink = createDataSink(p, new MediaLocator("file:./out/" + Globals.videoName + "." + Globals.videoExt));
                 sink.open();
                 sink.start();
             } catch (Exception ex) {

@@ -32,6 +32,12 @@ import xomaya.application.Globals;
 import xomaya.logging.Log;
 
 /**
+ * This class is an Effect which is part of the JMF framework.
+ * This class has the responsibilities of performing the graphical
+ * output onto the surface of the video. This class implements
+ * a function called plot, and putPixel. These functions perform
+ * a putPixel operation on the video surface.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

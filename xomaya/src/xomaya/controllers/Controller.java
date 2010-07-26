@@ -203,7 +203,7 @@ public class Controller implements ActionListener
                     System.out.println("stop");
 
                     JOptionPane.showMessageDialog(null, "Your presentation is finished compiling.");
-                    JOptionPane.showMessageDialog(null, "Saved Successfully.\nThe location is:./out/movie." + Globals.videoExt + "\n Application will now exit.");
+                    JOptionPane.showMessageDialog(null, "Saved Successfully.\nThe location is:./out/" + Globals.videoName + "." + Globals.videoExt + "\n Application will now exit.");
                     if( Desktop.isDesktopSupported() ) {
                         try {
                             String s = System.getProperty("user.dir") + File.separator + "out";

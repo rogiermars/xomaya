@@ -27,8 +27,12 @@ package xomaya.application;
 import java.awt.*;
 import java.io.*;
 import java.net.URL;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Properties;
 import javax.swing.*;
+import xomaya.components.CaptureFormatSelector;
 import xomaya.components.DirectSoundAudo;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
@@ -77,11 +81,11 @@ public class Application extends JFrame {
             String expiryDate = props.getProperty("expiryDate");
             String licenseType = props.getProperty("licenseType");
 
+            licenseKey = licenseKey.toUpperCase();
+            licenseKey = licenseKey.trim();
             Globals.account = account;
             Globals.username = username;
             Globals.licenseKey = licenseKey;
-            licenseKey = licenseKey.toUpperCase();
-            licenseKey = licenseKey.trim();
             logger.println("License Key:" + licenseKey);
             Globals.expiryDate = expiryDate;
             Globals.licenseType = licenseType;
@@ -112,9 +116,11 @@ public class Application extends JFrame {
 
     private static void validateEnvironment() {
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-        if (d.width != 800 && d.height != 600) {
-            JOptionPane.showMessageDialog(null, "You are running the application in " + d.width + "x" + d.height + ".\nThe recommended resolution is 800x600\nApplication will try to run anyways.", "Warning", JOptionPane.WARNING_MESSAGE);
-        }
+
+        //if (d.width != 800 && d.height != 600) {
+        //    JOptionPane.showMessageDialog(null, "You are running the application in " + d.width + "x" + d.height + ".\nThe recommended resolution is 800x600\nApplication will try to run anyways.", "Tip:", JOptionPane.INFORMATION_MESSAGE);
+        //}
+
     }
 
 
@@ -124,6 +130,9 @@ public class Application extends JFrame {
         DirectSoundAudo audo = new DirectSoundAudo();
         long t = System.currentTimeMillis();
         JNA.getIdleTimeMillisWin32();
+        Calendar c = Calendar.getInstance();
+        c.setTime(new Date(System.currentTimeMillis()));
+        Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
         long tl = System.currentTimeMillis() - t;
         logger.println("Loaded DLL:" + tl);
         try {
@@ -211,6 +220,8 @@ public class Application extends JFrame {
         logger.println("Application validated:" + key );
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
+                CaptureFormatSelector sel = new CaptureFormatSelector();
+                Globals.selectedVideoFormat = sel.getSelectedVideoFormat();
                 Application app = new Application();
             }
         });
