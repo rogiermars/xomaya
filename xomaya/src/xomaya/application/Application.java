@@ -35,15 +35,19 @@ import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
 import xomaya.logging.Log;
 import xomaya.util.JNA;
-import xomaya.util.Utility;
 
 /**
+ * Application is the main class of xomaya.
+ * This class is responsible for setting up the application main frame,
+ * displaying buttons and initial loading procedures.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
 public class Application extends JFrame {
 
+    ImageIcon icon = new ImageIcon("./media/picon-small.png");
     public Application() {
         super(Globals.name + " " + Globals.version + " " + Globals.copyright);
         frame = this;
@@ -60,7 +64,6 @@ public class Application extends JFrame {
                 buffer = buffer + b;
             }
         } catch (Exception ex) {
-            //ex.printStackTrace();//
         }
     }
 
@@ -145,6 +148,7 @@ public class Application extends JFrame {
         Globals.registry.put("Application", frame);
         Globals.registry.put("Xomaya", fa);
         ModeSelector ms = new ModeSelector();
+        frame.setIconImage(icon.getImage());
         frame.add(fa, BorderLayout.WEST);
         frame.add(ms, BorderLayout.CENTER);
         frame.setJMenuBar(createMenuBar());

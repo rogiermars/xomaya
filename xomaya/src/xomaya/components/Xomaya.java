@@ -45,6 +45,11 @@ import xomaya.logging.Log;
 import xomaya.util.Utility;
 
 /**
+ * The Xomaya class is the main displayed panel. This class is responsible
+ * for displaying the buttons, opening the media and running most of the
+ * important aspects of the application. This is the main class of this
+ * application.
+ * 
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
@@ -72,13 +77,7 @@ public class Xomaya extends JPanel implements ControllerListener {
         Globals.registry.put("StopRecording", stop);
         start.addActionListener(controller);
         stop.addActionListener(controller);
-        stop.setEnabled(false);
-        try {
-        PlugInManager.addPlugIn(GraphicEffect.class.getName(), null, null, PlugInManager.EFFECT);
-        PlugInManager.commit();
-        } catch(Exception ex){
-            ex.printStackTrace();
-        }
+        stop.setEnabled(false);        
         add(start);
         add(stop);
     }
