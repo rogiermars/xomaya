@@ -111,43 +111,7 @@ public class Utility {
         Globals.captureHeight = dim.height;
         Globals.captureWidth = dim.width;
         AudioFormat af = new AudioFormat(AudioFormat.LINEAR);
-
-        //DirectSoundAudo audo = new DirectSoundAudo();
-        // Use CaptureUtil to create a monitored capture datasource
         DataSource original = Utility.getCaptureDS(vf, af);
-
-        /*
-        if (original == null) {
-        vf = new VideoFormat("YUV", new Dimension(720, 480), Format.NOT_SPECIFIED, null, Globals.fps);
-        original = Utility.getCaptureDS(vf, af);
-        Globals.captureHeight = 480;
-        Globals.captureWidth = 720;
-        }
-
-        Globals.encoding = "YUV";
-        logger.println("TRYING:" + Globals.encoding);
-        if (original == null) {
-        // was null - lets try a different encoding.
-        vf = new VideoFormat("YUV", null, Format.NOT_SPECIFIED, null, Globals.fps);
-        original = Utility.getCaptureDS(vf, af);
-        }
-
-        if (original == null) {
-        vf = new VideoFormat("YUV", new Dimension(720, 480), Format.NOT_SPECIFIED, null, Globals.fps);
-        original = Utility.getCaptureDS(vf, af);
-        Globals.captureHeight = 480;
-        Globals.captureWidth = 720;
-        Globals.encoding = "YUV";
-        }
-
-        if( original == null ){
-        vf = new VideoFormat(VideoFormat.YUV);
-        original = Utility.getCaptureDS(vf, af);
-        System.out.println(vf);
-        Globals.encoding = "YUV";
-        }
-         */
-
         return original;
     }
 
