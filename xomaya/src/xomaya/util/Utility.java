@@ -30,6 +30,7 @@ import javax.media.protocol.*;
 import javax.media.format.*;
 import javax.media.control.*;
 import java.util.Vector;
+import javax.swing.JOptionPane;
 import xomaya.application.Globals;
 import xomaya.components.CaptureFormatSelector;
 import xomaya.components.JavaSoundDataSource;
@@ -92,6 +93,7 @@ public class Utility {
         //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + null);
+            JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
             return null;
         }
         return devices;
@@ -108,10 +110,6 @@ public class Utility {
         Dimension dim = svf.getFormat().getSize();
         Globals.captureHeight = dim.height;
         Globals.captureWidth = dim.width;
-        //AudioFormat af = null;
-        //new AudioFormat(AudioFormat.LINEAR, 44100, 8, 2);
-        // new AudioFormat(AudioFormat.LINEAR, 44100, 4, 4);
-        // new AudioFormat(AudioFormat.LINEAR, 44100, 4, 4);
         AudioFormat af = new AudioFormat(AudioFormat.LINEAR);
 
         //DirectSoundAudo audo = new DirectSoundAudo();
@@ -217,6 +215,7 @@ public class Utility {
         //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + format);
+            JOptionPane.showMessageDialog(null, "Could not find a compatible device.");
             return null;
         }
         // Pick the first device

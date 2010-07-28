@@ -52,7 +52,7 @@ public class Globals
     public static long ttga = 0;
     public static String copyright = "copyright (c) 2010. All Rights Reserved.";
     public static String name = "xomaya";
-    public static double version = 1.20D;
+    public static double version = 1.21D;
     public static long snap = 0L;
     public static long tt = 0L;
     public static boolean compress = false;

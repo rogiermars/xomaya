@@ -43,8 +43,10 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
             javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
             Format[] f = (Format[])o.getFormats();
             for( int i = 0; i < f.length; i++ ) {
-                VideoFormat vf = (VideoFormat)f[i];
-                combo.addItem(new SelectableVideoFormat(vf,o));
+                if( f[i] instanceof VideoFormat ){
+                    VideoFormat vf = (VideoFormat)f[i];
+                    combo.addItem(new SelectableVideoFormat(vf,o));
+                }
             }
         }
 
