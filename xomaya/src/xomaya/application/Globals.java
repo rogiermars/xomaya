@@ -1,4 +1,4 @@
-/**
+        /**
  * Copyright (c) 2010 Sean Beecroft, http://xomaya.com/
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -24,7 +24,6 @@
 package xomaya.application;
 
 import java.util.Hashtable;
-import java.util.Properties;
 import javax.media.Buffer;
 import javax.media.Manager;
 import javax.media.TimeBase;

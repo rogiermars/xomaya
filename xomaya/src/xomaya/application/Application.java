@@ -20,11 +20,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-
 package xomaya.application;
 
-
+import com.sun.jna.Native;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.net.URL;
 import java.util.Calendar;
@@ -33,7 +33,6 @@ import java.util.Locale;
 import java.util.Properties;
 import javax.swing.*;
 import xomaya.components.CaptureFormatSelector;
-import xomaya.components.DirectSoundAudo;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
@@ -52,23 +51,11 @@ import xomaya.util.JNA;
 public class Application extends JFrame {
 
     ImageIcon icon = new ImageIcon("./media/picon-small.png");
+
     public Application() {
         super(Globals.name + " " + Globals.version + " " + Globals.copyright);
         frame = this;
         showFrame();
-    }
-
-    public static void registerSuccess() {
-        try {
-            URL url = new URL("http://www.xomaya.com/targets/Success");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
-            String b = "";
-            String buffer = "";
-            while ((b = reader.readLine()) != null) {
-                buffer = buffer + b;
-            }
-        } catch (Exception ex) {
-        }
     }
 
     private static void validateApplication(String key) {
@@ -98,7 +85,7 @@ public class Application extends JFrame {
                 buffer = buffer + b;
             }
 
-            if( !licenseKey.equals("EXPRESS")){
+            if (!licenseKey.equals("EXPRESS")) {
                 if (buffer.indexOf(licenseKey) != -1) {
                     logger.println("Application validated: Thank you for your business");
                     Globals.logo = false;
@@ -123,24 +110,25 @@ public class Application extends JFrame {
 
     }
 
-
-    public static void initialize()
-    {
+    public static void initialize() {
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-        DirectSoundAudo audo = new DirectSoundAudo();
+        //DirectSoundAudo audo = new DirectSoundAudo();
         long t = System.currentTimeMillis();
+        Runtime.getRuntime().traceMethodCalls(true);
+
         JNA.getIdleTimeMillisWin32();
         Calendar c = Calendar.getInstance();
         c.setTime(new Date(System.currentTimeMillis()));
         Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
         long tl = System.currentTimeMillis() - t;
         logger.println("Loaded DLL:" + tl);
+
         try {
             File out = new File("./out");
             out.mkdir();
             File logs = new File("./logs");
             logs.mkdir();
-        } catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
@@ -149,6 +137,7 @@ public class Application extends JFrame {
         int w = Globals.appWidth;
         int h = Globals.appHeight;
         Controller controller = new Controller(frame);
+        controller.doCaptureInputFormat();
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
 
@@ -172,29 +161,73 @@ public class Application extends JFrame {
     private JMenuBar createMenuBar() {
         JMenuBar menu = new JMenuBar();
         menu.add(createFileMenu());
+        menu.add(createToolsMenu());
         menu.add(createHelpMenu());
         return menu;
     }
 
     private JMenu createFileMenu() {
         JMenu fileMenu = new JMenu("File");
-        Controller controller = (Controller)Globals.registry.get("Controller");
+        Controller controller = (Controller) Globals.registry.get("Controller");
         JMenuItem exit = new JMenuItem("Exit");
+        exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, KeyEvent.SHIFT_DOWN_MASK, true));
+        exit.setMnemonic('X');
+        exit.setToolTipText("Exit this application");
         exit.setActionCommand(Command.EXIT.toString());
         exit.addActionListener(controller);
         fileMenu.add(exit);
         return fileMenu;
     }
 
+    private JMenu createToolsMenu() {
+        JMenu toolsMenu = new JMenu("Tools");
+        Controller controller = (Controller) Globals.registry.get("Controller");
+        
+        JMenuItem openOutputDirectory = new JMenuItem("Open Output Directory");
+        openOutputDirectory.setMnemonic('O');
+        openOutputDirectory.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.SHIFT_DOWN_MASK, true));
+        openOutputDirectory.setToolTipText("Get the output directory");
+        openOutputDirectory.setActionCommand(Command.OPEN_OUTPUT_DIRECTORY.toString());
+        openOutputDirectory.addActionListener(controller);
+        toolsMenu.add(openOutputDirectory);
+
+        JMenuItem clearOutputDirectory = new JMenuItem("Clear Output Directory");
+        clearOutputDirectory.setMnemonic('C');
+        clearOutputDirectory.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, KeyEvent.SHIFT_DOWN_MASK, true));
+        clearOutputDirectory.setToolTipText("Clear the output directory");
+        clearOutputDirectory.setActionCommand(Command.CLEAR_OUTPUT_DIRECTORY.toString());
+        clearOutputDirectory.addActionListener(controller);
+        toolsMenu.add(clearOutputDirectory);
+
+        toolsMenu.add(new JSeparator());
+        JMenuItem captureInputFormat = new JMenuItem("Select Input Format");
+        captureInputFormat.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, KeyEvent.SHIFT_DOWN_MASK, true));
+        captureInputFormat.setMnemonic('F');
+        captureInputFormat.setToolTipText("Select Capture Input Format");
+        captureInputFormat.setActionCommand(Command.CAPTURE_INPUT_FORMAT.toString());
+        captureInputFormat.addActionListener(controller);
+        toolsMenu.add(captureInputFormat);
+
+        return toolsMenu;
+    }
     private JMenu createHelpMenu() {
         JMenu helpMenu = new JMenu("Help");
-        Controller controller = (Controller)Globals.registry.get("Controller");
-        JMenuItem about = new JMenuItem("About");
+        Controller controller = (Controller) Globals.registry.get("Controller");
+        JMenuItem about = new JMenuItem("About Xomaya");
+        about.setMnemonic('A');
+        about.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, KeyEvent.SHIFT_DOWN_MASK, true));
+        about.setToolTipText("About this application");
+        about.setIcon(icon);
         about.setActionCommand(Command.ABOUT.toString());
         about.addActionListener(controller);
         helpMenu.add(about);
 
+        
+
         JMenuItem help = new JMenuItem("Help");
+        help.setMnemonic('H');
+        help.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, KeyEvent.SHIFT_DOWN_MASK, true));
+        help.setToolTipText("Get help online with this application");
         help.setActionCommand(Command.HELP.toString());
         help.addActionListener(controller);
         helpMenu.add(help);
@@ -202,12 +235,10 @@ public class Application extends JFrame {
         return helpMenu;
     }
 
-    
-
     public static void main(String args[])
             throws Exception {
         String key = "EXPRESS";
-        if( args.length > 0 ){
+        if (args.length > 0) {
             key = args[0];
         }
 
@@ -217,15 +248,15 @@ public class Application extends JFrame {
         Application.validateApplication(key);
         Application.validateEnvironment();
         initialize();
-        logger.println("Application validated:" + key );
+        logger.println("Application validated:" + key);
         SwingUtilities.invokeLater(new Runnable() {
+
             public void run() {
-                CaptureFormatSelector sel = new CaptureFormatSelector();
-                Globals.selectedVideoFormat = sel.getSelectedVideoFormat();
+                
                 Application app = new Application();
             }
         });
     }
-    static Log logger = new Log(Application.class);        
+    static Log logger = new Log(Application.class);
     JFrame frame;
 }

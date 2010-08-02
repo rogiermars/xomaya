@@ -32,7 +32,6 @@ import javax.media.control.*;
 import java.util.Vector;
 import javax.swing.JOptionPane;
 import xomaya.application.Globals;
-import xomaya.components.CaptureFormatSelector;
 import xomaya.components.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
 
@@ -79,24 +78,25 @@ public class Utility {
 
     public static Vector getVideoFormats()
     {
-        DataSource ds;
-        Vector devices;
-        CaptureDeviceInfo cdi;
-        MediaLocator ml;
-
-        // Find devices for format
-
-        devices = CaptureDeviceManager.getDeviceList(new VideoFormat(null));
-        for (int i = 0; i < devices.size(); i++) {
-            logger.println(devices.get(i));
-        }
-        //devices = CaptureDeviceManager.getDeviceList(null);
-        if (devices.size() < 1) {
-            logger.println("! No Devices for " + null);
-            JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
-            return null;
-        }
-        return devices;
+            DataSource ds;
+            //Vector devices;
+            CaptureDeviceInfo cdi;
+            MediaLocator ml;
+            // Find devices for format
+            
+            final java.util.Vector devices = (Vector)CaptureDeviceManager.getDeviceList(null);
+            CaptureDeviceManager.getDeviceList(new VideoFormat(null));
+            System.out.println("Found:" + devices.size());
+            for (int i = 0; i < devices.size(); i++) {
+                logger.println(devices.get(i));
+            }
+            //devices = CaptureDeviceManager.getDeviceList(null);
+            if (devices.size() < 1) {
+                logger.println("! No Devices for " + null);
+                JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
+                return null;
+            }
+            return devices;
     }
 
     public static DataSource getCaptureDS() {
@@ -108,8 +108,13 @@ public class Utility {
         logger.println("Selected format:" + svf);
         vf = svf.getFormat();
         Dimension dim = svf.getFormat().getSize();
-        Globals.captureHeight = dim.height;
-        Globals.captureWidth = dim.width;
+        if( dim != null ){
+            Globals.captureHeight = dim.height;
+            Globals.captureWidth = dim.width;
+        } else {
+            Globals.captureHeight = 480;
+            Globals.captureWidth = 640;
+        }
         AudioFormat af = new AudioFormat(AudioFormat.LINEAR);
         DataSource original = Utility.getCaptureDS(vf, af);
         return original;
@@ -156,7 +161,7 @@ public class Utility {
             ds = Manager.createMergingDataSource(new DataSource[]{
                         dsVideo, dsAudio
                     });
-        } catch (IncompatibleSourceException ise) {
+        } catch (Exception ise) {
             ise.printStackTrace();
             return null;
         }

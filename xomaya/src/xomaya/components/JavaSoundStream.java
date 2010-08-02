@@ -25,7 +25,7 @@
  */
 package xomaya.components;
 
-import com.sun.media.MediaTimeBase;
+
 import javax.media.*;
 import javax.media.format.*;
 import javax.media.protocol.*;

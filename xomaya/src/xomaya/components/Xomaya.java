@@ -89,7 +89,7 @@ public class Xomaya extends JPanel implements ControllerListener {
 
             if( original == null ){
                 logger.println("Could not create DS");
-                JOptionPane.showMessageDialog(this, "Xomaya requires a Webcam.\nPlease connect your Webcam and run Xomaya again.\nThis program requires capture mode of 640x480.\nIf you see this error again, please make sure\nyou have valid drivers for your webcam.\nProgram will now exit.", "No Webcam Detected!", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Xomaya requires a Webcam.\nPlease connect your Webcam and run Xomaya again.\nThis program recommends a capture mode of at least 640x480.\nIf you see this error again, please make sure\nyou have valid drivers for your webcam.\nProgram will now exit.", "No Webcam Detected!", JOptionPane.ERROR_MESSAGE);
                 System.exit(0);
             }
             
