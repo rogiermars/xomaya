@@ -71,6 +71,7 @@ public class VideoDataSource extends PushBufferDataSource {
         if (started) {
             return;
         }
+        System.out.println("VideoDataSource started");
         started = true;
         streams[0].start(true);
     }

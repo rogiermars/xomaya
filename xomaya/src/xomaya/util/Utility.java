@@ -34,6 +34,7 @@ import javax.swing.JOptionPane;
 import xomaya.application.Globals;
 import xomaya.components.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
+import xomaya.components.VideoDataSource;
 
 /**
  * This documentation is part of the Xomaya Express software suite.
@@ -86,7 +87,7 @@ public class Utility {
             
             final java.util.Vector devices = (Vector)CaptureDeviceManager.getDeviceList(null);
             CaptureDeviceManager.getDeviceList(new VideoFormat(null));
-            System.out.println("Found:" + devices.size());
+            logger.println("Found:" + devices.size());
             for (int i = 0; i < devices.size(); i++) {
                 logger.println(devices.get(i));
             }
@@ -125,6 +126,18 @@ public class Utility {
         DataSource dsAudio = null;
         DataSource ds = null;
 
+        boolean b = false;
+        if( b){
+            try {
+                dsVideo = new VideoDataSource();
+                dsVideo.connect();
+                System.out.println("Connected okay.");
+            } catch(Exception ex){
+                ex.printStackTrace(); //
+            }
+        }
+
+
         // Create a capture DataSource for the video
         // If there is no video capture device, then exit with null
         if (vf != null) {
@@ -143,6 +156,7 @@ public class Utility {
             ex.printStackTrace();
         }
 
+
         // Create the monitoring datasource wrapper
         if (dsVideo != null) {
             if (dsAudio == null) {
@@ -157,15 +171,16 @@ public class Utility {
         }
 
         // Merge the data sources, if both audio and video are available
-        try {
+        try {            
             ds = Manager.createMergingDataSource(new DataSource[]{
                         dsVideo, dsAudio
                     });
+            logger.println("Created merging data source");            
         } catch (Exception ise) {
+            System.out.println("ERROR:" + ise);
             ise.printStackTrace();
             return null;
         }
-
         return ds;
     }
 
@@ -197,7 +212,8 @@ public class Utility {
                 setCaptureFormat((CaptureDevice) ds, format);
             }
         } catch (Exception e) {
-            logger.println(e);
+            e.printStackTrace();
+            logger.println("createDataSource:" + e);
             return null;
         }
         return ds;

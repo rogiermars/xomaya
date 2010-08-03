@@ -2,13 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package xomaya.components;
 
 import java.io.IOException;
 import javax.media.Buffer;
 import javax.media.Control;
 import javax.media.Format;
+import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
@@ -25,7 +25,6 @@ public class VideoStream implements PushBufferStream, Runnable {
     protected Thread thread;
     protected BufferTransferHandler transferHandler;
     protected Control[] controls = new Control[0];
-
     boolean b = false;
 
     void start(boolean started) {
@@ -35,34 +34,36 @@ public class VideoStream implements PushBufferStream, Runnable {
                 thread = new Thread(this);
                 thread.start();
             }
-                notifyAll();
+            notifyAll();
         }
     }
 
-    public VideoStream()
-    {
+    public VideoStream() {
         thread = new Thread(this);
-        
     }
+
     public Format getFormat() {
-        //throw new UnsupportedOperationException("Not supported yet.");
         return format;
     }
 
     public void read(Buffer buffer) throws IOException {
-        //throw new UnsupportedOperationException("Not supported yet.");
-
         synchronized (this) {
             Object outdata = buffer.getData();
             int w = 640;
             int h = 480;
-            outdata = new byte[w*h*3];
+            outdata = new byte[w * h * 3];
             buffer.setData(outdata);
+            buffer.setLength(w*h*3);
+            Format fmt = new VideoFormat(VideoFormat.YUV);
+            buffer.setFormat(fmt);
         }
     }
 
     public void setTransferHandler(BufferTransferHandler bth) {
-        //throw new UnsupportedOperationException("Not supported yet.");
+        synchronized (this) {
+            this.transferHandler = bth;
+            notifyAll();
+        }
     }
 
     public ContentDescriptor getContentDescriptor() {
@@ -101,7 +102,7 @@ public class VideoStream implements PushBufferStream, Runnable {
         }
     }
 
-   /***************************************************************************
+    /***************************************************************************
      * Runnable
      ***************************************************************************/
     public void run() {
@@ -126,5 +127,4 @@ public class VideoStream implements PushBufferStream, Runnable {
             }
         }
     }
-
 }
