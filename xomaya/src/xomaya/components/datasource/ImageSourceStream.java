@@ -20,17 +20,14 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-package xomaya.components;
+package xomaya.components.datasource;
 
 import java.awt.Dimension;
-import java.io.File;
 import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.util.Vector;
 import javax.media.Buffer;
 import javax.media.Format;
 import javax.media.format.RGBFormat;
-import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
@@ -44,34 +41,27 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     Vector images;
     int width, height;
     Format format;
-    int nextImage = 0;	// index of the next image to be read.
-    boolean ended = false;
-
     protected BufferTransferHandler transferHandler;
-
     Thread thread = null;
-
     boolean started = false;
-    
-    
+
     public ImageSourceStream(int width, int height, int frameRate) {
         this.width = width;
         this.height = height;
         thread = new Thread(this);
         format = new RGBFormat(new Dimension(width, height),
-                    Format.NOT_SPECIFIED,
-                    Format.byteArray,
-                    Format.NOT_SPECIFIED,
-                    24,
-                    3, 2, 1,
-                    3, Format.NOT_SPECIFIED,
-                    Format.TRUE,
-                    Format.NOT_SPECIFIED);
-        
+                Format.NOT_SPECIFIED,
+                Format.byteArray,
+                Format.NOT_SPECIFIED,
+                24,
+                3, 2, 1,
+                3, Format.NOT_SPECIFIED,
+                Format.TRUE,
+                Format.NOT_SPECIFIED);
+
         // Check the input buffer type & size.
 
     }
-
 
     /**
      * This is called from the Processor to read a frame worth
@@ -79,9 +69,9 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      */
     public void read(Buffer buffer) throws IOException {
 
-        //synchronized(this){
+        synchronized (this) {
             try {
-                int len = Globals.captureWidth*Globals.captureHeight*3; //(int)raf.length();
+                int len = Globals.captureWidth * Globals.captureHeight * 3; //(int)raf.length();
                 byte[] b = new byte[len];
                 buffer.setData(b);
                 buffer.setFormat(format);
@@ -90,15 +80,15 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 buffer.setTimeStamp(Globals.time.getNanoseconds());
                 buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
                 buffer.setHeader(null);
-                //System.out.println(".");
-            } catch(Exception ex){
+                System.out.println(".");
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
-        //}
- 
-    }
+        }
 
+    }
     long seqNo = 0;
+
     /**
      * Return the format of each video frame.  That will be JPEG.
      */
@@ -115,7 +105,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     }
 
     public boolean endOfStream() {
-        return ended;
+        return false;
     }
 
     public Object[] getControls() {
@@ -126,11 +116,11 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
         return null;
     }
 
-    public void setTransferHandler(BufferTransferHandler bth) {
-       //synchronized (this) {
-            this.transferHandler = bth;
-        //    notifyAll();
-        //}
+    public void setTransferHandler(BufferTransferHandler transferHandler) {
+        synchronized (this) {
+            this.transferHandler = transferHandler;
+            notifyAll();
+        }
     }
 
     void start(boolean started) {
@@ -139,25 +129,39 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
             if (started && !thread.isAlive()) {
                 thread = new Thread(this);
                 thread.start();
-                
             }
-            //notifyAll();
+
+            notifyAll();
         }
+    }
+
+    public void stop() {
     }
 
     /***************************************************************************
      * Runnable
      ***************************************************************************/
     public void run() {
-        while (started) {
+        boolean running = true;
+        while (running) {
+            synchronized (this) {
+                while (transferHandler == null && started) {
+                    try {
+                        wait(100);
+                    } catch (InterruptedException ie) {
+                        ie.printStackTrace();
+                    }
+                }
+            }
             if (started && transferHandler != null) {
-                transferHandler.transferData(this); 
+                transferHandler.transferData(this);
                 try {
-                    Thread.sleep(100);
+                    Thread.currentThread().sleep(100);
                 } catch (InterruptedException ise) {
                     ise.printStackTrace();
                 }
             }
         }
+        System.out.println("finished");
     }
 }

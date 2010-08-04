@@ -33,7 +33,6 @@ import java.util.Locale;
 import java.util.Properties;
 import javax.swing.*;
 import xomaya.components.CaptureFormatSelector;
-import xomaya.components.DirectSoundAuto;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
@@ -106,7 +105,7 @@ public class Application extends JFrame {
     private static void validateEnvironment() {
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
 
-        DirectSoundAuto auto = new DirectSoundAuto();
+        //DirectSoundAuto auto = new DirectSoundAuto();
         //if (d.width != 800 && d.height != 600) {
         //    JOptionPane.showMessageDialog(null, "You are running the application in " + d.width + "x" + d.height + ".\nThe recommended resolution is 800x600\nApplication will try to run anyways.", "Tip:", JOptionPane.INFORMATION_MESSAGE);
         //}

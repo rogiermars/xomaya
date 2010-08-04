@@ -20,7 +20,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-package xomaya.components;
+package xomaya.components.datasource;
 ///////////////////////////////////////////////
 //
 import java.io.IOException;
@@ -33,7 +33,6 @@ import javax.media.protocol.PushBufferStream;
 
 // Inner classes.
 ///////////////////////////////////////////////
-
 /**
  * A DataSource to read from a list of JPEG image files and
  * turn that into a stream of JMF buffers.
@@ -42,6 +41,8 @@ import javax.media.protocol.PushBufferStream;
 public class ImageDataSource extends PushBufferDataSource {
 
     ImageSourceStream streams[];
+    boolean connected = false;
+    boolean started = false;
 
     public ImageDataSource(int width, int height, int frameRate) {
         streams = new ImageSourceStream[1];
@@ -63,10 +64,7 @@ public class ImageDataSource extends PushBufferDataSource {
         return ContentDescriptor.RAW;
     }
 
-       boolean connected = false;
-    boolean started = false;
-
-   public void connect() throws IOException {
+    public void connect() throws IOException {
         if (connected) {
             return;
         }
@@ -83,7 +81,6 @@ public class ImageDataSource extends PushBufferDataSource {
         connected = false;
     }
 
-
     public void start() throws IOException {
         // we need to throw error if connect() has not been called
         if (!connected) {
@@ -96,6 +93,7 @@ public class ImageDataSource extends PushBufferDataSource {
         started = true;
         streams[0].start(true);
     }
+
     /**
      * Return the ImageSourceStreams.
      */
@@ -125,8 +123,7 @@ public class ImageDataSource extends PushBufferDataSource {
             return;
         }
         started = false;
-        streams[0].start(false);
+        streams[0].stop();
     }
-
 }
 

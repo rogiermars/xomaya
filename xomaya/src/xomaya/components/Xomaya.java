@@ -22,6 +22,7 @@
  */
 package xomaya.components;
 
+import xomaya.components.datasource.JavaSoundDataSource;
 import xomaya.controllers.Controller;
 import xomaya.application.Globals;
 import xomaya.application.Command;

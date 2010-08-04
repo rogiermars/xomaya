@@ -24,7 +24,7 @@
  *
  */
 
-package xomaya.components;
+package xomaya.components.datasource;
 
 
 import javax.media.Time;

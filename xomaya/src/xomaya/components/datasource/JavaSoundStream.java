@@ -23,7 +23,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-package xomaya.components;
+package xomaya.components.datasource;
 
 
 import javax.media.*;

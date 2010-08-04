@@ -32,9 +32,9 @@ import javax.media.control.*;
 import java.util.Vector;
 import javax.swing.JOptionPane;
 import xomaya.application.Globals;
-import xomaya.components.JavaSoundDataSource;
+import xomaya.components.datasource.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
-import xomaya.components.ImageDataSource;
+import xomaya.components.datasource.ImageDataSource;
 
 
 /**
