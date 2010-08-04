@@ -55,22 +55,26 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
     ImageIcon icon = new ImageIcon("./media/picon-small.png");
     public CaptureFormatSelector()
     {
+        // REFACTOR
         Vector v = Utility.getVideoFormats();
-        Enumeration e = v.elements();
-        while( e.hasMoreElements() ) {
-            try {
-                javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
-                Format[] f = (Format[])o.getFormats();
-                for( int i = 0; i < f.length; i++ ) {
-                    if( f[i] instanceof VideoFormat ){
-                        VideoFormat vf = (VideoFormat)f[i];
-                        combo.addItem(new SelectableVideoFormat(vf,o));
+        if( v != null ){
+            Enumeration e = v.elements();
+            while( e.hasMoreElements() ) {
+                try {
+                    javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
+                    Format[] f = (Format[])o.getFormats();
+                    for( int i = 0; i < f.length; i++ ) {
+                        if( f[i] instanceof VideoFormat ){
+                            VideoFormat vf = (VideoFormat)f[i];
+                            combo.addItem(new SelectableVideoFormat(vf,o));
+                        }
                     }
+                } catch(Exception ex) {
+                    ex.printStackTrace();
                 }
-            } catch(Exception ex) {
-                ex.printStackTrace();
             }
         }
+        // REFACTOR
 
         int w = Globals.appWidth;
         int h = Globals.appHeight;

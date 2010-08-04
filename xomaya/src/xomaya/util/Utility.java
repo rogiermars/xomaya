@@ -111,7 +111,13 @@ public class Utility {
 
         SelectableVideoFormat svf = Globals.selectedVideoFormat;
         logger.println("Selected format:" + svf);
-        vf = (VideoFormat)svf.getFormat();
+        // REFACTOR
+        if( svf == null ){
+            
+        } else {
+            vf = (VideoFormat)svf.getFormat();
+        }
+        // REFACTOR
         Dimension dim = vf.getSize();
         if( dim != null ){
             Globals.captureHeight = dim.height;
