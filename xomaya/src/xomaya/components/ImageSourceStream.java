@@ -4,16 +4,27 @@
  */
 package xomaya.components;
 
+import com.sun.media.format.AviVideoFormat;
 import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Vector;
+import javax.imageio.ImageIO;
 import javax.media.Buffer;
 import javax.media.Format;
 import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
+import javax.media.util.ImageToBuffer;
+import xomaya.application.Globals;
+import xomaya.components.effects.GraphicEffect;
 
 /**
  * The source stream to go along with ImageDataSource.
@@ -31,70 +42,34 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     Thread thread = null;
 
     boolean started = false;
-
+    
+    
     public ImageSourceStream(int width, int height, int frameRate, Vector images) {
         this.width = width;
         this.height = height;
-        this.images = images;
         thread = new Thread(this);
         format = new VideoFormat(VideoFormat.JPEG,
                 new Dimension(width, height),
                 Format.NOT_SPECIFIED,
                 Format.byteArray,
                 (float) frameRate);
+
+    
+        
+        // Check the input buffer type & size.
+
     }
 
-    /**
-     * We should never need to block assuming data are read from files.
-     */
-    public boolean willReadBlock() {
-        return false;
-    }
 
     /**
      * This is called from the Processor to read a frame worth
      * of video data.
      */
-    public void read(Buffer buf) throws IOException {
-        // Check if we've finished all the frames.
-        
-        String imageFile = (String) "./media/plain.jpg";
-
-        //System.out.println("  - ready to read image file: " + imageFile);
-        
-        // Open a random access file for the next image.
-        RandomAccessFile raFile;
-        //System.out.println("    - reading image file: " + imageFile);
-        raFile = new RandomAccessFile(imageFile, "r");
-
-        byte data[] = null;
-
-        // Check the input buffer type & size.
-
-        if (buf.getData() instanceof byte[]) {
-            data = (byte[]) buf.getData();
-        }
-
-        // Check to see the given buffer is big enough for the frame.
-        if (data == null || data.length < raFile.length()) {
-            data = new byte[(int) raFile.length()];
-            buf.setData(data);
-        }
-
-        // Read the entire JPEG image from the file.
-        raFile.readFully(data, 0, (int) raFile.length());
-
-        //System.out.println("    read " + raFile.length() + " bytes.");
-
-        buf.setOffset(0);
-        buf.setLength((int) raFile.length());
-        buf.setFormat(format);
-        buf.setFlags(buf.getFlags() | Buffer.FLAG_KEY_FRAME);
-
-        // Close the random access file.
-        raFile.close();
+    public void read(Buffer buffer) throws IOException {
+ 
     }
 
+    long seqNo = 0;
     /**
      * Return the format of each video frame.  That will be JPEG.
      */
@@ -135,6 +110,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
             if (started && !thread.isAlive()) {
                 thread = new Thread(this);
                 thread.start();
+                
             }
             notifyAll();
         }
@@ -156,7 +132,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
             }
             //Thread.yield();
             if (started && transferHandler != null) {
-                transferHandler.transferData(this);
+                transferHandler.transferData(this); 
                 try {
                     Thread.currentThread().sleep(100);
                 } catch (InterruptedException ise) {

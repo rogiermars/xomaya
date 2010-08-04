@@ -85,6 +85,8 @@ public class Xomaya extends JPanel implements ControllerListener {
     public boolean open(MediaLocator ml) {
 
         try {
+            Globals.registry.put("GraphicEffect", effect);
+            
             DataSource original = Utility.getCaptureDS();
 
             if( original == null ){
@@ -167,6 +169,7 @@ public class Xomaya extends JPanel implements ControllerListener {
                     timer.scheduleAtFixedRate(task, 0L, 300L);
                     Globals.registry.put("STimerTask", task);
                     Globals.registry.put("Timer", timer);
+                    logger.println("Timers initialized");
                 }
             };
             

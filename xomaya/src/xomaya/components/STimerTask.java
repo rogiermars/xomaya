@@ -113,6 +113,7 @@ public class STimerTask extends TimerTask {
             if( target.store == null ){
                 return;
             }
+            //System.out.println("Taking a pic");
             BufferedImage img = robot.createScreenCapture(rect);
             int mx = MouseInfo.getPointerInfo().getLocation().x;
             int my = MouseInfo.getPointerInfo().getLocation().y;
