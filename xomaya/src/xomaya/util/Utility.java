@@ -35,7 +35,7 @@ import xomaya.application.Globals;
 import xomaya.components.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
 import xomaya.components.ImageDataSource;
-import xomaya.components.LiveDataSource;
+
 
 /**
  * This documentation is part of the Xomaya Express software suite.
@@ -134,8 +134,8 @@ public class Utility {
             if (dsVideo == null) {
                 logger.println("Unable to create dsVideo from VideoFormat");
                 //return null;
-                dsVideo = new ImageDataSource(Globals.captureWidth, Globals.captureHeight, (int)Globals.fps, null);
-                try { dsVideo.connect(); } catch(Exception ex){ ex.printStackTrace(); return null; }
+                dsVideo = new ImageDataSource(Globals.captureWidth, Globals.captureHeight, (int)Globals.fps);
+                try { dsVideo.connect(); } catch(Exception ex){ return null; }
             }
         }
         try {
@@ -157,7 +157,7 @@ public class Utility {
         } else if (dsAudio != null) {
             return dsAudio;
         } else {
-            logger.println("Unable to create dsVideo");
+            logger.println("Unable to create dsVideo -HALT-");
             return null;
         }
 
@@ -187,7 +187,6 @@ public class Utility {
         for (int i = 0; i < devices.size(); i++) {
             logger.println(devices.get(i));
         }
-        //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + format);
             JOptionPane.showMessageDialog(null, "Could not find a compatible device.");

@@ -54,17 +54,11 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     boolean started = false;
     
     
-    public ImageSourceStream(int width, int height, int frameRate, Vector images) {
+    public ImageSourceStream(int width, int height, int frameRate) {
         this.width = width;
         this.height = height;
         thread = new Thread(this);
-        //format = new VideoFormat(VideoFormat.RBB,
-        //        new Dimension(width, height),
-        //        Format.NOT_SPECIFIED,
-        //        Format.byteArray,
-        //        (float) frameRate);
-
-    format = new RGBFormat(new Dimension(640,480),
+        format = new RGBFormat(new Dimension(width, height),
                     Format.NOT_SPECIFIED,
                     Format.byteArray,
                     Format.NOT_SPECIFIED,
@@ -85,9 +79,9 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      */
     public void read(Buffer buffer) throws IOException {
 
-        synchronized(this){
+        //synchronized(this){
             try {
-                int len = 640*480*3; //(int)raf.length();
+                int len = Globals.captureWidth*Globals.captureHeight*3; //(int)raf.length();
                 byte[] b = new byte[len];
                 buffer.setData(b);
                 buffer.setFormat(format);
@@ -96,13 +90,11 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 buffer.setTimeStamp(Globals.time.getNanoseconds());
                 buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
                 buffer.setHeader(null);
-                //buffer.
-                //buffer.setTimeStamp(System.currentTimeMillis());
-                //System.out.println("Image read");
+                //System.out.println(".");
             } catch(Exception ex){
                 ex.printStackTrace();
             }
-        }
+        //}
  
     }
 
@@ -135,10 +127,10 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     }
 
     public void setTransferHandler(BufferTransferHandler bth) {
-       synchronized (this) {
+       //synchronized (this) {
             this.transferHandler = bth;
-            notifyAll();
-        }
+        //    notifyAll();
+        //}
     }
 
     void start(boolean started) {
@@ -149,7 +141,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 thread.start();
                 
             }
-            notifyAll();
+            //notifyAll();
         }
     }
 
@@ -158,20 +150,10 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      ***************************************************************************/
     public void run() {
         while (started) {
-            synchronized (this) {
-                while (transferHandler == null && started) {
-                    try {
-                        wait(100);
-                    } catch (InterruptedException ie) {
-                        ie.printStackTrace();
-                    }
-                }
-            }
-            //Thread.yield();
             if (started && transferHandler != null) {
                 transferHandler.transferData(this); 
                 try {
-                    Thread.currentThread().sleep(100);
+                    Thread.sleep(100);
                 } catch (InterruptedException ise) {
                     ise.printStackTrace();
                 }

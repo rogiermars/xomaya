@@ -43,9 +43,9 @@ public class ImageDataSource extends PushBufferDataSource {
 
     ImageSourceStream streams[];
 
-    public ImageDataSource(int width, int height, int frameRate, Vector images) {
+    public ImageDataSource(int width, int height, int frameRate) {
         streams = new ImageSourceStream[1];
-        streams[0] = new ImageSourceStream(width, height, frameRate, images);
+        streams[0] = new ImageSourceStream(width, height, frameRate);
     }
 
     public void setLocator(MediaLocator source) {
