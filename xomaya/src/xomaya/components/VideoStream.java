@@ -4,6 +4,7 @@
  */
 package xomaya.components;
 
+import com.sun.media.format.AviVideoFormat;
 import java.io.IOException;
 import javax.media.Buffer;
 import javax.media.Control;
@@ -12,6 +13,7 @@ import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
+import xomaya.application.Globals;
 
 /**
  *
@@ -49,12 +51,12 @@ public class VideoStream implements PushBufferStream, Runnable {
     public void read(Buffer buffer) throws IOException {
         synchronized (this) {
             Object outdata = buffer.getData();
-            int w = 640;
-            int h = 480;
+            int w = Globals.captureWidth;
+            int h = Globals.captureHeight;
             outdata = new byte[w * h * 3];
             buffer.setData(outdata);
             buffer.setLength(w*h*3);
-            Format fmt = new VideoFormat(VideoFormat.YUV);
+            Format fmt = new AviVideoFormat(VideoFormat.YUV);
             buffer.setFormat(fmt);
         }
     }

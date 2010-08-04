@@ -6,7 +6,9 @@
 package xomaya.components;
 
 import java.io.IOException;
+import javax.media.Control;
 import javax.media.Time;
+import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferDataSource;
 import javax.media.protocol.PushBufferStream;
 
@@ -16,8 +18,9 @@ import javax.media.protocol.PushBufferStream;
  */
 public class VideoDataSource extends PushBufferDataSource {
 
-    protected String contentType = "raw";
     VideoStream[] streams = null;
+    protected Control[] controls = new Control[0];
+
     public void createStreams()
     {
         if (streams == null) {
@@ -28,18 +31,16 @@ public class VideoDataSource extends PushBufferDataSource {
 
     @Override
     public PushBufferStream[] getStreams() {
-        //throw new UnsupportedOperationException("Not supported yet.");
         return streams;
     }
 
     @Override
     public String getContentType() {
-        //throw new UnsupportedOperationException("Not supported yet.");
         if (!connected) {
             System.out.println("Error: DataSource not connected");
             return null;
         }
-        return contentType;
+        return ContentDescriptor.RAW;
     }
 
     boolean connected = false;
@@ -84,21 +85,30 @@ public class VideoDataSource extends PushBufferDataSource {
         streams[0].start(false);
     }
 
-    @Override
-    public Object getControl(String string) {
-        //throw new UnsupportedOperationException("Not supported yet.");
-        return null;
+    // Controls
+    public Object[] getControls() {
+        return controls;
     }
 
-    @Override
-    public Object[] getControls() {
-        //throw new UnsupportedOperationException("Not supported yet.");
-        return null;
+    public Object getControl(String controlType) {
+        try {
+            Class cls = Class.forName(controlType);
+            Object cs[] = getControls();
+            for (int i = 0; i < cs.length; i++) {
+                if (cls.isInstance(cs[i])) {
+                    return cs[i];
+                }
+            }
+            return null;
+
+        } catch (Exception e) {   // no such controlType or such control
+            return null;
+        }
     }
+
 
     @Override
     public Time getDuration() {
-        //throw new UnsupportedOperationException("Not supported yet.");
         return null;
     }
 

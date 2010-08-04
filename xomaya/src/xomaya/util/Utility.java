@@ -34,7 +34,7 @@ import javax.swing.JOptionPane;
 import xomaya.application.Globals;
 import xomaya.components.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
-import xomaya.components.VideoDataSource;
+import xomaya.components.ImageDataSource;
 
 /**
  * This documentation is part of the Xomaya Express software suite.
@@ -126,10 +126,10 @@ public class Utility {
         DataSource dsAudio = null;
         DataSource ds = null;
 
-        boolean b = false;
+        boolean b = true;
         if( b){
             try {
-                dsVideo = new VideoDataSource();
+                dsVideo = new ImageDataSource(Globals.captureWidth,Globals.captureHeight,(int)Globals.fps,new Vector());
                 dsVideo.connect();
                 System.out.println("Connected okay.");
             } catch(Exception ex){
@@ -141,7 +141,7 @@ public class Utility {
         // Create a capture DataSource for the video
         // If there is no video capture device, then exit with null
         if (vf != null) {
-            dsVideo = createDataSource(vf);
+            //dsVideo = createDataSource(vf);
             if (dsVideo == null) {
                 logger.println("Unable to create dsVideo from VideoFormat");
                 return null;
