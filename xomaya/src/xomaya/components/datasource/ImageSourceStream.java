@@ -22,8 +22,12 @@
  */
 package xomaya.components.datasource;
 
+import xomaya.components.events.EventType;
+import xomaya.components.events.Event;
 import java.awt.Dimension;
 import java.io.IOException;
+import java.util.EventListener;
+import java.util.Iterator;
 import java.util.Vector;
 import javax.media.Buffer;
 import javax.media.Format;
@@ -80,7 +84,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 buffer.setTimeStamp(Globals.time.getNanoseconds());
                 buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
                 buffer.setHeader(null);
-                System.out.println(".");
+                //System.out.println(".");
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
@@ -154,7 +158,11 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 }
             }
             if (started && transferHandler != null) {
+                Event evtS = new Event(EventType.TRANSFER_STARTED);
+                dispatch(evtS);
                 transferHandler.transferData(this);
+                Event evtC = new Event(EventType.TRANSFER_COMPLETE);
+                dispatch(evtC);
                 try {
                     Thread.currentThread().sleep(100);
                 } catch (InterruptedException ise) {
@@ -163,5 +171,25 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
             }
         }
         System.out.println("finished");
+    }
+
+    Vector<TransferListener> listeners = new Vector<TransferListener>();
+    public void addTransferListener(TransferListener el)
+    {
+        listeners.add(el);
+    }
+
+    public void dispatch(Event ae)
+    {
+        Iterator i = listeners.iterator();
+        while( i.hasNext() ){
+            TransferListener l = (TransferListener)i.next();
+            if( ae.getType() == EventType.TRANSFER_COMPLETE ){
+                l.transferCompleted();
+            }
+            else if( ae.getType() == EventType.TRANSFER_STARTED ){
+                l.transferStarted();
+            }
+        }
     }
 }
