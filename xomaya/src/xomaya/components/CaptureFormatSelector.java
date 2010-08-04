@@ -99,7 +99,6 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
 
     public SelectableVideoFormat getSelectedVideoFormat()
     {
-        //this.setModal(false);
         return (SelectableVideoFormat)combo.getSelectedItem();
     }
 
