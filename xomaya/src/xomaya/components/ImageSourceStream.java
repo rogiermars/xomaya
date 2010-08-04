@@ -37,7 +37,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
         this.height = height;
         this.images = images;
         thread = new Thread(this);
-        format = new VideoFormat(VideoFormat.MPEG,
+        format = new VideoFormat(VideoFormat.JPEG,
                 new Dimension(width, height),
                 Format.NOT_SPECIFIED,
                 Format.byteArray,

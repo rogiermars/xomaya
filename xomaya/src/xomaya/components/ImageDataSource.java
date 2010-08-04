@@ -5,21 +5,11 @@
 package xomaya.components;
 ///////////////////////////////////////////////
 //
-import java.awt.Dimension;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.util.Vector;
-import javax.imageio.ImageIO;
-import javax.media.Buffer;
-import javax.media.Format;
 import javax.media.MediaLocator;
 import javax.media.Time;
-import javax.media.format.VideoFormat;
 import javax.media.protocol.ContentDescriptor;
-import javax.media.protocol.PullBufferStream;
-import javax.media.protocol.PullBufferDataSource;
 import javax.media.protocol.PushBufferDataSource;
 import javax.media.protocol.PushBufferStream;
 
