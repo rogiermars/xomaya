@@ -57,6 +57,12 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
     protected javax.sound.sampled.AudioFormat audio_in_format;
     static Log logger = new Log(JavaSoundStream.class);
 
+    /***************************************************************************
+     * PushBufferStream
+     ***************************************************************************/
+    private int seqNo = 0;
+    int flag = 0;
+
     /* JavaSound Stuff */
     TargetDataLine tdl = null;
 
@@ -129,15 +135,10 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
     public boolean endOfStream() {
         return false;
     }
-    /***************************************************************************
-     * PushBufferStream
-     ***************************************************************************/
-    private int seqNo = 0;
 
     public Format getFormat() {
         return audio_out_format;
     }
-    int flag = 0;
 
     public void read(Buffer buffer) throws IOException {
 

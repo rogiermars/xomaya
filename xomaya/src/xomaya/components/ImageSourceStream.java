@@ -34,6 +34,7 @@ import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
+import xomaya.application.Globals;
 
 /**
  * The source stream to go along with ImageDataSource.
@@ -86,21 +87,18 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
 
         synchronized(this){
             try {
-                System.out.println("Reading image...");
-                File f = new File("./media/plain.jpg");
-                RandomAccessFile raf = new RandomAccessFile(f,"r");
                 int len = 640*480*3; //(int)raf.length();
-                System.out.println("Data length:" + len);
                 byte[] b = new byte[len];
-                //raf.readFully(b, 0, len);
                 buffer.setData(b);
                 buffer.setFormat(format);
                 buffer.setOffset(0);
                 buffer.setSequenceNumber(seqNo++);
+                buffer.setTimeStamp(Globals.time.getNanoseconds());
                 buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
                 buffer.setHeader(null);
+                //buffer.
                 //buffer.setTimeStamp(System.currentTimeMillis());
-                System.out.println("Image read");
+                //System.out.println("Image read");
             } catch(Exception ex){
                 ex.printStackTrace();
             }
