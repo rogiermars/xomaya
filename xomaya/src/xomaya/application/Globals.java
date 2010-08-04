@@ -60,7 +60,7 @@ public class Globals
     public static int captureHeight = 480;
 
     public static int appWidth = 240;
-    public static int appHeight = 125;
+    public static int appHeight = 140;
 
     public static long seqNo = 0;
     public static Application dw = null;

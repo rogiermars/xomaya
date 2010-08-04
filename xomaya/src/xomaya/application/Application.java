@@ -36,6 +36,7 @@ import xomaya.components.CaptureFormatSelector;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
+import xomaya.components.Status;
 import xomaya.logging.Log;
 import xomaya.util.JNA;
 
@@ -140,17 +141,20 @@ public class Application extends JFrame {
         int h = Globals.appHeight;
         Controller controller = new Controller(frame);
         controller.doCaptureInputFormat();
+        Status status = new Status();
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
 
         Globals.registry.put("Controller", controller);
         Globals.registry.put("Console", console);
+        Globals.registry.put("Status", status);
         Globals.registry.put("Application", frame);
         Globals.registry.put("Xomaya", fa);
         ModeSelector ms = new ModeSelector();
         frame.setIconImage(icon.getImage());
         frame.add(fa, BorderLayout.WEST);
         frame.add(ms, BorderLayout.CENTER);
+        frame.add(status, BorderLayout.SOUTH);
         frame.setJMenuBar(createMenuBar());
         frame.setSize(w, h);
         frame.setResizable(false);

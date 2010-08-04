@@ -146,8 +146,8 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      * Runnable
      ***************************************************************************/
     public void run() {
-        boolean running = true;
-        while (running) {
+        //boolean running = true;
+        while (started) {
             synchronized (this) {
                 while (transferHandler == null && started) {
                     try {
@@ -157,14 +157,13 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                     }
                 }
             }
+
             if (started && transferHandler != null) {
-                Event evtS = new Event(EventType.TRANSFER_STARTED);
-                dispatch(evtS);
-                transferHandler.transferData(this);
-                Event evtC = new Event(EventType.TRANSFER_COMPLETE);
-                dispatch(evtC);
                 try {
-                    Thread.currentThread().sleep(100);
+                    dispatch(new Event(EventType.TRANSFER_STARTED));
+                    transferHandler.transferData(this);
+                    dispatch(new Event(EventType.TRANSFER_COMPLETE));
+                    Thread.sleep(100);
                 } catch (InterruptedException ise) {
                     ise.printStackTrace();
                 }
@@ -172,22 +171,19 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
         }
         System.out.println("finished");
     }
-
     Vector<TransferListener> listeners = new Vector<TransferListener>();
-    public void addTransferListener(TransferListener el)
-    {
+
+    public void addTransferListener(TransferListener el) {
         listeners.add(el);
     }
 
-    public void dispatch(Event ae)
-    {
+    public void dispatch(Event ae) {
         Iterator i = listeners.iterator();
-        while( i.hasNext() ){
-            TransferListener l = (TransferListener)i.next();
-            if( ae.getType() == EventType.TRANSFER_COMPLETE ){
+        while (i.hasNext()) {
+            TransferListener l = (TransferListener) i.next();
+            if (ae.getType() == EventType.TRANSFER_COMPLETE) {
                 l.transferCompleted();
-            }
-            else if( ae.getType() == EventType.TRANSFER_STARTED ){
+            } else if (ae.getType() == EventType.TRANSFER_STARTED) {
                 l.transferStarted();
             }
         }
