@@ -1,30 +1,39 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Copyright (c) 2010 Sean Beecroft, http://xomaya.com/
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
  */
 package xomaya.components;
 
-import com.sun.media.format.AviVideoFormat;
 import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Vector;
-import javax.imageio.ImageIO;
 import javax.media.Buffer;
 import javax.media.Format;
+import javax.media.format.RGBFormat;
 import javax.media.format.VideoFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
-import javax.media.util.ImageToBuffer;
-import xomaya.application.Globals;
-import xomaya.components.effects.GraphicEffect;
 
 /**
  * The source stream to go along with ImageDataSource.
@@ -33,7 +42,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
 
     Vector images;
     int width, height;
-    VideoFormat format;
+    Format format;
     int nextImage = 0;	// index of the next image to be read.
     boolean ended = false;
 
@@ -48,13 +57,21 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
         this.width = width;
         this.height = height;
         thread = new Thread(this);
-        format = new VideoFormat(VideoFormat.JPEG,
-                new Dimension(width, height),
-                Format.NOT_SPECIFIED,
-                Format.byteArray,
-                (float) frameRate);
+        //format = new VideoFormat(VideoFormat.RBB,
+        //        new Dimension(width, height),
+        //        Format.NOT_SPECIFIED,
+        //        Format.byteArray,
+        //        (float) frameRate);
 
-    
+    format = new RGBFormat(new Dimension(640,480),
+                    Format.NOT_SPECIFIED,
+                    Format.byteArray,
+                    Format.NOT_SPECIFIED,
+                    24,
+                    3, 2, 1,
+                    3, Format.NOT_SPECIFIED,
+                    Format.TRUE,
+                    Format.NOT_SPECIFIED);
         
         // Check the input buffer type & size.
 
@@ -66,6 +83,28 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      * of video data.
      */
     public void read(Buffer buffer) throws IOException {
+
+        synchronized(this){
+            try {
+                System.out.println("Reading image...");
+                File f = new File("./media/plain.jpg");
+                RandomAccessFile raf = new RandomAccessFile(f,"r");
+                int len = 640*480*3; //(int)raf.length();
+                System.out.println("Data length:" + len);
+                byte[] b = new byte[len];
+                //raf.readFully(b, 0, len);
+                buffer.setData(b);
+                buffer.setFormat(format);
+                buffer.setOffset(0);
+                buffer.setSequenceNumber(seqNo++);
+                buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
+                buffer.setHeader(null);
+                //buffer.setTimeStamp(System.currentTimeMillis());
+                System.out.println("Image read");
+            } catch(Exception ex){
+                ex.printStackTrace();
+            }
+        }
  
     }
 

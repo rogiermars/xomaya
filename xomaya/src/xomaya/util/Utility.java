@@ -133,7 +133,9 @@ public class Utility {
             dsVideo = createDataSource(vf);
             if (dsVideo == null) {
                 logger.println("Unable to create dsVideo from VideoFormat");
-                return null;
+                //return null;
+                dsVideo = new ImageDataSource(Globals.captureWidth, Globals.captureHeight, (int)Globals.fps, null);
+                try { dsVideo.connect(); } catch(Exception ex){ ex.printStackTrace(); return null; }
             }
         }
         try {
