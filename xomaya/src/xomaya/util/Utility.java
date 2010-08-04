@@ -95,6 +95,9 @@ public class Utility {
             //devices = CaptureDeviceManager.getDeviceList(null);
             if (devices.size() < 1) {
                 logger.println("! No Devices for " + null);
+                //Dimension size = new Dimension(Globals.captureWidth, Globals.captureHeight);
+                //VideoFormat vf = new VideoFormat("YUV", size, Format.NOT_SPECIFIED, null, Globals.fps);
+                //devices.add(vf);
                 JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
                 return null;
             }
@@ -108,8 +111,8 @@ public class Utility {
 
         SelectableVideoFormat svf = Globals.selectedVideoFormat;
         logger.println("Selected format:" + svf);
-        vf = svf.getFormat();
-        Dimension dim = svf.getFormat().getSize();
+        vf = (VideoFormat)svf.getFormat();
+        Dimension dim = vf.getSize();
         if( dim != null ){
             Globals.captureHeight = dim.height;
             Globals.captureWidth = dim.width;

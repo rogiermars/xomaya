@@ -20,39 +20,43 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-
 package xomaya.components;
 
 import java.awt.Dimension;
 import javax.media.CaptureDeviceInfo;
+import javax.media.Format;
 import javax.media.format.VideoFormat;
 
 public class SelectableVideoFormat {
 
-    VideoFormat vf = null;
+    Format vf = null;
     CaptureDeviceInfo cdi = null;
-    public SelectableVideoFormat(VideoFormat vf, CaptureDeviceInfo cdi)
-    {
+
+    public SelectableVideoFormat(Format vf, CaptureDeviceInfo cdi) {
         this.vf = vf;
         this.cdi = cdi;
     }
 
-    public String toString()
-    {
-        Dimension d = vf.getSize();
-        String enc = vf.getEncoding();
-        enc = enc.toUpperCase();
-        if( d != null ){
-            enc = enc + ":" + d.width + "x" + d.height;
+    public String toString() {
+        if (vf instanceof VideoFormat) {
+            VideoFormat vvf = (VideoFormat)vf;
+            Dimension d = vvf.getSize();
+            String enc = vvf.getEncoding();
+            enc = enc.toUpperCase();
+            if (d != null) {
+                enc = enc + ":" + d.width + "x" + d.height;
+            }
+            return enc;
         }
-        return enc;
+
+        return "empty";
     }
-    public VideoFormat getFormat()
-    {
+
+    public Format getFormat() {
         return vf;
     }
-    public CaptureDeviceInfo getCaptureDeviceInfo()
-    {
+
+    public CaptureDeviceInfo getCaptureDeviceInfo() {
         return cdi;
     }
 }

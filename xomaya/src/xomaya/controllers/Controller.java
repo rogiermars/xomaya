@@ -23,6 +23,7 @@
 package xomaya.controllers;
 
 import java.awt.Desktop;
+import java.awt.Dimension;
 import xomaya.application.Globals;
 import xomaya.application.State;
 import xomaya.application.Command;
@@ -35,10 +36,13 @@ import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URL;
 import java.util.*;
+import javax.media.Format;
+import javax.media.format.RGBFormat;
 import javax.media.protocol.FileTypeDescriptor;
 import javax.swing.*;
 import xomaya.application.Mode;
 import xomaya.components.CaptureFormatSelector;
+import xomaya.components.SelectableVideoFormat;
 import xomaya.components.Xomaya;
 
 /**
@@ -144,8 +148,25 @@ public class Controller implements ActionListener {
     }
 
     public void doCaptureInputFormat() {
-        CaptureFormatSelector sel = new CaptureFormatSelector();
-        Globals.selectedVideoFormat = sel.getSelectedVideoFormat();
+        try {
+            CaptureFormatSelector sel = new CaptureFormatSelector();
+            Globals.selectedVideoFormat = sel.getSelectedVideoFormat();
+            if( Globals.selectedVideoFormat == null ) {
+                Format format = new RGBFormat(
+                        new Dimension(Globals.captureWidth, Globals.captureHeight),
+                        Format.NOT_SPECIFIED,
+                        Format.byteArray,
+                        Format.NOT_SPECIFIED,
+                        24,
+                        3, 2, 1,
+                        3, Format.NOT_SPECIFIED,
+                        Format.TRUE,
+                        Format.NOT_SPECIFIED);
+                Globals.selectedVideoFormat = new SelectableVideoFormat( format, null );
+            }
+        } catch(Exception ex){
+            ex.printStackTrace();
+        }
     }
 
     public void doAbout() {
