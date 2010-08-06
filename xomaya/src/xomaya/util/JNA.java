@@ -58,7 +58,7 @@ public class JNA {
     public static int getIdleTime()
     {
         if(Platform.isWindows()) {
-            return getIdleTimeMillisWin32();
+            return Win32IdleTime.getIdleTimeMillis();
         }
         else if(Platform.isLinux()){
             return (int)LinuxIdleTime.getIdleTimeMillis();

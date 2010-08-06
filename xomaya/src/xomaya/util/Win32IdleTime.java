@@ -55,7 +55,7 @@ public class Win32IdleTime {
      * (mouse or keyboard)
      * @return idle time in milliseconds
      */
-    public static int getIdleTimeMillisWin32() {
+    public static int getIdleTimeMillis() {
         User32.LASTINPUTINFO lastInputInfo = new User32.LASTINPUTINFO();
         User32.INSTANCE.GetLastInputInfo(lastInputInfo);
         return Kernel32.INSTANCE.GetTickCount() - lastInputInfo.dwTime;
