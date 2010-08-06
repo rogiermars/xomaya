@@ -154,41 +154,33 @@ public class Xomaya extends JPanel implements ControllerListener {
             }
             // Realize the processor.
             p.prefetch();
-            logger.println("Middle?");
+            logger.println("Middle-");
             if (!waitForState(p.Prefetched)) {
                 logger.println("Failed to realize the processor.");
                 return false;
             }
 
-            JavaSoundDataSource dsAudio = (JavaSoundDataSource)Globals.registry.get("dsAudio");            
-            //Globals.ts = System.currentTimeMillis();
-            
-            Thread t = new Thread() {
-                public void run() {
+            //SwingUtilities.invokeLater(new Runnable)
+
                     STimerTask task = new STimerTask(effect);
                     Timer timer = new java.util.Timer();
                     timer.scheduleAtFixedRate(task, 0L, 300L);
                     Globals.registry.put("STimerTask", task);
                     Globals.registry.put("Timer", timer);
                     logger.println("Timers initialized");
-                }
-            };
-            
-            t.setPriority(Thread.MIN_PRIORITY);
-            t.start();
-            //Thread.sleep(500);
-            //Processor
+
             Globals.registry.put("Processor", p);
             long tt = System.currentTimeMillis();
             p.setMediaTime(new Time(Time.ONE_SECOND));
             p.syncStart(new Time(System.currentTimeMillis()/1000));
+            //p.start();
             logger.println("TT GA:" + (tt - Globals.ttga));
             
             long tu = System.currentTimeMillis() - tt;
             JButton stop = (JButton)Globals.registry.get("StopRecording");
             stop.setEnabled(true);
-
-
+            System.out.println("Stop enabled");
+            
             Controller c = (Controller)Globals.registry.get("Controller");
             JFrame f = c.getFrame();
             f.setState(JFrame.ICONIFIED);

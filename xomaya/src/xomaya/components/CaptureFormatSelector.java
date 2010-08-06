@@ -56,24 +56,7 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
     public CaptureFormatSelector()
     {
         // REFACTOR
-        Vector v = Utility.getVideoFormats();
-        if( v != null ){
-            Enumeration e = v.elements();
-            while( e.hasMoreElements() ) {
-                try {
-                    javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
-                    Format[] f = (Format[])o.getFormats();
-                    for( int i = 0; i < f.length; i++ ) {
-                        if( f[i] instanceof VideoFormat ){
-                            VideoFormat vf = (VideoFormat)f[i];
-                            combo.addItem(new SelectableVideoFormat(vf,o));
-                        }
-                    }
-                } catch(Exception ex) {
-                    ex.printStackTrace();
-                }
-            }
-        }
+        populate();
         // REFACTOR
 
         int w = Globals.appWidth;
@@ -99,6 +82,30 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
         setModal(true);
         setVisible(true);
         
+    }
+
+    public void populate()
+    {
+        Vector v = Utility.getVideoFormats();
+        if( v != null ){
+            Enumeration e = v.elements();
+            while( e.hasMoreElements() ) {
+                try {
+                    javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
+                    Format[] f = (Format[])o.getFormats();
+                    for( int i = 0; i < f.length; i++ ) {
+                        if( f[i] instanceof VideoFormat ){
+                            VideoFormat vf = (VideoFormat)f[i];
+                            combo.addItem(new SelectableVideoFormat(vf,o));
+                        }
+                    }
+                } catch(Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        } else {
+            combo.addItem(new SelectableVideoFormat("Default Capture Mode"));
+        }
     }
 
     public SelectableVideoFormat getSelectedVideoFormat()

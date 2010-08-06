@@ -214,8 +214,7 @@ public class Controller implements ActionListener {
 
     public void doStartRecording() {
         logger.println("Started!");
-        Thread t = new Thread() {
-
+        SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {
                     Globals.snap = System.currentTimeMillis();
@@ -226,14 +225,14 @@ public class Controller implements ActionListener {
                     ex.printStackTrace();
                 }
             }
-        };
+        });
         JButton start = (JButton) Globals.registry.get("StartRecording");
         JCheckBox compression = (JCheckBox) Globals.registry.get("Compression");
         start.setEnabled(false);
         // stop should be enabled later, when the program actually starts recording.
         compression.setEnabled(false);
 
-        t.start();
+        //t.start();
         JFrame f = (JFrame) Globals.registry.get("Application");
         State state = (State) Globals.registry.get("State");
         state = State.IDLE;

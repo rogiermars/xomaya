@@ -22,20 +22,53 @@
  */
 package xomaya.util;
 
+import com.sun.jna.Native;
+import com.sun.jna.Platform;
+import java.awt.Desktop;
+
 /**
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
 public class JNA {
+
+    public static void initialize()
+    {
+        try {
+            int t = getIdleTime();
+            System.out.println("Idle time:" + t);
+        } catch(Error e){
+            e.printStackTrace();
+        }       
+    }
+
     /**
      * Get the amount of milliseconds that have elapsed since the last input event
      * (mouse or keyboard)
      * @return idle time in milliseconds
      */
-    public static int getIdleTimeMillisWin32() {
+    private static int getIdleTimeMillisWin32() {
+        
         User32.LASTINPUTINFO lastInputInfo = new User32.LASTINPUTINFO();
         User32.INSTANCE.GetLastInputInfo(lastInputInfo);
         return Kernel32.INSTANCE.GetTickCount() - lastInputInfo.dwTime;
+    }
+
+    public static int getIdleTime()
+    {
+        if(Platform.isWindows()) {
+            return getIdleTimeMillisWin32();
+        }
+        else if(Platform.isLinux()){
+            return (int)LinuxIdleTime.getIdleTimeMillis();
+        }
+        else if(Platform.isMac()){
+            return (int)MacIdleTime.getIdleTimeMillis();
+        }
+        else {
+            System.out.println("Platform unknown: Using windows");
+            return getIdleTimeMillisWin32();
+        }
     }
 }

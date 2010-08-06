@@ -26,9 +26,12 @@ import xomaya.components.events.EventType;
 import xomaya.components.events.Event;
 import java.awt.Dimension;
 import java.io.IOException;
-import java.util.EventListener;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Vector;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import javax.media.Buffer;
 import javax.media.Format;
 import javax.media.format.RGBFormat;
@@ -48,6 +51,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     protected BufferTransferHandler transferHandler;
     Thread thread = null;
     boolean started = false;
+    Vector<TransferListener> listeners = new Vector<TransferListener>();
 
     public ImageSourceStream(int width, int height, int frameRate) {
         this.width = width;
@@ -72,24 +76,25 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      * of video data.
      */
     public void read(Buffer buffer) throws IOException {
-
-        synchronized (this) {
-            try {
-                int len = Globals.captureWidth * Globals.captureHeight * 3; //(int)raf.length();
-                byte[] b = new byte[len];
-                buffer.setData(b);
-                buffer.setFormat(format);
-                buffer.setOffset(0);
-                buffer.setSequenceNumber(seqNo++);
-                buffer.setTimeStamp(Globals.time.getNanoseconds());
-                buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
-                buffer.setHeader(null);
-                //System.out.println(".");
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
+        System.out.println("Read 0");
+        //synchronized (this) {
+        System.out.println("Read 1");
+        try {
+            int len = Globals.captureWidth * Globals.captureHeight * 3;
+            byte[] b = new byte[len];
+            buffer.setData(b);
+            buffer.setFormat(format);
+            buffer.setOffset(0);
+            buffer.setSequenceNumber(seqNo++);
+            buffer.setTimeStamp(Globals.time.getNanoseconds());
+            buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
+            buffer.setHeader(null);
+            //notifyAll();
+            System.out.println("read 2");
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
-
+        //}
     }
     long seqNo = 0;
 
@@ -121,57 +126,57 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     }
 
     public void setTransferHandler(BufferTransferHandler transferHandler) {
-        synchronized (this) {
+        //synchronized (this) {
+        lock.lock();
+        try {
             this.transferHandler = transferHandler;
-            notifyAll();
+        } finally {
+            lock.unlock();
         }
+        //}
     }
 
-    void start(boolean started) {
-        synchronized (this) {
-            this.started = started;
-            if (started && !thread.isAlive()) {
-                thread = new Thread(this);
-                thread.start();
-            }
-
-            notifyAll();
+    public void start(boolean started) {
+        this.started = started;
+        if (started && !thread.isAlive()) {
+            thread = new Thread(this);
+            thread.start();
         }
+        //notifyAll();
+
     }
 
+    //@Override
     public void stop() {
+        System.out.println("Stop called");
+        //started = false;
     }
+    Map lockedMap = new HashMap();
+    Lock lock = new ReentrantLock();
 
-    /***************************************************************************
-     * Runnable
-     ***************************************************************************/
     public void run() {
-        //boolean running = true;
         while (started) {
-            synchronized (this) {
-                while (transferHandler == null && started) {
-                    try {
-                        wait(100);
-                    } catch (InterruptedException ie) {
-                        ie.printStackTrace();
-                    }
-                }
-            }
 
             if (started && transferHandler != null) {
+                dispatch(new Event(EventType.TRANSFER_STARTED));
+                System.out.println("transferData");
+
+                lock.lock();
                 try {
-                    dispatch(new Event(EventType.TRANSFER_STARTED));
                     transferHandler.transferData(this);
-                    dispatch(new Event(EventType.TRANSFER_COMPLETE));
-                    Thread.sleep(100);
-                } catch (InterruptedException ise) {
-                    ise.printStackTrace();
+                } finally {
+                    lock.unlock();
                 }
+                System.out.println("transferData 2");
+                try {
+                    Thread.currentThread().sleep(100);
+                } catch (Exception ex) {
+                }
+                dispatch(new Event(EventType.TRANSFER_COMPLETE));
             }
         }
-        System.out.println("finished");
+        System.out.println("Finished");
     }
-    Vector<TransferListener> listeners = new Vector<TransferListener>();
 
     public void addTransferListener(TransferListener el) {
         listeners.add(el);

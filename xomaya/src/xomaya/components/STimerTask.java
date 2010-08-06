@@ -85,7 +85,7 @@ public class STimerTask extends TimerTask {
 
         Thread.yield();
         long tss = System.currentTimeMillis();
-        int idleSec = JNA.getIdleTimeMillisWin32() / 1000;
+        int idleSec = JNA.getIdleTime() / 1000;
         long afterJNACall = System.currentTimeMillis() - tss;
         if( afterJNACall > 10 ){
             logger.println("Delay:" + afterJNACall + "|" + totalTime);

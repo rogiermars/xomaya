@@ -174,6 +174,8 @@ public class GraphicEffect implements Effect {
             Globals.ttga = System.currentTimeMillis();
             flag++;
         }
+
+        //System.out.println("p");
         
         RGBFormat vfIn = (RGBFormat) inBuffer.getFormat();
         Dimension sizeIn = vfIn.getSize();

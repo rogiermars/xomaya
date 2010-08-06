@@ -95,9 +95,6 @@ public class Utility {
             //devices = CaptureDeviceManager.getDeviceList(null);
             if (devices.size() < 1) {
                 logger.println("! No Devices for " + null);
-                //Dimension size = new Dimension(Globals.captureWidth, Globals.captureHeight);
-                //VideoFormat vf = new VideoFormat("YUV", size, Format.NOT_SPECIFIED, null, Globals.fps);
-                //devices.add(vf);
                 JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
                 return null;
             }
@@ -112,9 +109,7 @@ public class Utility {
         SelectableVideoFormat svf = Globals.selectedVideoFormat;
         logger.println("Selected format:" + svf);
         // REFACTOR
-        if( svf == null ){
-            
-        } else {
+        if( !svf.isDefault()){
             vf = (VideoFormat)svf.getFormat();
         }
         // REFACTOR
@@ -149,7 +144,6 @@ public class Utility {
         }
         try {
             dsAudio = new JavaSoundDataSource();
-            Globals.registry.put("dsAudio", dsAudio);
             dsAudio.connect();
         } catch (Exception ex) {
             logger.println("Busted here:" + ex);

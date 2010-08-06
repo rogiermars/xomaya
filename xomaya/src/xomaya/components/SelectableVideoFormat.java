@@ -31,10 +31,21 @@ public class SelectableVideoFormat {
 
     Format vf = null;
     CaptureDeviceInfo cdi = null;
-
+    String description = "";
+    boolean isDefault = true;
     public SelectableVideoFormat(Format vf, CaptureDeviceInfo cdi) {
         this.vf = vf;
         this.cdi = cdi;
+        isDefault = false;
+    }
+
+    public SelectableVideoFormat(String description) {
+        this.description = description;
+    }
+
+    public boolean isDefault()
+    {
+        return isDefault;
     }
 
     public String toString() {
@@ -49,7 +60,7 @@ public class SelectableVideoFormat {
             return enc;
         }
 
-        return "empty";
+        return description;
     }
 
     public Format getFormat() {

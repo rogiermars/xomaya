@@ -25,11 +25,7 @@ public class Status extends JPanel implements TransferListener {
         setPreferredSize(new Dimension(Globals.appWidth, 15));
         add(label);
     }
-    public void setText(String text)
-    {
-        //label.setText(text);
-    }
-
+   
     public void transferCompleted() {
         //System.out.println("Completed");
         setBackground(Color.white);

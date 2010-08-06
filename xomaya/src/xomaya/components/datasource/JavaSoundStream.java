@@ -168,7 +168,6 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
             notifyAll();
         }
     }
-    boolean b = false;
 
     void start(boolean started) {
         synchronized (this) {

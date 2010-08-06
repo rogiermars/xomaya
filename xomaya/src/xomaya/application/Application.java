@@ -117,9 +117,10 @@ public class Application extends JFrame {
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
         //DirectSoundAudo audo = new DirectSoundAudo();
         long t = System.currentTimeMillis();
-        Runtime.getRuntime().traceMethodCalls(true);
+        //Runtime.getRuntime().traceMethodCalls(true);
 
-        JNA.getIdleTimeMillisWin32();
+        JNA.initialize();
+        //getIdleTimeMillisWin32();
         Calendar c = Calendar.getInstance();
         c.setTime(new Date(System.currentTimeMillis()));
         Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
@@ -188,7 +189,7 @@ public class Application extends JFrame {
     private JMenu createToolsMenu() {
         JMenu toolsMenu = new JMenu("Tools");
         Controller controller = (Controller) Globals.registry.get("Controller");
-        
+
         JMenuItem openOutputDirectory = new JMenuItem("Open Output Directory");
         openOutputDirectory.setMnemonic('O');
         openOutputDirectory.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.SHIFT_DOWN_MASK, true));
@@ -216,6 +217,7 @@ public class Application extends JFrame {
 
         return toolsMenu;
     }
+
     private JMenu createHelpMenu() {
         JMenu helpMenu = new JMenu("Help");
         Controller controller = (Controller) Globals.registry.get("Controller");
@@ -228,7 +230,7 @@ public class Application extends JFrame {
         about.addActionListener(controller);
         helpMenu.add(about);
 
-        
+
 
         JMenuItem help = new JMenuItem("Help");
         help.setMnemonic('H');
@@ -253,12 +255,12 @@ public class Application extends JFrame {
         logger.println("--------------------------");
         Application.validateApplication(key);
         Application.validateEnvironment();
-        initialize();
+        Application.initialize();
         logger.println("Application validated:" + key);
         SwingUtilities.invokeLater(new Runnable() {
 
             public void run() {
-                
+
                 Application app = new Application();
             }
         });
