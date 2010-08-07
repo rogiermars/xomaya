@@ -4,7 +4,7 @@ README
 Copyright (c) 2010, Xomaya.com All Rights Reserved.
 
 Date: 
-11:00 AM 7/19/2010
+9:00 AM 8/07/2010
 
 Applcation Name: 
 Xomaya
@@ -20,6 +20,9 @@ To Run the Java Version Instructions:
 Run the application from the windows command line:
 java -jar -Xmn100M -Xms500M -Xmx500M xomaya.jar
 
+Vista:
+Start java -jar -Xmn100M -Xms500M -Xmx500M xomaya.jar
+
 License:
 SHAREWARE (See LICENSE.txt)
 
@@ -29,10 +32,10 @@ much easier to create and reduces the amount of editing and "post" a
 presentation must endure. This saves time and headaches and money.
 
 Version: 
-xomaya 1.19
+xomaya 1.21
 
 Limitations:
-The current system (version 1.19) does not support linux or MacOS. Future
+The current system (version 1.21) does not support linux or MacOS. Future
 editions may include full support if enough interest warrants the effort.
 
 Requirements:
