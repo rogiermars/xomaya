@@ -201,6 +201,7 @@ public class Utility {
         cdi = (CaptureDeviceInfo) devices.elementAt(0);
         ml = cdi.getLocator();
         try {
+            logger.println("Create Data Source:" + ml);
             ds = Manager.createDataSource(ml);
             ds.connect();
             if (ds instanceof CaptureDevice) {

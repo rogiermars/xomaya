@@ -154,15 +154,12 @@ public class Xomaya extends JPanel implements ControllerListener {
                 return false;
             }
 
-
             STimerTask task = new STimerTask(effect);
             Timer timer = new java.util.Timer();
             timer.scheduleAtFixedRate(task, 0L, 300L);
             Globals.registry.put("STimerTask", task);
             Globals.registry.put("Timer", timer);
             logger.println("Timers initialized");
-
-            //SwingUtilities.invokeLater(new Runnable)
 
             Thread.sleep(1200);
 
@@ -179,7 +176,7 @@ public class Xomaya extends JPanel implements ControllerListener {
             stop.setEnabled(true);
             logger.println("Stop enabled");
             logger.println("Waiting to start...");
-            logger.println(p.getState());
+            logger.println("State code:" + p.getState());
             // 600
 
             Controller c = (Controller) Globals.registry.get("Controller");
