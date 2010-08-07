@@ -9,6 +9,8 @@
 <arguments>EXPRESS</arguments>
 <classPath>lib\fmj.jar</classPath>
 <classPath>lib\jna.jar</classPath>
+<classPath>lib\platform.jar</classPath>
+<classPath>lib\jmf.jar</classPath>
 <currentDirectory>${EXECUTABLEPATH}</currentDirectory>
 <embeddedJar>true</embeddedJar>
 <executableName>xomaya.exe</executableName>
