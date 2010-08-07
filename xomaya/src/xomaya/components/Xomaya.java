@@ -164,7 +164,7 @@ public class Xomaya extends JPanel implements ControllerListener {
 
             //SwingUtilities.invokeLater(new Runnable)
 
-            Thread.sleep(1000);
+            Thread.sleep(1200);
 
             Globals.registry.put("Processor", p);
             long tt = System.currentTimeMillis();

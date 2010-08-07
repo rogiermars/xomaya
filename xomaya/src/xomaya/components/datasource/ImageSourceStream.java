@@ -88,9 +88,8 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 buffer.setOffset(0);
                 buffer.setSequenceNumber(seqNo++);
                 buffer.setTimeStamp(Globals.time.getNanoseconds());
-                buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
+                buffer.setFlags(Globals.bufferFlags);
                 buffer.setHeader(null);
-                //System.out.println("read 2");
             } catch (Exception ex) {
                 logger.println(ex);
                 ex.printStackTrace();
@@ -136,9 +135,9 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     int st = 0;
 
     public void start(boolean s) {
-        System.out.println("Start called");
+        logger.println("Start called");
         if (this.started) {
-            System.out.println("st" + st++);
+            logger.println("st" + st++);
             return;
         }
         synchronized (l) {
@@ -164,21 +163,12 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
         while (started) {
             if (started && handler != null) {
                 //dispatch(new Event(EventType.TRANSFER_STARTED));
-                System.out.println("Start ImageSourceStream");
                 lock.lock();
                 synchronized (h) {
                     final ImageSourceStream d = this;
-
-                    System.out.println(thread.activeCount());
-                    //if (thread.isDaemon()) {
-                    //    System.out.println("Its dead");
-                    //}
-
                     handler.transferData(d);
                 }
                 lock.unlock();
-
-                System.out.println("end Transfer ImageSourceStream");
             }
             try {
                 Thread.sleep(100);

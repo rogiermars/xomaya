@@ -25,7 +25,6 @@
  */
 package xomaya.components.datasource;
 
-
 import javax.media.*;
 import javax.media.format.*;
 import javax.media.protocol.*;
@@ -58,7 +57,6 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
     protected AudioFormat audio_out_format;
     protected javax.sound.sampled.AudioFormat audio_in_format;
     static Log logger = new Log(JavaSoundStream.class);
-
     /***************************************************************************
      * PushBufferStream
      ***************************************************************************/
@@ -181,11 +179,8 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
             /* Open up the TargetDataLine */
             if (tdl != null) {
                 try {
-
                     tdl.open();
                     tdl.start();
-                    //System.out.println("Audio Started!");
-
                 } catch (LineUnavailableException e) {
                     this.started = false;
                 }
@@ -210,9 +205,9 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
             }
             //Thread.yield();
             if (started && transferHandler != null) {
-                System.out.println("Start transfer sound");
+                //System.out.println("Start transfer sound");
                 transferHandler.transferData(this);
-                System.out.println("end transfer sound");
+                //System.out.println("end transfer sound");
                 try {
                     Thread.currentThread().sleep(100);
                 } catch (InterruptedException ise) {
