@@ -154,7 +154,6 @@ public class Xomaya extends JPanel implements ControllerListener {
                 return false;
             }
 
-            //SwingUtilities.invokeLater(new Runnable)
 
             STimerTask task = new STimerTask(effect);
             Timer timer = new java.util.Timer();
@@ -163,11 +162,17 @@ public class Xomaya extends JPanel implements ControllerListener {
             Globals.registry.put("Timer", timer);
             logger.println("Timers initialized");
 
+            //SwingUtilities.invokeLater(new Runnable)
+
+            Thread.sleep(1000);
+
             Globals.registry.put("Processor", p);
             long tt = System.currentTimeMillis();
             p.setMediaTime(new Time(Time.ONE_SECOND));
             p.syncStart(new Time(System.currentTimeMillis() / 1000));
             logger.println("TT GA:" + (tt - Globals.ttga));
+
+            
 
             long tu = System.currentTimeMillis() - tt;
             JButton stop = (JButton) Globals.registry.get("StopRecording");
