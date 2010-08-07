@@ -101,6 +101,8 @@
         <copy file="xomaya.exe" tofile="${distDir}/xomaya.exe" overwrite="true"></copy>
         <copy file="C:\lib\jna.jar" tofile="${distDir}/lib/jna.jar" overwrite="true"></copy>
         <copy file="C:\lib\fmj.jar" tofile="${distDir}/lib/fmj.jar" overwrite="true"></copy>
+        <copy file="C:\lib\platform.jar" tofile="${distDir}/lib/platform.jar" overwrite="true"></copy>
+        <copy file="C:\lib\jmf.jar" tofile="${distDir}/lib/jmf.jar" overwrite="true"></copy>
         <copy file="C:\lib\jmf-2_1_1e-windows-i586.exe" tofile="${distDir}/redist/jmf-2_1_1e-windows-i586.exe" overwrite="true"></copy>
     </target>
 </project>
