@@ -22,17 +22,14 @@
  */
 package xomaya.application;
 
-import com.sun.jna.Native;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.*;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Properties;
 import javax.swing.*;
-import xomaya.components.CaptureFormatSelector;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
@@ -60,7 +57,7 @@ public class Application extends JFrame {
         showFrame();
     }
 
-    private static void validateApplication(String key) {
+    private static void register() {
         try {
             Properties props = new Properties();
             props.load(new FileInputStream("./application.properties"));
@@ -87,6 +84,8 @@ public class Application extends JFrame {
                 buffer = buffer + b;
             }
 
+            reader.close();
+
             if (!licenseKey.equals("EXPRESS")) {
                 if (buffer.indexOf(licenseKey) != -1) {
                     logger.println("Application validated: Thank you for your business");
@@ -96,21 +95,14 @@ public class Application extends JFrame {
                     logger.println(message);
                 }
             }
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             String message = "Invalid License Key: ERROR CODE 5";
             logger.println(message);
-            //Globals.logo = true;
         }
     }
 
-    private static void validateEnvironment() {
-        Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-
-        //DirectSoundAuto auto = new DirectSoundAuto();
-        //if (d.width != 800 && d.height != 600) {
-        //    JOptionPane.showMessageDialog(null, "You are running the application in " + d.width + "x" + d.height + ".\nThe recommended resolution is 800x600\nApplication will try to run anyways.", "Tip:", JOptionPane.INFORMATION_MESSAGE);
-        //}
-
+    public static void quit(int v) {
+        System.exit(v);
     }
 
     public static void initialize() {
@@ -129,9 +121,13 @@ public class Application extends JFrame {
 
         try {
             File out = new File("./out");
-            out.mkdir();
+            if (!out.mkdir()) {
+                logger.println("Could not create directory ./out");
+            }
             File logs = new File("./logs");
-            logs.mkdir();
+            if (!logs.mkdir()) {
+                logger.println("Could not create directory ./logs");
+            }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -243,27 +239,34 @@ public class Application extends JFrame {
         return helpMenu;
     }
 
-    public static void main(String args[])
-            throws Exception {
-        String key = "EXPRESS";
-        if (args.length > 0) {
-            key = args[0];
-        }
-
-        logger.println("System starting...");
-        logger.println(Globals.name + " " + Globals.version + " " + Globals.copyright);
-        logger.println("--------------------------");
-        Application.validateApplication(key);
-        Application.validateEnvironment();
-        Application.initialize();
-        logger.println("Application validated:" + key);
-        SwingUtilities.invokeLater(new Runnable() {
-
-            public void run() {
-
-                Application app = new Application();
+    public static void main(String args[]) {
+        try {
+            String key = "EXPRESS";
+            if (args.length > 0) {
+                key = args[0];
             }
-        });
+
+            logger.println("System starting...");
+            logger.println(Globals.name + " " + Globals.version + " " + Globals.copyright);
+            logger.println("--------------------------");
+            Application.register();
+            Application.initialize();
+            logger.println("Application validated:" + key);
+            SwingUtilities.invokeLater(new Runnable() {
+
+                public void run() {
+
+                    Application app = new Application();
+                }
+            });
+
+        } catch (Exception ex) {
+            logger.println(ex);
+        } catch (Error e) {
+            logger.println(e);
+        } finally {
+            logger.println("-finally-");
+        }
     }
     static Log logger = new Log(Application.class);
     JFrame frame;

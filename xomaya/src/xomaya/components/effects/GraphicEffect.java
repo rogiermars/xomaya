@@ -28,6 +28,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
+import xomaya.application.Application;
 import xomaya.application.Globals;
 import xomaya.logging.Log;
 
@@ -87,7 +88,7 @@ public class GraphicEffect implements Effect {
             logger.println("Could not locate xomaya logo");
             logger.println(ex);
             ex.printStackTrace();
-            System.exit(1);
+            Application.quit(1);
         }
 
     }
@@ -174,8 +175,6 @@ public class GraphicEffect implements Effect {
             Globals.ttga = System.currentTimeMillis();
             flag++;
         }
-
-        //System.out.println("p");
         
         RGBFormat vfIn = (RGBFormat) inBuffer.getFormat();
         Dimension sizeIn = vfIn.getSize();
@@ -226,7 +225,7 @@ public class GraphicEffect implements Effect {
         int ls = vfIn.getLineStride();
 
         int _w = sizeIn.width; /// 3;
-        int _h = ((vfIn.getMaxDataLength()) / 3) / _w;
+        //int _h = ((vfIn.getMaxDataLength()) / 3) / _w;
 
         int[] pixels = new int[w * h];
         c.getRGB(0, 0, w, h, pixels, 0, w);
@@ -269,12 +268,9 @@ public class GraphicEffect implements Effect {
     }
 
     private byte[] putPixel(byte[] data, int x, int y, int w, int h, Color color, int pxs, int ls) {
-        //Color white = Color.white;
         int r = color.getRed();
         int b = color.getBlue();
         int g = color.getGreen();
-        Color c = new Color(r, g, b);
-
         data = putPixel(data, x, y, w, h, r, g, b, pxs, ls);
         return data;
     }

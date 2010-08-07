@@ -25,6 +25,7 @@ package xomaya.util;
 import com.sun.jna.Native;
 import com.sun.jna.Platform;
 import java.awt.Desktop;
+import xomaya.logging.Log;
 
 /**
  * This documentation is part of the Xomaya Express software suite.
@@ -37,22 +38,10 @@ public class JNA {
     {
         try {
             int t = getIdleTime();
-            System.out.println("Idle time:" + t);
+            logger.println("Idle time:" + t);
         } catch(Error e){
             e.printStackTrace();
         }       
-    }
-
-    /**
-     * Get the amount of milliseconds that have elapsed since the last input event
-     * (mouse or keyboard)
-     * @return idle time in milliseconds
-     */
-    private static int getIdleTimeMillisWin32() {
-        
-        User32.LASTINPUTINFO lastInputInfo = new User32.LASTINPUTINFO();
-        User32.INSTANCE.GetLastInputInfo(lastInputInfo);
-        return Kernel32.INSTANCE.GetTickCount() - lastInputInfo.dwTime;
     }
 
     public static int getIdleTime()
@@ -67,8 +56,9 @@ public class JNA {
             return (int)MacIdleTime.getIdleTimeMillis();
         }
         else {
-            System.out.println("Platform unknown: Using windows");
-            return getIdleTimeMillisWin32();
+            logger.println("Platform unknown: Using windows");
+            return Win32IdleTime.getIdleTimeMillis();
         }
     }
+    static Log logger = new Log(JNA.class);
 }

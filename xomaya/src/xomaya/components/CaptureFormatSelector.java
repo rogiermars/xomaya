@@ -20,9 +20,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-
 package xomaya.components;
-
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -44,17 +42,16 @@ import javax.swing.border.TitledBorder;
 import xomaya.application.Globals;
 import xomaya.util.Utility;
 
-
 /**
  *
  * @author beecrofs
  */
 public class CaptureFormatSelector extends JDialog implements ActionListener {
-    JComboBox combo = new JComboBox();
 
+    JComboBox combo = new JComboBox();
     ImageIcon icon = new ImageIcon("./media/picon-small.png");
-    public CaptureFormatSelector()
-    {
+
+    public CaptureFormatSelector() {
         // REFACTOR
         populate();
         // REFACTOR
@@ -76,45 +73,46 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
         center.add(combo);
         add(center, BorderLayout.CENTER);
         add(south, BorderLayout.SOUTH);
-        setSize(Globals.appWidth,Globals.appHeight);
+        setSize(Globals.appWidth, Globals.appHeight);
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation(d.width / 2 - w / 2, d.height / 2 - h / 2);
         setModal(true);
         setVisible(true);
-        
+
     }
 
-    public void populate()
-    {
+    public void populate() {
         Vector v = Utility.getVideoFormats();
-        if( v != null ){
+        if (v != null) {
             Enumeration e = v.elements();
-            while( e.hasMoreElements() ) {
+            while (e.hasMoreElements()) {
                 try {
-                    javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo)e.nextElement();
-                    Format[] f = (Format[])o.getFormats();
-                    for( int i = 0; i < f.length; i++ ) {
-                        if( f[i] instanceof VideoFormat ){
-                            VideoFormat vf = (VideoFormat)f[i];
-                            combo.addItem(new SelectableVideoFormat(vf,o));
+                    javax.media.CaptureDeviceInfo o = (javax.media.CaptureDeviceInfo) e.nextElement();
+                    Format[] f = (Format[]) o.getFormats();
+                    for (int i = 0; i < f.length; i++) {
+                        if (f[i] instanceof VideoFormat) {
+                            VideoFormat vf = (VideoFormat) f[i];
+                            combo.addItem(new SelectableVideoFormat(vf, o));
                         }
                     }
-                } catch(Exception ex) {
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
             }
-        } else {
-            combo.addItem(new SelectableVideoFormat("Default Capture Mode"));
         }
+
+        if (combo.getItemCount() == 0) {
+            // No options available - add a default option.
+            combo.addItem(new SelectableVideoFormat("Screen Capture"));
+        }
+
     }
 
-    public SelectableVideoFormat getSelectedVideoFormat()
-    {
-        return (SelectableVideoFormat)combo.getSelectedItem();
+    public SelectableVideoFormat getSelectedVideoFormat() {
+        return (SelectableVideoFormat) combo.getSelectedItem();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         CaptureFormatSelector sel = new CaptureFormatSelector();
         SelectableVideoFormat svf = sel.getSelectedVideoFormat();
         System.out.println("The selected format was:" + svf);

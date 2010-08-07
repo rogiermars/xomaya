@@ -45,7 +45,6 @@ public class Log
         file = true;
         try
         {
-            Date d = new Date(System.currentTimeMillis());
             Calendar c = Calendar.getInstance();
             //FIX ME.
             String fileName = "." + File.separator + "logs" + File.separator + "xomaya-" + c.get(5) + "-" + c.get(2) + "-" + c.get(1) + ".log";
@@ -66,6 +65,11 @@ public class Log
         println(ex.getMessage());
     }
 
+    public void println(Error er)
+    {
+        println(er.getMessage());
+    }
+
     public void println(Object o)
     {
         println(o.toString());
@@ -80,9 +84,9 @@ public class Log
             }
             if(this.console)
             {
-                Console console = (Console)Globals.registry.get("Console");
-                if( console != null ){
-                    console.print(o);
+                Console c = (Console)Globals.registry.get("Console");
+                if( c != null ){
+                    c.print(o);
                 }
             }
             if(file)
@@ -105,16 +109,15 @@ public class Log
             Date d = new Date(l);
             DateFormat df = new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss");
             String sd = df.format(d);
-            //String line = "xomaya[" + Globals.version + "]:" + clazz.getName() + ":" + d + ":" + str;
             String line = sd + ":" + clazz.getName() + ":" + str;
             if(system){
                 System.out.println(line);
             }
             if(this.console)
             {
-                Console console = (Console)Globals.registry.get("Console");
-                if( console != null ){
-                    console.println(line);
+                Console c = (Console)Globals.registry.get("Console");
+                if( c != null ){
+                    c.println(line);
                 }
             }
             if(file)

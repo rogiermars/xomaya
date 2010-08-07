@@ -42,6 +42,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import xomaya.application.Application;
 import xomaya.logging.Log;
 import xomaya.util.Utility;
 
@@ -64,21 +65,20 @@ public class Xomaya extends JPanel implements ControllerListener {
     DataSink ddsink = null;
     DSinkListener dataSinkListener = null;
     DataSource ads = null;
-
     Icon recordIcon = new ImageIcon("./media/media-record.gif");
     Icon stopIcon = new ImageIcon("./media/media-playback-stop.gif");
 
     public Xomaya(Controller controller) {
         JButton stop = new JButton("Stop", stopIcon);
         JButton start = new JButton("Start", recordIcon);
-        setLayout(new GridLayout(0,1));
+        setLayout(new GridLayout(0, 1));
         start.setActionCommand(Command.START_RECORDING.toString());
         stop.setActionCommand(Command.STOP_RECORDING.toString());
         Globals.registry.put("StartRecording", start);
         Globals.registry.put("StopRecording", stop);
         start.addActionListener(controller);
         stop.addActionListener(controller);
-        stop.setEnabled(false);        
+        stop.setEnabled(false);
         add(start);
         add(stop);
     }
@@ -87,15 +87,15 @@ public class Xomaya extends JPanel implements ControllerListener {
 
         try {
             Globals.registry.put("GraphicEffect", effect);
-            
+
             DataSource original = Utility.getCaptureDS();
 
-            if( original == null ){
+            if (original == null) {
                 logger.println("Could not create DS");
                 JOptionPane.showMessageDialog(this, "Xomaya requires a Webcam.\nPlease connect your Webcam and run Xomaya again.\nThis program recommends a capture mode of at least 640x480.\nIf you see this error again, please make sure\nyou have valid drivers for your webcam.\nProgram will now exit.", "No Webcam Detected!", JOptionPane.ERROR_MESSAGE);
-                System.exit(0);
+                Application.quit(0);
             }
-            
+
             try {
                 p = Manager.createProcessor(original);
             } catch (Exception e) {
@@ -123,19 +123,13 @@ public class Xomaya extends JPanel implements ControllerListener {
 
             // Search for the track control for the video track.
             TrackControl videoTrack = null;
-            TrackControl audioTrack = null;
-
             for (int i = 0; i < tc.length; i++) {
                 if (tc[i].getFormat() instanceof VideoFormat) {
                     videoTrack = tc[i];
                     break;
                 }
-                if (tc[i].getFormat() instanceof VideoFormat) {
-                    audioTrack = tc[i];
-                    break;
-                }
             }
-            
+
             if (videoTrack == null) {
                 logger.println("The input media does not contain a video track.");
                 return false;
@@ -162,28 +156,31 @@ public class Xomaya extends JPanel implements ControllerListener {
 
             //SwingUtilities.invokeLater(new Runnable)
 
-                    STimerTask task = new STimerTask(effect);
-                    Timer timer = new java.util.Timer();
-                    timer.scheduleAtFixedRate(task, 0L, 300L);
-                    Globals.registry.put("STimerTask", task);
-                    Globals.registry.put("Timer", timer);
-                    logger.println("Timers initialized");
+            STimerTask task = new STimerTask(effect);
+            Timer timer = new java.util.Timer();
+            timer.scheduleAtFixedRate(task, 0L, 300L);
+            Globals.registry.put("STimerTask", task);
+            Globals.registry.put("Timer", timer);
+            logger.println("Timers initialized");
 
             Globals.registry.put("Processor", p);
             long tt = System.currentTimeMillis();
             p.setMediaTime(new Time(Time.ONE_SECOND));
-            p.syncStart(new Time(System.currentTimeMillis()/1000));
-            //p.start();
+            p.syncStart(new Time(System.currentTimeMillis() / 1000));
             logger.println("TT GA:" + (tt - Globals.ttga));
-            
+
             long tu = System.currentTimeMillis() - tt;
-            JButton stop = (JButton)Globals.registry.get("StopRecording");
+            JButton stop = (JButton) Globals.registry.get("StopRecording");
             stop.setEnabled(true);
-            System.out.println("Stop enabled");
-            
-            Controller c = (Controller)Globals.registry.get("Controller");
+            logger.println("Stop enabled");
+            logger.println("Waiting to start...");
+            logger.println(p.getState());
+            // 600
+
+            Controller c = (Controller) Globals.registry.get("Controller");
             JFrame f = c.getFrame();
             f.setState(JFrame.ICONIFIED);
+            logger.println("Returned true");
             return true;
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -246,6 +243,8 @@ public class Xomaya extends JPanel implements ControllerListener {
             }
         } else if (evt instanceof RealizeCompleteEvent) {
             synchronized (waitSync) {
+                //JOptionPane.showConfirmDialog(this, "Realized");
+                logger.println("Realized");
                 stateTransitionOK = true;
                 waitSync.notifyAll();
             }
@@ -256,7 +255,7 @@ public class Xomaya extends JPanel implements ControllerListener {
             } catch (Exception ex) {
                 ex.printStackTrace();
                 JOptionPane.showMessageDialog(this, "DataSink could not be created", "Could not write to disk", JOptionPane.ERROR_MESSAGE);
-                System.exit(-1);
+                Application.quit(-1);
             }
         } else if (evt instanceof PrefetchCompleteEvent) {
             synchronized (waitSync) {
@@ -286,11 +285,11 @@ public class Xomaya extends JPanel implements ControllerListener {
         if ((ml = new MediaLocator(url)) == null) {
             JOptionPane.showMessageDialog(this, "Could not build media locator from: " + url, "Could not open", JOptionPane.ERROR_MESSAGE);
             logger.println("Cannot build media locator from: " + url);
-            System.exit(0);
+            Application.quit(0);
         }
         if (!open(ml)) {
             JOptionPane.showMessageDialog(this, "Could not open device(s) for capture", "Could not open", JOptionPane.ERROR_MESSAGE);
-            System.exit(0);
+            Application.quit(0);
         }
     }
 
@@ -320,6 +319,5 @@ public class Xomaya extends JPanel implements ControllerListener {
             ex.printStackTrace();
         }
     }
-
     static Log logger = new Log(Xomaya.class);
 }

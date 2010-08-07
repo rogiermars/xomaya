@@ -22,6 +22,8 @@
  */
 package xomaya.components.datasource;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import xomaya.components.events.EventType;
 import xomaya.components.events.Event;
 import java.awt.Dimension;
@@ -38,19 +40,23 @@ import javax.media.format.RGBFormat;
 import javax.media.protocol.BufferTransferHandler;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferStream;
+import javax.swing.SwingUtilities;
 import xomaya.application.Globals;
+import xomaya.logging.Log;
 
 /**
  * The source stream to go along with ImageDataSource.
  */
 public class ImageSourceStream implements PushBufferStream, Runnable {
 
-    Vector images;
     int width, height;
+    long seqNo = 0;
+    Lock lock = new ReentrantLock();
+    static Log logger = new Log(ImageSourceStream.class);
     Format format;
-    protected BufferTransferHandler transferHandler;
+    volatile BufferTransferHandler handler = null;
+    volatile boolean started = false;
     Thread thread = null;
-    boolean started = false;
     Vector<TransferListener> listeners = new Vector<TransferListener>();
 
     public ImageSourceStream(int width, int height, int frameRate) {
@@ -66,9 +72,6 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 3, Format.NOT_SPECIFIED,
                 Format.TRUE,
                 Format.NOT_SPECIFIED);
-
-        // Check the input buffer type & size.
-
     }
 
     /**
@@ -76,27 +79,24 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
      * of video data.
      */
     public void read(Buffer buffer) throws IOException {
-        System.out.println("Read 0");
-        //synchronized (this) {
-        System.out.println("Read 1");
-        try {
-            int len = Globals.captureWidth * Globals.captureHeight * 3;
-            byte[] b = new byte[len];
-            buffer.setData(b);
-            buffer.setFormat(format);
-            buffer.setOffset(0);
-            buffer.setSequenceNumber(seqNo++);
-            buffer.setTimeStamp(Globals.time.getNanoseconds());
-            buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
-            buffer.setHeader(null);
-            //notifyAll();
-            System.out.println("read 2");
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        synchronized (this) {
+            try {
+                int len = Globals.captureWidth * Globals.captureHeight * 3;
+                byte[] b = new byte[len];
+                buffer.setData(b);
+                buffer.setFormat(format);
+                buffer.setOffset(0);
+                buffer.setSequenceNumber(seqNo++);
+                buffer.setTimeStamp(Globals.time.getNanoseconds());
+                buffer.setFlags(buffer.getFlags() | Buffer.FLAG_KEY_FRAME);
+                buffer.setHeader(null);
+                //System.out.println("read 2");
+            } catch (Exception ex) {
+                logger.println(ex);
+                ex.printStackTrace();
+            }
         }
-        //}
     }
-    long seqNo = 0;
 
     /**
      * Return the format of each video frame.  That will be JPEG.
@@ -124,58 +124,69 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     public Object getControl(String type) {
         return null;
     }
+    final Object h = new Object();
 
     public void setTransferHandler(BufferTransferHandler transferHandler) {
-        //synchronized (this) {
-        lock.lock();
-        try {
-            this.transferHandler = transferHandler;
-        } finally {
-            lock.unlock();
+        synchronized (h) {
+            this.handler = transferHandler;
         }
-        //}
     }
+    final Object l = new Object();
+    volatile boolean locked = false;
+    int st = 0;
 
-    public void start(boolean started) {
-        this.started = started;
-        if (started && !thread.isAlive()) {
-            thread = new Thread(this);
-            thread.start();
+    public void start(boolean s) {
+        System.out.println("Start called");
+        if (this.started) {
+            System.out.println("st" + st++);
+            return;
         }
-        //notifyAll();
-
+        synchronized (l) {
+            try {
+                this.started = s;
+                if (this.started && !thread.isAlive()) {
+                    thread = new Thread(this);
+                    thread.start();
+                }
+            } catch (Exception ex) {
+                logger.println(ex);
+            }
+        }
     }
 
     //@Override
     public void stop() {
-        System.out.println("Stop called");
-        //started = false;
+        logger.println("Stop called");
+        started = false;
     }
-    Map lockedMap = new HashMap();
-    Lock lock = new ReentrantLock();
 
     public void run() {
         while (started) {
-
-            if (started && transferHandler != null) {
-                dispatch(new Event(EventType.TRANSFER_STARTED));
-                System.out.println("transferData");
-
+            if (started && handler != null) {
+                //dispatch(new Event(EventType.TRANSFER_STARTED));
+                System.out.println("Start ImageSourceStream");
                 lock.lock();
-                try {
-                    transferHandler.transferData(this);
-                } finally {
-                    lock.unlock();
+                synchronized (h) {
+                    final ImageSourceStream d = this;
+
+                    System.out.println(thread.activeCount());
+                    //if (thread.isDaemon()) {
+                    //    System.out.println("Its dead");
+                    //}
+
+                    handler.transferData(d);
                 }
-                System.out.println("transferData 2");
-                try {
-                    Thread.currentThread().sleep(100);
-                } catch (Exception ex) {
-                }
-                dispatch(new Event(EventType.TRANSFER_COMPLETE));
+                lock.unlock();
+
+                System.out.println("end Transfer ImageSourceStream");
             }
+            try {
+                Thread.sleep(100);
+            } catch (Exception ex) {
+            }
+            //dispatch(new Event(EventType.TRANSFER_COMPLETE));
         }
-        System.out.println("Finished");
+        logger.println("Finished");
     }
 
     public void addTransferListener(TransferListener el) {

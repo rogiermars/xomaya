@@ -29,9 +29,9 @@ import javax.media.Time;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferDataSource;
 import javax.media.protocol.PushBufferStream;
-import javax.swing.SwingUtilities;
 import xomaya.application.Globals;
 import xomaya.components.Status;
+import xomaya.logging.Log;
 
 // Inner classes.
 ///////////////////////////////////////////////
@@ -97,7 +97,7 @@ public class ImageDataSource extends PushBufferDataSource {
         if (started) {
             return;
         }
-        System.out.println("ImageDataSource started");
+        logger.println("ImageDataSource started");
         started = true;
         if( !streams[0].started ){
            streams[0].start(true);
@@ -133,7 +133,8 @@ public class ImageDataSource extends PushBufferDataSource {
             return;
         }
         started = false;
-        //streams[0].stop();
     }
+
+    static Log logger = new Log(ImageDataSource.class);
 }
 

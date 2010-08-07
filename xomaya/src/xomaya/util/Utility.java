@@ -36,7 +36,6 @@ import xomaya.components.datasource.JavaSoundDataSource;
 import xomaya.components.SelectableVideoFormat;
 import xomaya.components.datasource.ImageDataSource;
 
-
 /**
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
@@ -78,27 +77,26 @@ public class Utility {
         return null;
     }
 
-    public static Vector getVideoFormats()
-    {
-            DataSource ds;
-            //Vector devices;
-            CaptureDeviceInfo cdi;
-            MediaLocator ml;
-            // Find devices for format
-            
-            final java.util.Vector devices = (Vector)CaptureDeviceManager.getDeviceList(null);
-            CaptureDeviceManager.getDeviceList(new VideoFormat(null));
-            logger.println("Found:" + devices.size());
-            for (int i = 0; i < devices.size(); i++) {
-                logger.println(devices.get(i));
-            }
-            //devices = CaptureDeviceManager.getDeviceList(null);
-            if (devices.size() < 1) {
-                logger.println("! No Devices for " + null);
-                JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
-                return null;
-            }
-            return devices;
+    public static Vector getVideoFormats() {
+        DataSource ds;
+        //Vector devices;
+        CaptureDeviceInfo cdi;
+        MediaLocator ml;
+        // Find devices for format
+
+        final java.util.Vector devices = (Vector) CaptureDeviceManager.getDeviceList(null);
+        CaptureDeviceManager.getDeviceList(new VideoFormat(null));
+        logger.println("Found:" + devices.size());
+        for (int i = 0; i < devices.size(); i++) {
+            logger.println(devices.get(i));
+        }
+        //devices = CaptureDeviceManager.getDeviceList(null);
+        if (devices.size() < 1) {
+            logger.println("! No Devices for " + null);
+            JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
+            return null;
+        }
+        return devices;
     }
 
     public static DataSource getCaptureDS() {
@@ -109,12 +107,12 @@ public class Utility {
         SelectableVideoFormat svf = Globals.selectedVideoFormat;
         logger.println("Selected format:" + svf);
         // REFACTOR
-        if( !svf.isDefault()){
-            vf = (VideoFormat)svf.getFormat();
+        if (!svf.isDefault()) {
+            vf = (VideoFormat) svf.getFormat();
         }
         // REFACTOR
         Dimension dim = vf.getSize();
-        if( dim != null ){
+        if (dim != null) {
             Globals.captureHeight = dim.height;
             Globals.captureWidth = dim.width;
         } else {
@@ -138,8 +136,12 @@ public class Utility {
             if (dsVideo == null) {
                 logger.println("Unable to create dsVideo from VideoFormat");
                 //return null;
-                dsVideo = new ImageDataSource(Globals.captureWidth, Globals.captureHeight, (int)Globals.fps);
-                try { dsVideo.connect(); } catch(Exception ex){ return null; }
+                dsVideo = new ImageDataSource(Globals.captureWidth, Globals.captureHeight, (int) Globals.fps);
+                try {
+                    dsVideo.connect();
+                } catch (Exception ex) {
+                    return null;
+                }
             }
         }
         try {
@@ -165,11 +167,11 @@ public class Utility {
         }
 
         // Merge the data sources, if both audio and video are available
-        try {            
+        try {
             ds = Manager.createMergingDataSource(new DataSource[]{
                         dsVideo, dsAudio
                     });
-            logger.println("Created merging data source");            
+            logger.println("Created merging data source");
         } catch (Exception ise) {
             System.out.println("ERROR:" + ise);
             ise.printStackTrace();
@@ -230,17 +232,28 @@ public class Utility {
         }
     }
 
-    public static void copy(File src, File dst)
-            throws IOException {
-        InputStream in = new FileInputStream(src);
-        OutputStream out = new FileOutputStream(dst);
-        byte buf[] = new byte[1024];
-        int len;
-        while ((len = in.read(buf)) > 0) {
-            out.write(buf, 0, len);
+    public static void copy(File src, File dst) {
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+            in = new FileInputStream(src);
+            out = new FileOutputStream(dst);
+
+            byte buf[] = new byte[1024];
+            int len;
+            while ((len = in.read(buf)) > 0) {
+                out.write(buf, 0, len);
+            }
+        } catch (IOException ioException) {
+            logger.println(ioException);
+        } finally {
+            try {
+                in.close();
+                out.close();
+            } catch(Exception ex){
+                logger.println(ex);
+            }
         }
-        in.close();
-        out.close();
     }
 
     public static void clear() {

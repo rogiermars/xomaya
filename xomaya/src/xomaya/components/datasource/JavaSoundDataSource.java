@@ -85,12 +85,6 @@ public class JavaSoundDataSource extends PushBufferDataSource {
         connected = false;
     }
 
-    //public void realStart()
-    //{
-    //    started = true;
-    //    stream.start(true);
-    //}
-
     public void start() throws IOException {
         // we need to throw error if connect() has not been called
         if (!connected) {

@@ -48,10 +48,13 @@ public class Globals
     }
 
     public static boolean logo = true;
+    final public static String copyright = "copyright (c) 2010. All Rights Reserved.";
+    final public static String name = "xomaya";
+    final public static double version = 1.21D;
+    final public static float fps = 8f;
+    final public static Hashtable registry = new Hashtable();
+    
     public static long ttga = 0;
-    public static String copyright = "copyright (c) 2010. All Rights Reserved.";
-    public static String name = "xomaya";
-    public static double version = 1.21D;
     public static long snap = 0L;
     public static long tt = 0L;
     public static boolean compress = false;
@@ -59,13 +62,11 @@ public class Globals
     public static int captureWidth = 640;
     public static int captureHeight = 480;
 
-    public static int appWidth = 240;
-    public static int appHeight = 140;
+    final public static int appWidth = 240;
+    final public static int appHeight = 140;
 
     public static long seqNo = 0;
     public static Application dw = null;
-    public static float fps = 8f;
-    public static Hashtable registry = new Hashtable();
     public static String expiryDate = "";
     public static String account = "";
     public static String username = "";
@@ -78,14 +79,14 @@ public class Globals
 
     public static SelectableVideoFormat selectedVideoFormat = null;
 
-    public static String encoding = "RGB";
+    final public static String encoding = "RGB";
     public static String videoExt = "avi";
     public static String videoName = "xomaya";
     public static String fileTypeDescriptor = FileTypeDescriptor.MSVIDEO;
 
     // key frames seemed to work.
-    public static int bufferFlags = Buffer.FLAG_SYSTEM_TIME | Buffer.FLAG_KEY_FRAME;
-    public static TimeBase time = Manager.getSystemTimeBase();
+    final public static int bufferFlags = Buffer.FLAG_SYSTEM_TIME | Buffer.FLAG_KEY_FRAME;
+    final public static TimeBase time = Manager.getSystemTimeBase();
     public static Mode currentMode = Mode.SCREEN_ONLY;
 
 }

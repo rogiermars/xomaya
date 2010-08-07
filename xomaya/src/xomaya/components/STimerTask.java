@@ -81,7 +81,7 @@ public class STimerTask extends TimerTask {
     long totalTime = 0;
     public void run() {
         //Run our screen capture
-        long l = System.currentTimeMillis();
+        //long l = System.currentTimeMillis();
 
         Thread.yield();
         long tss = System.currentTimeMillis();
@@ -92,6 +92,7 @@ public class STimerTask extends TimerTask {
         }
         totalTime += afterJNACall;
         Thread.yield();
+        
         int t = 5;
         State newState = idleSec >= t ? idleSec <= 300 ? State.IDLE : State.AWAY : State.ONLINE;
         Globals.registry.put("State", newState);
@@ -113,6 +114,7 @@ public class STimerTask extends TimerTask {
             if( target.store == null ){
                 return;
             }
+            //System.out.println("Online");
             //System.out.println("Taking a pic");
             BufferedImage img = robot.createScreenCapture(rect);
             int mx = MouseInfo.getPointerInfo().getLocation().x;
@@ -157,7 +159,7 @@ public class STimerTask extends TimerTask {
             }
 
             target.screenCaptureEnabled = true;
-            
+            //System.out.println("Complete");
         }
     }
 

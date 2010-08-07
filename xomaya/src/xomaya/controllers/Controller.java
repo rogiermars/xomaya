@@ -40,6 +40,7 @@ import javax.media.Format;
 import javax.media.format.RGBFormat;
 import javax.media.protocol.FileTypeDescriptor;
 import javax.swing.*;
+import xomaya.application.Application;
 import xomaya.application.Mode;
 import xomaya.components.CaptureFormatSelector;
 import xomaya.components.SelectableVideoFormat;
@@ -102,6 +103,7 @@ public class Controller implements ActionListener {
             while ((b = reader.readLine()) != null) {
                 buffer = buffer + b;
             }
+            reader.close();
         } catch (Exception ex) {
             logger.println(ex);
             ex.printStackTrace();
@@ -109,14 +111,14 @@ public class Controller implements ActionListener {
     }
 
     public void doExit() {
-        System.exit(1);
+        Application.quit(-1);
     }
 
     public void doOpenOutputDirectory() {
         if (Desktop.isDesktopSupported()) {
             try {
                 String s = System.getProperty("user.dir") + File.separator + "out";
-                System.out.println(s);
+                logger.println("Open:" + s);
                 File f = new File(s);
                 Desktop.getDesktop().browse(f.toURI());
 
@@ -133,11 +135,13 @@ public class Controller implements ActionListener {
             int result = JOptionPane.showConfirmDialog(frame, "Warning: This will remove all of the files in this directory. Are you sure?");
             if( result == JOptionPane.YES_OPTION ){
                 String s = System.getProperty("user.dir") + File.separator + "out";
-                System.out.println(s);
+                logger.println("Clear:" + s);
                 File f = new File(s);
                 File[] list = f.listFiles();
                 for( int i = 0; i < list.length; i++ ){
-                    list[i].delete();
+                    if( !list[i].delete() ) {
+                        logger.println("Could not delete:" + list[i].getAbsolutePath() );
+                    }
                 }
             }
         } catch (Exception ex) {
@@ -231,11 +235,6 @@ public class Controller implements ActionListener {
         start.setEnabled(false);
         // stop should be enabled later, when the program actually starts recording.
         compression.setEnabled(false);
-
-        //t.start();
-        JFrame f = (JFrame) Globals.registry.get("Application");
-        State state = (State) Globals.registry.get("State");
-        state = State.IDLE;
     }
 
     public JFrame getFrame() {
@@ -270,7 +269,7 @@ public class Controller implements ActionListener {
                     // Register that we completed the application.
                     doRegisterSuccess();
 
-                    System.exit(-1);
+                    Application.quit(-1);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                     logger.println(ex);
