@@ -97,6 +97,10 @@
             </fileset>
         </copy>
         <copy file="dist/xomaya.jar" tofile="${distDir}/xomaya.jar" overwrite="true"></copy>
+        <copy file="runme.sh" tofile="${distDir}/runme.sh" overwrite="true"></copy>
+        <copy file="README.txt" tofile="${distDir}/README.txt" overwrite="true"></copy>
+        <copy file="LICENSE.txt" tofile="${distDir}/LICENSE.txt" overwrite="true"></copy>
+        <copy file="application.properties" tofile="${distDir}/application.properties" overwrite="true"></copy>
         <copy file="runme.bat" tofile="${distDir}/runme.bat" overwrite="true"></copy>
         <copy file="xomaya.exe" tofile="${distDir}/xomaya.exe" overwrite="true"></copy>
         <copy file="C:\lib\jna.jar" tofile="${distDir}/lib/jna.jar" overwrite="true"></copy>
