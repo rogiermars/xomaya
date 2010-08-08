@@ -1,0 +1,397 @@
+2010-08-07:13:49:59:xomaya.application.Application:System starting...
+2010-08-07:13:49:59:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:13:49:59:xomaya.application.Application:--------------------------
+2010-08-07:13:49:59:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:13:50:00:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:13:50:01:xomaya.util.JNA:Idle time:485
+2010-08-07:13:50:01:xomaya.application.Application:Loaded DLL:1011
+2010-08-07:13:50:01:xomaya.application.Application:Could not create directory ./out
+2010-08-07:13:50:01:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:13:50:01:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:13:50:02:xomaya.application.Application:-finally-
+2010-08-07:13:50:02:xomaya.util.Utility:Found:0
+2010-08-07:13:50:02:xomaya.util.Utility:! No Devices for null
+2010-08-07:13:50:06:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281203406992,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1a2f02e,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:13:50:07:xomaya.controllers.Controller:Started!
+2010-08-07:13:50:07:xomaya.util.Utility:TRYING:YUV
+2010-08-07:13:50:07:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:13:50:07:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:13:50:10:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:13:50:10:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:13:50:10:xomaya.util.Utility:Created merging data source
+2010-08-07:13:50:10:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:50:10:xomaya.components.Xomaya:Middle-
+2010-08-07:13:50:10:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:13:50:10:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:13:50:10:xomaya.components.Xomaya:Realized
+2010-08-07:13:50:10:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:50:10:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:13:50:10:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:13:50:10:xomaya.components.Xomaya:Timers initialized
+2010-08-07:13:50:10:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:50:10:xomaya.components.STimerTask:Delay:14|0
+2010-08-07:13:50:10:xomaya.components.Xomaya:TT GA:39
+2010-08-07:13:50:11:xomaya.components.Xomaya:Stop enabled
+2010-08-07:13:50:11:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:13:50:11:xomaya.components.Xomaya:600
+2010-08-07:13:50:11:xomaya.components.Xomaya:Returned true
+2010-08-07:13:50:21:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281203421998,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1a2f02e,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@11abd68,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:13:50:22:xomaya.controllers.Controller:Stopped!
+2010-08-07:13:50:22:xomaya.components.Xomaya:Total Time:11363
+2010-08-07:13:57:43:xomaya.application.Application:System starting...
+2010-08-07:13:57:43:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:13:57:43:xomaya.application.Application:--------------------------
+2010-08-07:13:57:43:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:13:57:44:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:13:57:45:xomaya.util.JNA:Idle time:1
+2010-08-07:13:57:45:xomaya.application.Application:Loaded DLL:832
+2010-08-07:13:57:45:xomaya.application.Application:Could not create directory ./out
+2010-08-07:13:57:45:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:13:57:45:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:13:57:45:xomaya.application.Application:-finally-
+2010-08-07:13:57:45:xomaya.util.Utility:Found:0
+2010-08-07:13:57:45:xomaya.util.Utility:! No Devices for null
+2010-08-07:13:57:49:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281203869674,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@ed32c4,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:13:57:49:xomaya.controllers.Controller:Started!
+2010-08-07:13:57:49:xomaya.util.Utility:TRYING:YUV
+2010-08-07:13:57:49:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:13:57:49:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:13:57:50:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:13:57:50:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:13:57:50:xomaya.util.Utility:Created merging data source
+2010-08-07:13:57:50:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:57:50:xomaya.components.Xomaya:Middle-
+2010-08-07:13:57:50:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:13:57:50:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:13:57:50:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:13:57:50:xomaya.components.Xomaya:Realized
+2010-08-07:13:57:50:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:57:50:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:13:57:51:xomaya.components.Xomaya:Timers initialized
+2010-08-07:13:57:51:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:57:51:xomaya.components.Xomaya:TT GA:55
+2010-08-07:13:57:51:xomaya.components.Xomaya:Stop enabled
+2010-08-07:13:57:51:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:13:57:51:xomaya.components.Xomaya:600
+2010-08-07:13:57:51:xomaya.components.Xomaya:Returned true
+2010-08-07:13:57:58:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281203878337,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@ed32c4,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@16d3536,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:13:57:58:xomaya.controllers.Controller:Stopped!
+2010-08-07:13:57:58:xomaya.components.Xomaya:Total Time:7440
+2010-08-07:13:58:05:xomaya.components.STimerTask:Delay:36|94
+2010-08-07:13:58:23:xomaya.application.Application:System starting...
+2010-08-07:13:58:23:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:13:58:23:xomaya.application.Application:--------------------------
+2010-08-07:13:58:23:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:13:58:23:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:13:58:24:xomaya.util.JNA:Idle time:1375
+2010-08-07:13:58:24:xomaya.application.Application:Loaded DLL:835
+2010-08-07:13:58:24:xomaya.application.Application:Could not create directory ./out
+2010-08-07:13:58:24:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:13:58:24:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:13:58:24:xomaya.application.Application:-finally-
+2010-08-07:13:58:25:xomaya.util.Utility:Found:0
+2010-08-07:13:58:25:xomaya.util.Utility:! No Devices for null
+2010-08-07:13:58:29:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281203909704,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@205756,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:13:58:29:xomaya.controllers.Controller:Started!
+2010-08-07:13:58:29:xomaya.util.Utility:TRYING:YUV
+2010-08-07:13:58:29:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:13:58:29:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:13:58:30:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:13:58:30:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:13:58:30:xomaya.util.Utility:Created merging data source
+2010-08-07:13:58:30:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:58:30:xomaya.components.Xomaya:Middle-
+2010-08-07:13:58:31:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:13:58:31:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:13:58:31:xomaya.components.Xomaya:Realized
+2010-08-07:13:58:31:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:58:31:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:13:58:31:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:13:58:31:xomaya.components.Xomaya:Timers initialized
+2010-08-07:13:58:31:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:13:58:31:xomaya.components.Xomaya:TT GA:33
+2010-08-07:13:58:31:xomaya.components.Xomaya:Stop enabled
+2010-08-07:13:58:31:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:13:58:31:xomaya.components.Xomaya:600
+2010-08-07:13:58:31:xomaya.components.Xomaya:Returned true
+2010-08-07:14:00:20:xomaya.application.Application:System starting...
+2010-08-07:14:00:20:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:00:20:xomaya.application.Application:--------------------------
+2010-08-07:14:00:20:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:00:21:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:00:22:xomaya.util.JNA:Idle time:2152
+2010-08-07:14:00:22:xomaya.application.Application:Loaded DLL:1358
+2010-08-07:14:00:22:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:00:22:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:00:22:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:00:23:xomaya.application.Application:-finally-
+2010-08-07:14:00:23:xomaya.util.Utility:Found:0
+2010-08-07:14:00:23:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:00:24:xomaya.components.STimerTask:Delay:67|608
+2010-08-07:14:00:31:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204031824,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1a2f02e,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:00:31:xomaya.controllers.Controller:Started!
+2010-08-07:14:00:31:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:00:31:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:00:31:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:00:33:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:00:33:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:00:33:xomaya.util.Utility:Created merging data source
+2010-08-07:14:00:33:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:33:xomaya.components.Xomaya:Middle-
+2010-08-07:14:00:33:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:00:33:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:00:33:xomaya.components.Xomaya:Realized
+2010-08-07:14:00:33:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:33:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:00:33:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:00:33:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:00:33:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:33:xomaya.components.Xomaya:TT GA:25
+2010-08-07:14:00:33:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:00:33:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:00:33:xomaya.components.Xomaya:600
+2010-08-07:14:00:33:xomaya.components.Xomaya:Returned true
+2010-08-07:14:00:42:xomaya.application.Application:System starting...
+2010-08-07:14:00:42:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:00:42:xomaya.application.Application:--------------------------
+2010-08-07:14:00:42:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:00:42:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:00:43:xomaya.util.JNA:Idle time:832
+2010-08-07:14:00:43:xomaya.application.Application:Loaded DLL:786
+2010-08-07:14:00:43:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:00:43:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:00:43:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:00:43:xomaya.application.Application:-finally-
+2010-08-07:14:00:43:xomaya.util.Utility:Found:0
+2010-08-07:14:00:43:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:00:47:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204047192,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@6c5482,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:00:47:xomaya.controllers.Controller:Started!
+2010-08-07:14:00:47:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:00:47:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:00:47:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:00:48:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:00:48:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:00:48:xomaya.util.Utility:Created merging data source
+2010-08-07:14:00:48:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:48:xomaya.components.Xomaya:Middle-
+2010-08-07:14:00:48:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:00:48:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:00:48:xomaya.components.Xomaya:Realized
+2010-08-07:14:00:48:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:48:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:00:48:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:00:48:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:00:48:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:00:48:xomaya.components.STimerTask:Delay:17|0
+2010-08-07:14:00:48:xomaya.components.Xomaya:TT GA:22
+2010-08-07:14:00:49:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:00:49:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:00:49:xomaya.components.Xomaya:600
+2010-08-07:14:00:49:xomaya.components.Xomaya:Returned true
+2010-08-07:14:00:56:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281204056233,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@6c5482,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@1c13d0b,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:14:00:56:xomaya.controllers.Controller:Stopped!
+2010-08-07:14:00:56:xomaya.components.Xomaya:Total Time:7870
+2010-08-07:14:01:02:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281204062461,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@6c5482,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@1c13d0b,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:14:01:02:xomaya.controllers.Controller:Stopped!
+2010-08-07:14:01:02:xomaya.components.Xomaya:Total Time:13787
+2010-08-07:14:01:08:xomaya.application.Application:System starting...
+2010-08-07:14:01:08:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:01:08:xomaya.application.Application:--------------------------
+2010-08-07:14:01:08:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:01:08:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:01:09:xomaya.util.JNA:Idle time:350
+2010-08-07:14:01:09:xomaya.application.Application:Loaded DLL:818
+2010-08-07:14:01:09:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:01:09:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:01:09:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:01:09:xomaya.application.Application:-finally-
+2010-08-07:14:01:09:xomaya.util.Utility:Found:0
+2010-08-07:14:01:09:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:01:14:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204074593,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@11e831,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:01:14:xomaya.controllers.Controller:Started!
+2010-08-07:14:01:14:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:01:14:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:01:14:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:01:17:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:01:17:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:01:17:xomaya.util.Utility:Created merging data source
+2010-08-07:14:01:17:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:17:xomaya.components.Xomaya:Middle-
+2010-08-07:14:01:17:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:01:17:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:01:17:xomaya.components.Xomaya:Realized
+2010-08-07:14:01:17:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:17:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:01:17:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:01:17:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:01:17:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:17:xomaya.components.Xomaya:TT GA:28
+2010-08-07:14:01:17:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:01:17:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:01:17:xomaya.components.Xomaya:600
+2010-08-07:14:01:17:xomaya.components.Xomaya:Returned true
+2010-08-07:14:01:21:xomaya.components.STimerTask:Delay:67|28
+2010-08-07:14:01:25:xomaya.application.Application:System starting...
+2010-08-07:14:01:25:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:01:25:xomaya.application.Application:--------------------------
+2010-08-07:14:01:25:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:01:26:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:01:26:xomaya.util.JNA:Idle time:8
+2010-08-07:14:01:26:xomaya.application.Application:Loaded DLL:775
+2010-08-07:14:01:26:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:01:26:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:01:26:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:01:27:xomaya.application.Application:-finally-
+2010-08-07:14:01:27:xomaya.util.Utility:Found:0
+2010-08-07:14:01:27:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:01:33:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204093913,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@ed32c4,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:01:33:xomaya.controllers.Controller:Started!
+2010-08-07:14:01:33:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:01:33:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:01:33:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:01:35:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:01:35:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:01:35:xomaya.util.Utility:Created merging data source
+2010-08-07:14:01:35:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:35:xomaya.components.Xomaya:Middle-
+2010-08-07:14:01:35:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:01:35:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:01:35:xomaya.components.Xomaya:Realized
+2010-08-07:14:01:35:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:35:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:01:35:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:01:35:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:01:35:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:35:xomaya.components.STimerTask:Delay:16|0
+2010-08-07:14:01:35:xomaya.components.Xomaya:TT GA:34
+2010-08-07:14:01:35:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:01:35:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:01:35:xomaya.components.Xomaya:600
+2010-08-07:14:01:35:xomaya.components.Xomaya:Returned true
+2010-08-07:14:01:42:xomaya.application.Application:System starting...
+2010-08-07:14:01:42:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:01:42:xomaya.application.Application:--------------------------
+2010-08-07:14:01:42:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:01:43:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:01:43:xomaya.util.JNA:Idle time:22
+2010-08-07:14:01:43:xomaya.application.Application:Loaded DLL:755
+2010-08-07:14:01:43:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:01:43:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:01:43:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:01:43:xomaya.application.Application:-finally-
+2010-08-07:14:01:44:xomaya.util.Utility:Found:0
+2010-08-07:14:01:44:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:01:48:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204108981,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@467991,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:01:49:xomaya.controllers.Controller:Started!
+2010-08-07:14:01:49:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:01:49:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:01:49:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:01:49:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:01:49:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:01:49:xomaya.util.Utility:Created merging data source
+2010-08-07:14:01:49:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:49:xomaya.components.Xomaya:Middle-
+2010-08-07:14:01:49:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:01:49:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:01:49:xomaya.components.Xomaya:Realized
+2010-08-07:14:01:49:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:49:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:01:49:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:01:49:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:01:49:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:49:xomaya.components.Xomaya:TT GA:22
+2010-08-07:14:01:50:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:01:50:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:01:50:xomaya.components.Xomaya:600
+2010-08-07:14:01:50:xomaya.components.Xomaya:Returned true
+2010-08-07:14:01:50:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:01:59:xomaya.components.STimerTask:Delay:37|58
+2010-08-07:14:09:28:xomaya.application.Application:System starting...
+2010-08-07:14:09:28:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:14:09:28:xomaya.application.Application:--------------------------
+2010-08-07:14:09:28:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:14:09:28:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:14:09:29:xomaya.util.JNA:Idle time:1436
+2010-08-07:14:09:29:xomaya.application.Application:Loaded DLL:939
+2010-08-07:14:09:29:xomaya.application.Application:Could not create directory ./out
+2010-08-07:14:09:29:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:14:09:29:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:14:09:29:xomaya.application.Application:-finally-
+2010-08-07:14:09:30:xomaya.util.Utility:Found:0
+2010-08-07:14:09:30:xomaya.util.Utility:! No Devices for null
+2010-08-07:14:09:36:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281204576930,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@11e831,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:14:09:36:xomaya.controllers.Controller:Started!
+2010-08-07:14:09:36:xomaya.util.Utility:TRYING:YUV
+2010-08-07:14:09:36:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:14:09:36:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:14:09:37:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:14:09:37:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:14:09:37:xomaya.util.Utility:Created merging data source
+2010-08-07:14:09:37:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:09:37:xomaya.components.Xomaya:Middle-
+2010-08-07:14:09:37:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:14:09:37:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:14:09:37:xomaya.components.Xomaya:Realized
+2010-08-07:14:09:37:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:09:37:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:14:09:37:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:14:09:37:xomaya.components.Xomaya:Timers initialized
+2010-08-07:14:09:38:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:09:39:xomaya.components.Xomaya:TT GA:1035
+2010-08-07:14:09:39:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:14:09:39:xomaya.components.Xomaya:Stop enabled
+2010-08-07:14:09:39:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:14:09:39:xomaya.components.Xomaya:600
+2010-08-07:14:09:39:xomaya.components.Xomaya:Returned true
+2010-08-07:14:09:50:xomaya.components.STimerTask:Delay:42|85
+2010-08-07:14:09:52:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281204592576,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@11e831,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@baa31b,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:14:09:52:xomaya.controllers.Controller:Stopped!
+2010-08-07:14:09:52:xomaya.components.Xomaya:Total Time:14822
+2010-08-07:14:09:53:xomaya.components.Xomaya:Stopped and closed
+2010-08-07:14:09:53:xomaya.controllers.Controller:Total time:16187
+2010-08-07:14:09:55:xomaya.controllers.Controller:Open:/home/yogiudo/NetBeansProjects/xomaya/out
+2010-08-07:14:09:56:xomaya.controllers.Controller:http://www.xomaya.com/targets/Success
+2010-08-07:19:05:48:xomaya.application.Application:System starting...
+2010-08-07:19:05:48:xomaya.application.Application:xomaya 1.21 copyright (c) 2010. All Rights Reserved.
+2010-08-07:19:05:48:xomaya.application.Application:--------------------------
+2010-08-07:19:05:48:xomaya.application.Application:License Key:EXPRESS
+2010-08-07:19:05:48:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-08-07:19:05:49:xomaya.util.JNA:Idle time:947
+2010-08-07:19:05:49:xomaya.application.Application:Loaded DLL:752
+2010-08-07:19:05:49:xomaya.application.Application:Could not create directory ./out
+2010-08-07:19:05:49:xomaya.application.Application:Could not create directory ./logs
+2010-08-07:19:05:49:xomaya.application.Application:Application validated:EXPRESS
+2010-08-07:19:05:49:xomaya.application.Application:-finally-
+2010-08-07:19:05:50:xomaya.util.Utility:Found:0
+2010-08-07:19:05:50:xomaya.util.Utility:! No Devices for null
+2010-08-07:19:05:55:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1281222355347,modifiers=Button1] on javax.swing.JButton[,0,0,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@df2d38,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-08-07:19:05:55:xomaya.controllers.Controller:Started!
+2010-08-07:19:05:55:xomaya.util.Utility:TRYING:YUV
+2010-08-07:19:05:55:xomaya.util.Utility:Selected format:Screen Capture
+2010-08-07:19:05:55:xomaya.util.Utility:! No Devices for YUV, 640x480, FrameRate=8.0
+2010-08-07:19:05:56:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-08-07:19:05:56:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-08-07:19:05:56:xomaya.util.Utility:Created merging data source
+2010-08-07:19:05:57:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:19:05:57:xomaya.components.Xomaya:Middle-
+2010-08-07:19:05:57:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-08-07:19:05:57:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-08-07:19:05:57:xomaya.components.Xomaya:Realized
+2010-08-07:19:05:57:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:19:05:57:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-08-07:19:05:57:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-08-07:19:05:57:xomaya.components.Xomaya:Timers initialized
+2010-08-07:19:05:58:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:19:05:58:xomaya.components.Xomaya:TT GA:1028
+2010-08-07:19:05:58:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-08-07:19:05:59:xomaya.components.Xomaya:Stop enabled
+2010-08-07:19:05:59:xomaya.components.Xomaya:Waiting to start...
+2010-08-07:19:05:59:xomaya.components.Xomaya:600
+2010-08-07:19:05:59:xomaya.components.Xomaya:Returned true
+2010-08-07:19:06:04:xomaya.components.STimerTask:Delay:13|42
+2010-08-07:19:06:05:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1281222365078,modifiers=Button1] on javax.swing.JButton[,0,36,90x36,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@df2d38,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@6127da,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-08-07:19:06:05:xomaya.controllers.Controller:Stopped!
+2010-08-07:19:06:05:xomaya.components.Xomaya:Total Time:8006
+2010-08-07:19:06:05:xomaya.components.Xomaya:Stopped and closed
+2010-08-07:19:06:05:xomaya.controllers.Controller:Total time:9992
+2010-08-07:19:06:12:xomaya.controllers.Controller:Open:/home/yogiudo/NetBeansProjects/xomaya/out
