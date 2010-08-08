@@ -7,9 +7,7 @@ package xomaya.components;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.GridLayout;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import xomaya.application.Globals;
@@ -33,7 +31,7 @@ public class StatusBar extends JPanel implements TransferListener {
         bar.setMinimum(0);
         bar.setMaximum(100);
         bar.setStringPainted(true);
-
+        setStatus(Status.LOADING);
         setLayout(new GridLayout(0,1));
         add(bar);
     }
