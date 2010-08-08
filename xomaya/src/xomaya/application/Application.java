@@ -31,7 +31,6 @@ import java.util.Date;
 import java.util.Properties;
 import javax.swing.*;
 import xomaya.controllers.Controller;
-import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
 import xomaya.components.StatusBar;
 import xomaya.logging.Log;
@@ -144,7 +143,7 @@ public class Application extends JFrame {
 
         Globals.registry.put("Controller", controller);
         Globals.registry.put("Console", console);
-        Globals.registry.put("Status", status);
+        Globals.registry.put("StatusBar", status);
         Globals.registry.put("Application", frame);
         Globals.registry.put("Xomaya", fa);
         ModeSelector ms = new ModeSelector();

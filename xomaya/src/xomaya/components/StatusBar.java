@@ -11,6 +11,7 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import xomaya.application.Globals;
+import xomaya.application.Xomaya;
 import xomaya.components.datasource.TransferListener;
 
 
@@ -46,7 +47,8 @@ public class StatusBar extends JPanel implements TransferListener {
         }
 
         bar.setString(statusText);
-        this.updateUI();
+        bar.repaint();
+        this.repaint();
     }
 
     private void setStatusText(String text)

@@ -20,7 +20,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-package xomaya.components;
+package xomaya.application;
 
 import xomaya.controllers.Controller;
 import xomaya.application.Globals;
@@ -42,6 +42,10 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import xomaya.application.Application;
+import xomaya.components.DSinkListener;
+import xomaya.components.STimerTask;
+import xomaya.components.Status;
+import xomaya.components.StatusBar;
 import xomaya.logging.Log;
 import xomaya.util.Utility;
 
@@ -55,7 +59,7 @@ import xomaya.util.Utility;
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
-public class Xomaya extends JPanel implements ControllerListener {
+public class Xomaya extends JPanel implements ControllerListener, Runnable {
 
     GraphicEffect effect = new GraphicEffect();
     Processor p;
@@ -85,7 +89,11 @@ public class Xomaya extends JPanel implements ControllerListener {
     public boolean open(MediaLocator ml) {
 
         try {
-            StatusBar status = (StatusBar)Globals.registry.get("Status");
+            Thread lt = new Thread(this);
+            lt.setPriority(Thread.MIN_PRIORITY);
+            lt.start();
+
+            StatusBar status = (StatusBar)Globals.registry.get("StatusBar");
             Globals.registry.put("GraphicEffect", effect);
 
             // increase our status
@@ -217,8 +225,9 @@ public class Xomaya extends JPanel implements ControllerListener {
             f.setState(JFrame.ICONIFIED);
             logger.println("Returned true");
             // increase our status
-            status.increment();
+
             status.setStatus(Status.RECORDING);
+            status.increment();
 
             return true;
         } catch (Exception ex) {
@@ -356,6 +365,24 @@ public class Xomaya extends JPanel implements ControllerListener {
             logger.println("Stopped and closed");
         } catch (IOException ex) {
             ex.printStackTrace();
+        }
+    }
+
+    public void run()
+    {
+        boolean running = true;
+
+        while( running ){
+            try {
+                Thread.sleep(500);
+                StatusBar sb = (StatusBar)Globals.registry.get("StatusBar");
+                if( sb != null ){
+                    // show so the application can show that it is doing something.
+                    sb.increment();
+                }
+            } catch(Exception ex){
+
+            }
         }
     }
     static Log logger = new Log(Xomaya.class);

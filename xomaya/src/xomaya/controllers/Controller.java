@@ -44,7 +44,7 @@ import xomaya.application.Application;
 import xomaya.application.Mode;
 import xomaya.components.CaptureFormatSelector;
 import xomaya.components.SelectableVideoFormat;
-import xomaya.components.Xomaya;
+import xomaya.application.Xomaya;
 
 /**
  * This documentation is part of the Xomaya Express software suite.
