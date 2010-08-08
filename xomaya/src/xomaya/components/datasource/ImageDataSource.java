@@ -30,7 +30,7 @@ import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.PushBufferDataSource;
 import javax.media.protocol.PushBufferStream;
 import xomaya.application.Globals;
-import xomaya.components.Status;
+import xomaya.components.StatusBar;
 import xomaya.logging.Log;
 
 // Inner classes.
@@ -49,7 +49,7 @@ public class ImageDataSource extends PushBufferDataSource {
     public ImageDataSource(int width, int height, int frameRate) {
         streams = new ImageSourceStream[1];
         streams[0] = new ImageSourceStream(width, height, frameRate);
-        Status status = (Status)Globals.registry.get("Status");
+        StatusBar status = (StatusBar)Globals.registry.get("Status");
         if( status != null ){
             streams[0].addTransferListener(status);
         }

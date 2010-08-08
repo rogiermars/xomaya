@@ -33,7 +33,7 @@ import javax.swing.*;
 import xomaya.controllers.Controller;
 import xomaya.components.Xomaya;
 import xomaya.components.ModeSelector;
-import xomaya.components.Status;
+import xomaya.components.StatusBar;
 import xomaya.logging.Log;
 import xomaya.util.JNA;
 
@@ -138,7 +138,7 @@ public class Application extends JFrame {
         int h = Globals.appHeight;
         Controller controller = new Controller(frame);
         controller.doCaptureInputFormat();
-        Status status = new Status();
+        StatusBar status = new StatusBar();
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
 

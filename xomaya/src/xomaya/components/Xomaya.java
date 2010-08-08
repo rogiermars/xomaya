@@ -86,8 +86,12 @@ public class Xomaya extends JPanel implements ControllerListener {
     public boolean open(MediaLocator ml) {
 
         try {
+            StatusBar status = (StatusBar)Globals.registry.get("Status");
             Globals.registry.put("GraphicEffect", effect);
 
+            // increase our status
+            status.increment(10);
+            status.setStatus(Status.CAPTURING_DEVICE);
             DataSource original = Utility.getCaptureDS();
 
             if (original == null) {
@@ -96,6 +100,9 @@ public class Xomaya extends JPanel implements ControllerListener {
                 Application.quit(0);
             }
 
+            // increase our status
+            status.increment(10);
+
             try {
                 p = Manager.createProcessor(original);
             } catch (Exception e) {
@@ -103,6 +110,9 @@ public class Xomaya extends JPanel implements ControllerListener {
                 e.printStackTrace();
                 return false;
             }
+
+            // increase our status
+            status.increment(10);
 
             p.addControllerListener(this);
 
@@ -113,8 +123,15 @@ public class Xomaya extends JPanel implements ControllerListener {
                 return false;
             }
 
+            // increase our status
+            status.increment(10);
+            status.setStatus(Status.CREATING_DATASINK);
+
             p.setContentDescriptor(new ContentDescriptor(Globals.fileTypeDescriptor));
             TrackControl tc[] = p.getTrackControls();
+
+            // increase our status
+            status.increment(10);
 
             if (tc == null) {
                 logger.println("Failed to obtain track controls from the processor.");
@@ -130,10 +147,18 @@ public class Xomaya extends JPanel implements ControllerListener {
                 }
             }
 
+            status.setStatus(Status.LOADING);
+
+            // increase our status
+            status.increment();
+
             if (videoTrack == null) {
                 logger.println("The input media does not contain a video track.");
                 return false;
             }
+
+            // increase our status
+            status.increment();
 
             // Instantiate and set the frame access codec to the data flow path.
             try {
@@ -146,6 +171,10 @@ public class Xomaya extends JPanel implements ControllerListener {
             } catch (UnsupportedPlugInException e) {
                 System.err.println("The process does not support effects.");
             }
+
+            // increase our status
+            status.increment();
+
             // Realize the processor.
             p.prefetch();
             logger.println("Middle-");
@@ -169,7 +198,9 @@ public class Xomaya extends JPanel implements ControllerListener {
             p.syncStart(new Time(System.currentTimeMillis() / 1000));
             logger.println("TT GA:" + (tt - Globals.ttga));
 
-            
+            // increase our status
+            status.increment();
+
 
             long tu = System.currentTimeMillis() - tt;
             JButton stop = (JButton) Globals.registry.get("StopRecording");
@@ -179,10 +210,17 @@ public class Xomaya extends JPanel implements ControllerListener {
             logger.println("State code:" + p.getState());
             // 600
 
+            // increase our status
+            status.increment();
+
             Controller c = (Controller) Globals.registry.get("Controller");
             JFrame f = c.getFrame();
             f.setState(JFrame.ICONIFIED);
             logger.println("Returned true");
+            // increase our status
+            status.increment();
+            status.setStatus(Status.RECORDING);
+
             return true;
         } catch (Exception ex) {
             ex.printStackTrace();

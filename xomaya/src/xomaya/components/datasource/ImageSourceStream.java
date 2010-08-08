@@ -162,7 +162,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     public void run() {
         while (started) {
             if (started && handler != null) {
-                //dispatch(new Event(EventType.TRANSFER_STARTED));
+                dispatch(new Event(EventType.TRANSFER_STARTED));
                 lock.lock();
                 synchronized (h) {
                     final ImageSourceStream d = this;
@@ -174,7 +174,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
                 Thread.sleep(100);
             } catch (Exception ex) {
             }
-            //dispatch(new Event(EventType.TRANSFER_COMPLETE));
+            dispatch(new Event(EventType.TRANSFER_COMPLETE));
         }
         logger.println("Finished");
     }
