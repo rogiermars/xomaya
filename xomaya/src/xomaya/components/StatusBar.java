@@ -46,16 +46,12 @@ public class StatusBar extends JPanel implements TransferListener {
         }
 
         bar.setString(statusText);
-        
-        //System.out.println("Increment!");
-        //bar.repaint();
-        //this.repaint();
         this.updateUI();
     }
 
     private void setStatusText(String text)
     {
-
+        statusText = text;
     }
 
     public void setStatus(Status status)
