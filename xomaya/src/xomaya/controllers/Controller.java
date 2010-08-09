@@ -77,8 +77,8 @@ public class Controller implements ActionListener {
             doScreenOnly();
         } else if (cmd.equals(Command.TOGGLE_COMPRESSION.toString())) {
             doToggleCompression();
-        } else if (cmd.equals(Command.REGISTER_SUCCESS.toString())) {
-            doRegisterSuccess();
+        } else if (cmd.equals(Command.REGISTER_STATUS.toString())) {
+            doRegisterStatus();
         } else if (cmd.equals(Command.CAPTURE_INPUT_FORMAT.toString())) {
             doCaptureInputFormat();
         } else if (cmd.equals(Command.OPEN_OUTPUT_DIRECTORY.toString())) {
@@ -94,16 +94,32 @@ public class Controller implements ActionListener {
         }
     }
 
-    public void doRegisterSuccess() {
+    public void doRegisterStatus() {
         try {
-            URL url = new URL("http://www.xomaya.com/targets/Success");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
-            String b = "";
-            String buffer = "";
-            while ((b = reader.readLine()) != null) {
-                buffer = buffer + b;
+
+            String f = "." + File.separator + "out" + File.separator + Globals.videoName + "." + Globals.videoExt;
+            File file = new File(f);
+            if( file.length() > 5000 ){
+                logger.println("Checked file:" + f + " status success:" + file.length());
+                URL url = new URL("http://www.xomaya.com/targets/Success");
+                BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+                String b = "";
+                String buffer = "";
+                while ((b = reader.readLine()) != null) {
+                    buffer = buffer + b;
+                }
+                reader.close();
+            } else {
+                logger.println("Checked file:" + f + " status failure" + file.length());
+                URL url = new URL("http://www.xomaya.com/targets/Failure");
+                BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+                String b = "";
+                String buffer = "";
+                while ((b = reader.readLine()) != null) {
+                    buffer = buffer + b;
+                }
+                reader.close();
             }
-            reader.close();
         } catch (Exception ex) {
             logger.println(ex);
             ex.printStackTrace();
@@ -267,7 +283,7 @@ public class Controller implements ActionListener {
                     // Trigger the action
                     doOpenOutputDirectory();
                     // Register that we completed the application.
-                    doRegisterSuccess();
+                    doRegisterStatus();
 
                     Application.quit(-1);
                 } catch (Exception ex) {
