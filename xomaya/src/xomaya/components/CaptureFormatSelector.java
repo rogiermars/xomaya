@@ -43,8 +43,14 @@ import xomaya.application.Globals;
 import xomaya.util.Utility;
 
 /**
+ * This class is a JDialog class which is used for capturing technical
+ * preferences for capture mode. The dialog will display the various
+ * modes that are available. If no modes are available the application
+ * will provide a default selection.
  *
- * @author beecrofs
+ * This documentation is part of the Xomaya Express software suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
  */
 public class CaptureFormatSelector extends JDialog implements ActionListener {
 

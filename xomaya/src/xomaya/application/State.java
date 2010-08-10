@@ -24,6 +24,11 @@
 package xomaya.application;
 
 /**
+ * The State enum is a variable type which can be used for storing
+ * the various states of the application. In particular this type is used
+ * for accessing whether the user is actively using the computer or if
+ * their hands are free.
+ * 
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

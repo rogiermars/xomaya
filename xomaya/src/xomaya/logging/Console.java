@@ -26,6 +26,8 @@ import java.awt.BorderLayout;
 import javax.swing.*;
 
 /**
+ * This is a generic Console component that may be used to display text.
+ * 
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

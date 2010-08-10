@@ -25,9 +25,14 @@ package xomaya.components;
 
 import javax.media.datasink.DataSinkEvent;
 import javax.media.datasink.DataSinkListener;
+import xomaya.logging.Log;
 
 /**
  * Control the ending of the program prior to closing the data sink
+ *
+ * This documentation is part of the Xomaya Express software suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
  */
 public class DSinkListener implements DataSinkListener {
 
@@ -37,7 +42,7 @@ public class DSinkListener implements DataSinkListener {
     public void dataSinkUpdate(DataSinkEvent event) {
         if (event instanceof javax.media.datasink.EndOfStreamEvent) {
             endOfStream = true;
-            System.out.println("Reached end of stream************");
+            logger.println("Reached end of stream************");
         }
     }
 
@@ -48,7 +53,7 @@ public class DSinkListener implements DataSinkListener {
         while (!endOfStream) {
             try {
                 //Thread.currentThread().sleep(checkTimeMs);
-                System.out.println("Waiting for end of stream************");
+                logger.println("Waiting for end of stream************");
                 Thread.sleep(checkTimeMs);
             } catch (InterruptedException ie) {
                 // your exception handling here
@@ -56,4 +61,6 @@ public class DSinkListener implements DataSinkListener {
             }
         }
     }
+
+    static Log logger = new Log(DSinkListener.class);
 }

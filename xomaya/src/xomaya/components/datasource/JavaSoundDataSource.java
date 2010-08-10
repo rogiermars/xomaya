@@ -33,6 +33,9 @@ import java.io.IOException;
 import xomaya.logging.Log;
 
 /**
+ * This class is used as a pure Java implementation of the Java Sound API
+ * exposed through JMF. Courtesy of Jason Foss.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

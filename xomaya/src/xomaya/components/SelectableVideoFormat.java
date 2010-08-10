@@ -27,6 +27,15 @@ import javax.media.CaptureDeviceInfo;
 import javax.media.Format;
 import javax.media.format.VideoFormat;
 
+/**
+ * This class represents a selectable video format.
+ * The class has place holders for the format of the video
+ * but also the description.
+ *
+ * This documentation is part of the Xomaya Express software suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
+ */
 public class SelectableVideoFormat {
 
     Format vf = null;

@@ -22,8 +22,14 @@
  */package xomaya.components;
 
 /**
+ * This enum is a representation of application state.
+ * The application can be RECORDING, LOADING, etc. This is by
+ * This class is essentially a helper class for the View only
+ * and is not intended to be used for functional components.
  *
- * @author yogiudo
+ * This documentation is part of the Xomaya Express software suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
  */
 public enum Status {
     RECORDING,

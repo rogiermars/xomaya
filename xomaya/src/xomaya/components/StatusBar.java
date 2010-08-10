@@ -13,11 +13,17 @@ import javax.swing.JProgressBar;
 import xomaya.application.Globals;
 import xomaya.application.Xomaya;
 import xomaya.components.datasource.TransferListener;
+import xomaya.logging.Log;
 
 
 /**
- *
- * @author beecrofs
+ * This StatusBar class is designed to present the user with some
+ * information about when the application is loading. The StatusBar
+ * will display a JProgressBar and let the user know via the Status enum
+ * 
+ * This documentation is part of the Xomaya Express software suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
  */
 public class StatusBar extends JPanel implements TransferListener {
     JProgressBar bar = new JProgressBar();
@@ -41,7 +47,7 @@ public class StatusBar extends JPanel implements TransferListener {
     {
         bar.setValue(bar.getValue()+v);
         if( bar.getValue() >= StatusBar.MAXIMUM) {
-            System.out.println("Setting bar to 0");
+            logger.println("Setting bar to 0");
             bar.setValue(StatusBar.MINIMUM);
             bar.repaint();
         }
@@ -92,5 +98,6 @@ public class StatusBar extends JPanel implements TransferListener {
         //repaint();
     }
 
+    static Log logger = new Log(StatusBar.class);
     
 }

@@ -47,6 +47,9 @@ import xomaya.components.SelectableVideoFormat;
 import xomaya.application.Xomaya;
 
 /**
+ * This Controller class is the main delegate of the application.
+ * The Controller performs most of the applications important functions.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

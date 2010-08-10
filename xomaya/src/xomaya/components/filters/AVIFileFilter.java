@@ -26,6 +26,8 @@ import java.io.File;
 import javax.swing.filechooser.FileFilter;
 
 /**
+ * An AVI File Filter
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

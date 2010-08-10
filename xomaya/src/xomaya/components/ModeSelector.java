@@ -33,6 +33,9 @@ import xomaya.application.Globals;
 import xomaya.controllers.Controller;
 
 /**
+ * This JPanel is the View component which enables the user to make
+ * their selections.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

@@ -28,6 +28,9 @@ import java.awt.Desktop;
 import xomaya.logging.Log;
 
 /**
+ * This class implements some of the OS abstractions for the JNA.
+ * See https://jna.dev.java.net/ for more details on JNA
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.

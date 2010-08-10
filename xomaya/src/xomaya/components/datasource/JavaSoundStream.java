@@ -40,6 +40,7 @@ import xomaya.logging.Log;
 /**
  * This class is responsible for reading data from the buffer and transfering it
  * so that it may be used by the @JavaSoundDataSource.
+ *
  * This documentation is part of the Xomaya Express software suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
