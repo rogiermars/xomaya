@@ -40,6 +40,7 @@ import java.awt.image.BufferedImage;
 import java.util.TimerTask;
 import java.util.Vector;
 import xomaya.application.Mode;
+import xomaya.application.Registry;
 import xomaya.logging.Log;
 
 /**
@@ -95,7 +96,7 @@ public class STimerTask extends TimerTask {
         
         int t = 5;
         State newState = idleSec >= t ? idleSec <= 300 ? State.IDLE : State.AWAY : State.ONLINE;
-        Globals.registry.put("State", newState);
+        Registry.register("State", newState);
 
         // If the mode is set to screen only, then state must always be ONLINE.
         if( Globals.currentMode == Mode.SCREEN_ONLY ){

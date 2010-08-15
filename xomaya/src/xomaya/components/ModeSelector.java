@@ -30,6 +30,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import xomaya.application.Command;
 import xomaya.application.Globals;
+import xomaya.application.Registry;
 import xomaya.controllers.Controller;
 
 /**
@@ -56,9 +57,9 @@ public class ModeSelector extends JPanel {
         checkboxCompression.setActionCommand(Command.TOGGLE_COMPRESSION.toString());
         
         radioScreenOnly.setSelected(true);
-        Globals.registry.get("Controller");
-        Globals.registry.put("Compression", checkboxCompression);
-        Controller controller = (Controller)Globals.registry.get("Controller");
+        Registry.get("Controller");
+        Registry.register("Compression", checkboxCompression);
+        Controller controller = (Controller)Registry.get("Controller");
 
         radioSmoothSwitch.addActionListener(controller);
         radioVideoOnly.addActionListener(controller);

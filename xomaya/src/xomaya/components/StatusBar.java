@@ -8,9 +8,12 @@ package xomaya.components;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.util.Iterator;
+import java.util.Vector;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import xomaya.application.Globals;
+import xomaya.application.Registry;
 import xomaya.application.Xomaya;
 import xomaya.components.datasource.TransferListener;
 import xomaya.logging.Log;
@@ -25,22 +28,40 @@ import xomaya.logging.Log;
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
-public class StatusBar extends JPanel implements TransferListener {
+public class StatusBar extends JPanel implements TransferListener, StatusListener {
     JProgressBar bar = new JProgressBar();
     private final static int MAXIMUM = 100;
     private final static int MINIMUM = 0;
     String statusText = "";
-    Status status = Status.LOADING;
+    Status status = Status.READY;
+    Vector<StatusListener> listeners = new Vector<StatusListener>();
+
     public StatusBar()
     {
         setSize(new Dimension(Globals.appWidth, 15));
         setPreferredSize(new Dimension(Globals.appWidth, 15));
+        bar.setString("");
         bar.setMinimum(0);
         bar.setMaximum(100);
         bar.setStringPainted(true);
-        setStatus(Status.LOADING);
         setLayout(new GridLayout(0,1));
+        addStatusListener(this);
+        setStatus(Status.READY);
         add(bar);
+    }
+
+    public void addStatusListener(StatusListener sl)
+    {
+        listeners.add(sl);
+    }
+
+    public void dispatch(Status status)
+    {
+        Iterator i = listeners.iterator();
+        while( i.hasNext() ){
+            StatusListener sl = (StatusListener)i.next();
+            sl.statusChanged(status);
+        }
     }
 
     public void increment(int v)
@@ -49,15 +70,19 @@ public class StatusBar extends JPanel implements TransferListener {
         if( bar.getValue() >= StatusBar.MAXIMUM) {
             logger.println("Setting bar to 0");
             bar.setValue(StatusBar.MINIMUM);
-            bar.repaint();
         }
+        update();
+    }
 
+    public void update()
+    {
         bar.setString(statusText);
         bar.repaint();
         this.repaint();
+        //System.out.println("update called");
     }
 
-    private void setStatusText(String text)
+    public void setStatusText(String text)
     {
         statusText = text;
     }
@@ -65,18 +90,9 @@ public class StatusBar extends JPanel implements TransferListener {
     public void setStatus(Status status)
     {
         this.status = status;
-        if( status == Status.LOADING ){
-            statusText = "Loading";
-        }
-        else if( status == Status.RECORDING ){
-            statusText = "Recording";
-        }
-        else if( status == Status.CAPTURING_DEVICE ){
-            statusText = "Capturing Device";
-        }
-        else if( status == Status.CREATING_DATASINK ){
-            statusText = "Creating DataSink";
-        }
+        Registry.register("Status", status);
+        
+        dispatch(status);
     }
 
     public void increment()
@@ -99,5 +115,32 @@ public class StatusBar extends JPanel implements TransferListener {
     }
 
     static Log logger = new Log(StatusBar.class);
+
+    public void statusChanged(Status newStatus) {
+        //throw new UnsupportedOperationException("Not supported yet.");
+        status = newStatus;
+        
+        if( status == Status.READY ){
+            statusText = "Ready";
+        }
+        else if( status == Status.INITIALIZING ){
+            statusText = "Initializing... (Please wait)";
+        }
+        else if( status == Status.LOADING ){
+            statusText = "Loading...";
+        }
+        else if( status == Status.RECORDING ){
+            statusText = "Recording";
+        }
+         else if( status == Status.STOPPED ){
+            statusText = "Stopped";
+        }
+        else if( status == Status.CAPTURING_DEVICE ){
+            statusText = "Capturing Device";
+        }
+        else if( status == Status.CREATING_DATASINK ){
+            statusText = "Creating DataSink";
+        }
+    }
     
 }

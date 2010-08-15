@@ -27,6 +27,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import xomaya.application.Globals;
+import xomaya.application.Registry;
 
 /**
  * This is the Log class. Application logging is done through this
@@ -87,7 +88,7 @@ public class Log
             }
             if(this.console)
             {
-                Console c = (Console)Globals.registry.get("Console");
+                Console c = (Console)Registry.get("Console");
                 if( c != null ){
                     c.print(o);
                 }
@@ -118,7 +119,7 @@ public class Log
             }
             if(this.console)
             {
-                Console c = (Console)Globals.registry.get("Console");
+                Console c = (Console)Registry.get("Console");
                 if( c != null ){
                     c.println(line);
                 }

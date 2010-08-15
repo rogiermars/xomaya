@@ -141,11 +141,11 @@ public class Application extends JFrame {
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
 
-        Globals.registry.put("Controller", controller);
-        Globals.registry.put("Console", console);
-        Globals.registry.put("StatusBar", status);
-        Globals.registry.put("Application", frame);
-        Globals.registry.put("Xomaya", fa);
+        Registry.register("Controller", controller);
+        Registry.register("Console", console);
+        Registry.register("StatusBar", status);
+        Registry.register("Application", frame);
+        Registry.register("Xomaya", fa);
         ModeSelector ms = new ModeSelector();
         frame.setIconImage(icon.getImage());
         frame.add(fa, BorderLayout.WEST);
@@ -170,7 +170,7 @@ public class Application extends JFrame {
 
     private JMenu createFileMenu() {
         JMenu fileMenu = new JMenu("File");
-        Controller controller = (Controller) Globals.registry.get("Controller");
+        Controller controller = (Controller) Registry.get("Controller");
         JMenuItem exit = new JMenuItem("Exit");
         exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, KeyEvent.SHIFT_DOWN_MASK, true));
         exit.setMnemonic('X');
@@ -183,7 +183,7 @@ public class Application extends JFrame {
 
     private JMenu createToolsMenu() {
         JMenu toolsMenu = new JMenu("Tools");
-        Controller controller = (Controller) Globals.registry.get("Controller");
+        Controller controller = (Controller) Registry.get("Controller");
 
         JMenuItem openOutputDirectory = new JMenuItem("Open Output Directory");
         openOutputDirectory.setMnemonic('O');
@@ -215,7 +215,7 @@ public class Application extends JFrame {
 
     private JMenu createHelpMenu() {
         JMenu helpMenu = new JMenu("Help");
-        Controller controller = (Controller) Globals.registry.get("Controller");
+        Controller controller = (Controller) Registry.get("Controller");
         JMenuItem about = new JMenuItem("About Xomaya");
         about.setMnemonic('A');
         about.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, KeyEvent.SHIFT_DOWN_MASK, true));

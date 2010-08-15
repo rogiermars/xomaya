@@ -52,7 +52,7 @@ public class Globals
     final public static String name = "xomaya";
     final public static double version = 1.21D;
     final public static float fps = 8f;
-    final public static Hashtable registry = new Hashtable();
+    //final public static Hashtable registry = new Hashtable();
     
     public static long ttga = 0;
     public static long snap = 0L;

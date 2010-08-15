@@ -28,6 +28,7 @@ import xomaya.application.Command;
 import xomaya.components.effects.GraphicEffect;
 import java.awt.*;
 import java.io.IOException;
+import java.util.Date;
 import java.util.Timer;
 import javax.media.*;
 import javax.media.control.TrackControl;
@@ -41,6 +42,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import xomaya.application.Application;
 import xomaya.components.DSinkListener;
 import xomaya.components.STimerTask;
@@ -77,24 +79,26 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
         setLayout(new GridLayout(0, 1));
         start.setActionCommand(Command.START_RECORDING.toString());
         stop.setActionCommand(Command.STOP_RECORDING.toString());
-        Globals.registry.put("StartRecording", start);
-        Globals.registry.put("StopRecording", stop);
+        Registry.register("StartRecording", start);
+        Registry.register("StopRecording", stop);
         start.addActionListener(controller);
         stop.addActionListener(controller);
         stop.setEnabled(false);
         add(start);
         add(stop);
+
+        Thread lt = new Thread(this);
+        lt.setPriority(Thread.MIN_PRIORITY);
+        lt.start();
     }
 
     public boolean open(MediaLocator ml) {
 
         try {
-            Thread lt = new Thread(this);
-            lt.setPriority(Thread.MIN_PRIORITY);
-            lt.start();
+            
 
-            StatusBar status = (StatusBar)Globals.registry.get("StatusBar");
-            Globals.registry.put("GraphicEffect", effect);
+            StatusBar status = (StatusBar)Registry.get("StatusBar");
+            Registry.register("GraphicEffect", effect);
 
             // increase our status
             status.increment(10);
@@ -132,6 +136,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
 
             // increase our status
             status.increment(10);
+            //Thread.yield();
             status.setStatus(Status.CREATING_DATASINK);
 
             p.setContentDescriptor(new ContentDescriptor(Globals.fileTypeDescriptor));
@@ -154,6 +159,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
                 }
             }
 
+            //Thread.yield();
             status.setStatus(Status.LOADING);
 
             // increase our status
@@ -193,13 +199,13 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             STimerTask task = new STimerTask(effect);
             Timer timer = new java.util.Timer();
             timer.scheduleAtFixedRate(task, 0L, 300L);
-            Globals.registry.put("STimerTask", task);
-            Globals.registry.put("Timer", timer);
+            Registry.register("STimerTask", task);
+            Registry.register("Timer", timer);
             logger.println("Timers initialized");
 
             Thread.sleep(1200);
 
-            Globals.registry.put("Processor", p);
+            Registry.register("Processor", p);
             long tt = System.currentTimeMillis();
             p.setMediaTime(new Time(Time.ONE_SECOND));
             p.syncStart(new Time(System.currentTimeMillis() / 1000));
@@ -210,7 +216,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
 
 
             long tu = System.currentTimeMillis() - tt;
-            JButton stop = (JButton) Globals.registry.get("StopRecording");
+            JButton stop = (JButton) Registry.get("StopRecording");
             stop.setEnabled(true);
             logger.println("Stop enabled");
             logger.println("Waiting to start...");
@@ -220,7 +226,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             // increase our status
             status.increment();
 
-            Controller c = (Controller) Globals.registry.get("Controller");
+            Controller c = (Controller) Registry.get("Controller");
             JFrame f = c.getFrame();
             f.setState(JFrame.ICONIFIED);
             logger.println("Returned true");
@@ -348,6 +354,12 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
     public void stop() {
 
         try {
+
+            //This thing needs to be updated / refactored.
+            Status status = (Status)Registry.get("Status");
+            status = status.STOPPED;
+            Registry.register("Status", status);
+            
             //throw new UnsupportedOperationException("Not supported yet.");
             logger.println("Total Time:" + (System.currentTimeMillis() - Globals.ts));
             //Globals.ts = System.currentTimeMillis();
@@ -375,11 +387,19 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
         while( running ){
             try {
                 Thread.sleep(500);
-                StatusBar sb = (StatusBar)Globals.registry.get("StatusBar");
-                if( sb != null ){
-                    // show so the application can show that it is doing something.
-                    sb.increment();
+                Status status = (Status)Registry.get("Status");
+                final StatusBar sb = (StatusBar)Registry.get("StatusBar");
+                if( status == Status.RECORDING ){
+                    if( sb != null ){
+                        // show so the application can show that it is doing something.
+                        sb.increment();
+                    }
                 }
+                SwingUtilities.invokeLater(new Runnable() {
+                    public void run() {
+                        sb.update();
+                    }
+                });
             } catch(Exception ex){
 
             }

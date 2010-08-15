@@ -42,9 +42,12 @@ import javax.media.protocol.FileTypeDescriptor;
 import javax.swing.*;
 import xomaya.application.Application;
 import xomaya.application.Mode;
+import xomaya.application.Registry;
 import xomaya.components.CaptureFormatSelector;
 import xomaya.components.SelectableVideoFormat;
 import xomaya.application.Xomaya;
+import xomaya.components.Status;
+import xomaya.components.StatusBar;
 
 /**
  * This Controller class is the main delegate of the application.
@@ -102,7 +105,7 @@ public class Controller implements ActionListener {
 
             String f = "." + File.separator + "out" + File.separator + Globals.videoName + "." + Globals.videoExt;
             File file = new File(f);
-            if( file.length() > 5000 ){
+            if (file.length() > 5000) {
                 logger.println("Checked file:" + f + " status success:" + file.length());
                 URL url = new URL("http://www.xomaya.com/targets/Success");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -152,14 +155,14 @@ public class Controller implements ActionListener {
     public void doClearOutputDirectory() {
         try {
             int result = JOptionPane.showConfirmDialog(frame, "Warning: This will remove all of the files in this directory. Are you sure?");
-            if( result == JOptionPane.YES_OPTION ){
+            if (result == JOptionPane.YES_OPTION) {
                 String s = System.getProperty("user.dir") + File.separator + "out";
                 logger.println("Clear:" + s);
                 File f = new File(s);
                 File[] list = f.listFiles();
-                for( int i = 0; i < list.length; i++ ){
-                    if( !list[i].delete() ) {
-                        logger.println("Could not delete:" + list[i].getAbsolutePath() );
+                for (int i = 0; i < list.length; i++) {
+                    if (!list[i].delete()) {
+                        logger.println("Could not delete:" + list[i].getAbsolutePath());
                     }
                 }
             }
@@ -174,7 +177,7 @@ public class Controller implements ActionListener {
         try {
             CaptureFormatSelector sel = new CaptureFormatSelector();
             Globals.selectedVideoFormat = sel.getSelectedVideoFormat();
-            if( Globals.selectedVideoFormat == null ) {
+            if (Globals.selectedVideoFormat == null) {
                 Format format = new RGBFormat(
                         new Dimension(Globals.captureWidth, Globals.captureHeight),
                         Format.NOT_SPECIFIED,
@@ -185,9 +188,9 @@ public class Controller implements ActionListener {
                         3, Format.NOT_SPECIFIED,
                         Format.TRUE,
                         Format.NOT_SPECIFIED);
-                Globals.selectedVideoFormat = new SelectableVideoFormat( format, null );
+                Globals.selectedVideoFormat = new SelectableVideoFormat(format, null);
             }
-        } catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
@@ -237,11 +240,19 @@ public class Controller implements ActionListener {
 
     public void doStartRecording() {
         logger.println("Started!");
+        Status status = (Status) Registry.get(("Status"));
+        StatusBar sb = (StatusBar) Registry.get("StatusBar");
+        status = Status.INITIALIZING;
+        sb.setStatus(status);
+        sb.update();
+
         SwingUtilities.invokeLater(new Runnable() {
+
             public void run() {
                 try {
+
                     Globals.snap = System.currentTimeMillis();
-                    Xomaya jmf = (Xomaya) Globals.registry.get("Xomaya");
+                    Xomaya jmf = (Xomaya) Registry.get("Xomaya");
                     jmf.start();
                 } catch (Exception ex) {
                     logger.println(ex);
@@ -249,8 +260,8 @@ public class Controller implements ActionListener {
                 }
             }
         });
-        JButton start = (JButton) Globals.registry.get("StartRecording");
-        JCheckBox compression = (JCheckBox) Globals.registry.get("Compression");
+        JButton start = (JButton) Registry.get("StartRecording");
+        JCheckBox compression = (JCheckBox) Registry.get("Compression");
         start.setEnabled(false);
         // stop should be enabled later, when the program actually starts recording.
         compression.setEnabled(false);
@@ -266,13 +277,13 @@ public class Controller implements ActionListener {
 
             public void run() {
                 try {
-                    Xomaya jmf = (Xomaya) Globals.registry.get("Xomaya");
+                    Xomaya jmf = (Xomaya) Registry.get("Xomaya");
                     jmf.stop();
 
-                    java.util.Timer timer = (java.util.Timer) Globals.registry.get("Timer");
-                    TimerTask task = (TimerTask) Globals.registry.get("STimerTask");
-                    JButton start = (JButton) Globals.registry.get("StartRecording");
-                    JButton stop = (JButton) Globals.registry.get("StopRecording");
+                    java.util.Timer timer = (java.util.Timer) Registry.get("Timer");
+                    TimerTask task = (TimerTask) Registry.get("STimerTask");
+                    JButton start = (JButton) Registry.get("StartRecording");
+                    JButton stop = (JButton) Registry.get("StopRecording");
                     timer.cancel();
                     task.cancel();
                     Controller.logger.println("Total time:" + (System.currentTimeMillis() - Globals.snap));

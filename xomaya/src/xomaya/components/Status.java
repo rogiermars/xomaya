@@ -32,8 +32,11 @@
  * or to download our screen capture / screen recording software.
  */
 public enum Status {
+    READY,
+    INITIALIZING,
     RECORDING,
     LOADING,
     CREATING_DATASINK,
     CAPTURING_DEVICE,
+    STOPPED,
 }
