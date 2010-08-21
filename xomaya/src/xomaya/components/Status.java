@@ -23,7 +23,7 @@
 
 /**
  * This enum is a representation of application state.
- * The application can be RECORDING, LOADING, etc. This is by
+ * The application can be RECORDING, LOADING, etc. 
  * This class is essentially a helper class for the View only
  * and is not intended to be used for functional components.
  *
