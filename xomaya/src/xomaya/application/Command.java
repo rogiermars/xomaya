@@ -46,4 +46,5 @@ public enum Command
     EXIT,
     ABOUT,
     HELP,
+    LICENSE_KEY,
 }

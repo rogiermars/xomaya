@@ -68,8 +68,6 @@ public class Globals
     public static long seqNo = 0;
     public static Application dw = null;
     public static String expiryDate = "";
-    public static String account = "";
-    public static String username = "";
     public static String licenseKey = "";
     public static String licenseType = "";
     public static boolean debug = true;

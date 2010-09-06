@@ -28,6 +28,10 @@ import java.awt.FlowLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.Enumeration;
 import java.util.Vector;
 import javax.media.Format;
@@ -37,8 +41,11 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
+import xomaya.application.Application;
+import xomaya.application.ExitReason;
 import xomaya.application.Globals;
 import xomaya.util.Utility;
 
@@ -52,7 +59,7 @@ import xomaya.util.Utility;
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
-public class CaptureFormatSelector extends JDialog implements ActionListener {
+public final class CaptureFormatSelector extends JDialog implements ActionListener, WindowListener, ComponentListener {
 
     JComboBox combo = new JComboBox();
     ImageIcon icon = new ImageIcon("./media/picon-small.png");
@@ -65,7 +72,7 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
         int w = Globals.appWidth;
         int h = Globals.appHeight;
 
-        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         this.setIconImage(icon.getImage());
         this.setTitle("Capture Format Dialog");
         JPanel center = new JPanel();
@@ -84,7 +91,8 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
         setLocation(d.width / 2 - w / 2, d.height / 2 - h / 2);
         setModal(true);
         setVisible(true);
-
+        addWindowListener(this);
+        addComponentListener(this);
     }
 
     public void populate() {
@@ -129,5 +137,40 @@ public class CaptureFormatSelector extends JDialog implements ActionListener {
         //throw new UnsupportedOperationException("Not supported yet.");
         setModal(false);
         setVisible(false);
+    }
+
+    public void windowOpened(WindowEvent e) {
+    }
+
+    public void windowClosing(WindowEvent e) {
+    }
+
+    public void windowClosed(WindowEvent e) {
+    }
+
+    public void windowIconified(WindowEvent e) {
+    }
+
+    public void windowDeiconified(WindowEvent e) {
+    }
+
+    public void windowActivated(WindowEvent e) {
+    }
+
+    public void windowDeactivated(WindowEvent e) {
+    }
+
+    public void componentResized(ComponentEvent e) {
+    }
+
+    public void componentMoved(ComponentEvent e) {
+    }
+
+    public void componentShown(ComponentEvent e) {
+    }
+
+    public void componentHidden(ComponentEvent e) {
+        //JOptionPane.showMessageDialog(this, "Application will exit", "Application Exiting", JOptionPane.INFORMATION_MESSAGE);
+        //Application.quit(ExitReason.DIALOG_CLOSE);
     }
 }

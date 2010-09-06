@@ -24,6 +24,7 @@ package xomaya.util;
 
 import java.awt.Dimension;
 import java.io.*;
+import java.util.UUID;
 import xomaya.logging.Log;
 import javax.media.*;
 import javax.media.protocol.*;
@@ -77,6 +78,19 @@ public class Utility {
         }
 
         return null;
+    }
+
+    public static boolean isValidKey(String key)
+    {
+        UUID uuid = UUID.randomUUID();
+        if( key == null ){
+            return false;
+        } else if( key.equals("EXPRESS")){
+            return true;
+        } else if( key.length() == uuid.toString().length() ){
+            return true;
+        }
+        return false;
     }
 
     public static Vector getVideoFormats() {

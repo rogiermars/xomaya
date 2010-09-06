@@ -1,0 +1,1375 @@
+2010-09-04:11:41:28:xomaya.application.Application:System starting...
+2010-09-04:11:41:28:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:41:28:xomaya.application.Application:--------------------------
+2010-09-04:11:41:28:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:41:28:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:41:28:xomaya.util.JNA:Idle time:2324
+2010-09-04:11:41:28:xomaya.application.Application:Loaded DLL:421
+2010-09-04:11:41:28:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:41:28:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:41:28:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:41:28:xomaya.application.Application:-finally-
+2010-09-04:11:41:28:xomaya.util.Utility:Found:3
+2010-09-04:11:41:28:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:41:28:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:41:28:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:49:46:xomaya.application.Application:System starting...
+2010-09-04:11:49:46:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:49:46:xomaya.application.Application:--------------------------
+2010-09-04:11:49:46:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:49:46:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:49:46:xomaya.util.JNA:Idle time:1560
+2010-09-04:11:49:46:xomaya.application.Application:Loaded DLL:188
+2010-09-04:11:49:46:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:49:46:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:49:46:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:49:46:xomaya.application.Application:-finally-
+2010-09-04:11:49:46:xomaya.util.Utility:Found:3
+2010-09-04:11:49:46:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:49:46:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:49:46:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:51:37:xomaya.application.Application:System starting...
+2010-09-04:11:51:37:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:51:37:xomaya.application.Application:--------------------------
+2010-09-04:11:51:37:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:51:38:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:51:38:xomaya.util.JNA:Idle time:0
+2010-09-04:11:51:38:xomaya.application.Application:Loaded DLL:172
+2010-09-04:11:51:38:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:51:38:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:51:38:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:51:38:xomaya.application.Application:-finally-
+2010-09-04:11:51:38:xomaya.util.Utility:Found:3
+2010-09-04:11:51:38:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:51:38:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:51:38:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:52:35:xomaya.application.Application:System starting...
+2010-09-04:11:52:35:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:52:35:xomaya.application.Application:--------------------------
+2010-09-04:11:52:35:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:52:35:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:52:35:xomaya.util.JNA:Idle time:717
+2010-09-04:11:52:35:xomaya.application.Application:Loaded DLL:187
+2010-09-04:11:52:35:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:52:35:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:52:35:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:52:35:xomaya.application.Application:-finally-
+2010-09-04:11:52:36:xomaya.util.Utility:Found:3
+2010-09-04:11:52:36:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:52:36:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:52:36:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:55:32:xomaya.application.Application:System starting...
+2010-09-04:11:55:32:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:55:32:xomaya.application.Application:--------------------------
+2010-09-04:11:55:32:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:55:32:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:55:32:xomaya.util.JNA:Idle time:1529
+2010-09-04:11:55:32:xomaya.application.Application:Loaded DLL:156
+2010-09-04:11:55:32:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:55:32:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:55:32:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:55:32:xomaya.application.Application:-finally-
+2010-09-04:11:55:32:xomaya.util.Utility:Found:3
+2010-09-04:11:55:32:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:55:32:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:55:32:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:57:26:xomaya.application.Application:System starting...
+2010-09-04:11:57:26:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:57:26:xomaya.application.Application:--------------------------
+2010-09-04:11:57:26:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:57:26:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:57:26:xomaya.util.JNA:Idle time:655
+2010-09-04:11:57:26:xomaya.application.Application:Loaded DLL:171
+2010-09-04:11:57:26:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:57:26:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:57:26:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:57:26:xomaya.application.Application:-finally-
+2010-09-04:11:57:26:xomaya.util.Utility:Found:3
+2010-09-04:11:57:26:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:57:26:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:57:26:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:57:48:xomaya.application.Application:System starting...
+2010-09-04:11:57:48:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:57:48:xomaya.application.Application:--------------------------
+2010-09-04:11:57:48:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:57:48:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:57:48:xomaya.util.JNA:Idle time:671
+2010-09-04:11:57:48:xomaya.application.Application:Loaded DLL:187
+2010-09-04:11:57:48:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:57:48:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:57:48:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:57:48:xomaya.application.Application:-finally-
+2010-09-04:11:57:48:xomaya.util.Utility:Found:3
+2010-09-04:11:57:48:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:57:48:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:57:48:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:58:53:xomaya.application.Application:System starting...
+2010-09-04:11:58:53:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:58:53:xomaya.application.Application:--------------------------
+2010-09-04:11:58:53:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:58:53:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:58:53:xomaya.util.JNA:Idle time:16
+2010-09-04:11:58:53:xomaya.application.Application:Loaded DLL:187
+2010-09-04:11:58:53:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:58:53:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:58:53:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:58:53:xomaya.application.Application:-finally-
+2010-09-04:11:58:53:xomaya.util.Utility:Found:3
+2010-09-04:11:58:53:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:58:53:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:58:53:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:11:59:29:xomaya.application.Application:System starting...
+2010-09-04:11:59:29:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:11:59:29:xomaya.application.Application:--------------------------
+2010-09-04:11:59:29:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:11:59:29:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:11:59:29:xomaya.util.JNA:Idle time:110
+2010-09-04:11:59:29:xomaya.application.Application:Loaded DLL:187
+2010-09-04:11:59:29:xomaya.application.Application:Could not create directory ./out
+2010-09-04:11:59:29:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:11:59:29:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:11:59:29:xomaya.application.Application:-finally-
+2010-09-04:11:59:29:xomaya.util.Utility:Found:3
+2010-09-04:11:59:29:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:11:59:29:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:11:59:29:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:12:00:19:xomaya.application.Application:System starting...
+2010-09-04:12:00:19:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:12:00:19:xomaya.application.Application:--------------------------
+2010-09-04:12:00:19:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:12:00:19:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:12:00:20:xomaya.util.JNA:Idle time:47
+2010-09-04:12:00:20:xomaya.application.Application:Loaded DLL:187
+2010-09-04:12:00:20:xomaya.application.Application:Could not create directory ./out
+2010-09-04:12:00:20:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:12:00:20:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:12:00:20:xomaya.application.Application:-finally-
+2010-09-04:12:00:20:xomaya.util.Utility:Found:3
+2010-09-04:12:00:20:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:12:00:20:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:12:00:20:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:40:51:xomaya.application.Application:System starting...
+2010-09-04:16:40:51:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:40:51:xomaya.application.Application:--------------------------
+2010-09-04:16:40:51:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:40:51:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:40:52:xomaya.util.JNA:Idle time:2293
+2010-09-04:16:40:52:xomaya.application.Application:Loaded DLL:265
+2010-09-04:16:40:52:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:40:52:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:40:52:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:40:52:xomaya.application.Application:-finally-
+2010-09-04:16:40:52:xomaya.util.Utility:Found:3
+2010-09-04:16:40:52:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:40:52:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:40:52:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:40:59:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:43:19:xomaya.application.Application:System starting...
+2010-09-04:16:43:19:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:43:19:xomaya.application.Application:--------------------------
+2010-09-04:16:43:19:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:43:19:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:43:19:xomaya.util.JNA:Idle time:1014
+2010-09-04:16:43:19:xomaya.application.Application:Loaded DLL:671
+2010-09-04:16:43:19:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:43:19:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:43:19:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:43:19:xomaya.application.Application:-finally-
+2010-09-04:16:43:20:xomaya.util.Utility:Found:3
+2010-09-04:16:43:20:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:43:20:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:43:20:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:43:24:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:43:33:xomaya.application.Application:System starting...
+2010-09-04:16:43:33:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:43:33:xomaya.application.Application:--------------------------
+2010-09-04:16:43:33:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:43:33:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:43:33:xomaya.util.JNA:Idle time:530
+2010-09-04:16:43:33:xomaya.application.Application:Loaded DLL:234
+2010-09-04:16:43:33:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:43:33:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:43:33:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:43:33:xomaya.application.Application:-finally-
+2010-09-04:16:43:33:xomaya.util.Utility:Found:3
+2010-09-04:16:43:33:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:43:33:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:43:33:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:43:40:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:44:04:xomaya.application.Application:System starting...
+2010-09-04:16:44:04:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:44:04:xomaya.application.Application:--------------------------
+2010-09-04:16:44:04:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:44:05:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:44:05:xomaya.util.JNA:Idle time:656
+2010-09-04:16:44:05:xomaya.application.Application:Loaded DLL:265
+2010-09-04:16:44:05:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:44:05:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:44:05:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:44:05:xomaya.application.Application:-finally-
+2010-09-04:16:44:05:xomaya.util.Utility:Found:3
+2010-09-04:16:44:05:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:44:05:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:44:05:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:44:09:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:45:38:xomaya.application.Application:System starting...
+2010-09-04:16:45:38:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:45:38:xomaya.application.Application:--------------------------
+2010-09-04:16:45:38:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:45:38:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:45:38:xomaya.util.JNA:Idle time:671
+2010-09-04:16:45:38:xomaya.application.Application:Loaded DLL:172
+2010-09-04:16:45:38:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:45:38:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:45:38:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:45:38:xomaya.application.Application:-finally-
+2010-09-04:16:45:39:xomaya.util.Utility:Found:3
+2010-09-04:16:45:39:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:45:39:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:45:39:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:45:42:xomaya.application.Application:Quit reason:http://www.xomaya.com/targets/DIALOG_CLOSE
+2010-09-04:16:45:42:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:46:22:xomaya.application.Application:System starting...
+2010-09-04:16:46:22:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:46:22:xomaya.application.Application:--------------------------
+2010-09-04:16:46:22:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:46:22:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:46:22:xomaya.util.JNA:Idle time:655
+2010-09-04:16:46:22:xomaya.application.Application:Loaded DLL:171
+2010-09-04:16:46:22:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:46:22:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:46:22:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:46:22:xomaya.application.Application:-finally-
+2010-09-04:16:46:22:xomaya.util.Utility:Found:3
+2010-09-04:16:46:22:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:46:22:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:46:22:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:46:30:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=START_RECORDING,when=1283633190207,modifiers=Button1] on javax.swing.JButton[,0,0,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1edc073,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-record.gif,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Start,defaultCapable=true]
+2010-09-04:16:46:30:xomaya.controllers.Controller:Started!
+2010-09-04:16:46:30:xomaya.util.Utility:TRYING:YUV
+2010-09-04:16:46:30:xomaya.util.Utility:Selected format:YUV:640x480
+2010-09-04:16:46:30:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:46:30:xomaya.util.Utility:Create Data Source:vfw://0
+2010-09-04:16:46:39:xomaya.util.Utility:Setting format YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+2010-09-04:16:46:39:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-09-04:16:46:39:xomaya.util.Utility:Created merging data source
+2010-09-04:16:46:40:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-09-04:16:46:41:xomaya.application.Xomaya:Middle-
+2010-09-04:16:46:41:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-09-04:16:46:41:xomaya.components.effects.GraphicEffect:RGB, 640x480, FrameRate=15.0, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-09-04:16:46:41:xomaya.application.Xomaya:Realized
+2010-09-04:16:46:41:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-09-04:16:46:42:xomaya.application.Xomaya:Timers initialized
+2010-09-04:16:46:46:xomaya.application.Xomaya:TT GA:1982
+2010-09-04:16:46:46:xomaya.application.Xomaya:Stop enabled
+2010-09-04:16:46:46:xomaya.application.Xomaya:Waiting to start...
+2010-09-04:16:46:46:xomaya.application.Xomaya:State code:600
+2010-09-04:16:46:46:xomaya.application.Xomaya:Returned true
+2010-09-04:16:47:08:xomaya.components.StatusBar:Setting bar to 0
+2010-09-04:16:47:11:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=VIDEO_ONLY,when=1283633231022,modifiers=Button1] on javax.swing.JRadioButton[,0,0,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@7a5a19,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Video Capture]
+2010-09-04:16:47:22:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=SCREEN_ONLY,when=1283633242318,modifiers=Button1] on javax.swing.JRadioButton[,0,19,152x19,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@7a5a19,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Screen Capture]
+2010-09-04:16:47:31:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633251547,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@1cf7491,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:47:51:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=STOP_RECORDING,when=1283633271071,modifiers=Button1] on javax.swing.JButton[,0,38,82x38,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@1edc073,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=./media/media-playback-stop.gif,disabledIcon=sun.swing.ImageIconUIResource@d58939,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Stop,defaultCapable=true]
+2010-09-04:16:47:51:xomaya.controllers.Controller:Stopped!
+2010-09-04:16:47:51:xomaya.application.Xomaya:Total Time:70976
+2010-09-04:16:47:52:xomaya.application.Xomaya:Stopped and closed
+2010-09-04:16:47:52:xomaya.controllers.Controller:Total time:82144
+2010-09-04:16:47:55:xomaya.controllers.Controller:Open:C:\Users\Sean\Documents\NetBeansProjects\xomaya\xomaya\out
+2010-09-04:16:47:56:xomaya.controllers.Controller:Checked file:.\out\xomaya-16-46-4-8.avi status success:649027244
+2010-09-04:16:47:56:xomaya.controllers.Controller:www.xomaya.com
+2010-09-04:16:47:56:xomaya.application.Application:Quit reason:http://www.xomaya.com/targets/SUCCESS
+2010-09-04:16:47:56:xomaya.application.Application:www.xomaya.com
+2010-09-04:16:55:28:xomaya.application.Application:System starting...
+2010-09-04:16:55:28:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:55:28:xomaya.application.Application:--------------------------
+2010-09-04:16:55:28:xomaya.application.Application:License Key:HHHHHHHHH
+2010-09-04:16:55:28:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:55:29:xomaya.util.JNA:Idle time:1482
+2010-09-04:16:55:29:xomaya.application.Application:Loaded DLL:172
+2010-09-04:16:55:29:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:55:29:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:55:29:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:55:29:xomaya.application.Application:-finally-
+2010-09-04:16:55:29:xomaya.util.Utility:Found:3
+2010-09-04:16:55:29:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:55:29:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:55:29:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:55:33:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633733473,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@1808199,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:56:16:xomaya.application.Application:System starting...
+2010-09-04:16:56:16:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:56:16:xomaya.application.Application:--------------------------
+2010-09-04:16:56:16:xomaya.application.Application:License Key:LLLLLL
+2010-09-04:16:56:16:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:56:16:xomaya.util.JNA:Idle time:748
+2010-09-04:16:56:16:xomaya.application.Application:Loaded DLL:234
+2010-09-04:16:56:16:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:56:16:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:56:16:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:56:16:xomaya.application.Application:-finally-
+2010-09-04:16:56:16:xomaya.util.Utility:Found:3
+2010-09-04:16:56:16:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:56:16:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:56:16:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:56:26:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633786108,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@6e293a,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:56:32:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633792394,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@6e293a,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:57:10:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633830833,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@6e293a,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:57:58:xomaya.application.Application:System starting...
+2010-09-04:16:57:58:xomaya.application.Application:xomaya 1.22 copyright (c) 2010. All Rights Reserved.
+2010-09-04:16:57:58:xomaya.application.Application:--------------------------
+2010-09-04:16:57:58:xomaya.application.Application:License Key:EXPRESS
+2010-09-04:16:57:58:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-09-04:16:57:59:xomaya.util.JNA:Idle time:0
+2010-09-04:16:57:59:xomaya.application.Application:Loaded DLL:218
+2010-09-04:16:57:59:xomaya.application.Application:Could not create directory ./out
+2010-09-04:16:57:59:xomaya.application.Application:Could not create directory ./logs
+2010-09-04:16:57:59:xomaya.application.Application:Application validated:EXPRESS
+2010-09-04:16:57:59:xomaya.application.Application:-finally-
+2010-09-04:16:57:59:xomaya.util.Utility:Found:3
+2010-09-04:16:57:59:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-09-04:16:57:59:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-09-04:16:57:59:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+MJPG, 640x480, Length=921600 0 extra bytes
+
+2010-09-04:16:58:04:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633884840,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@166a22b,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]
+2010-09-04:16:58:11:xomaya.controllers.Controller:Action Command:java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=LICENSE_KEY,when=1283633891486,modifiers=Button1] on javax.swing.JMenuItem[,1,24,163x21,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.metal.MetalBorders$MenuItemBorder@166a22b,flags=392,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=2,bottom=2,right=2],paintBorder=true,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=License Key]

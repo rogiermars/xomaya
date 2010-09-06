@@ -5,8 +5,9 @@
 
 package xomaya.application;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 import xomaya.logging.Log;
 
@@ -15,7 +16,7 @@ import xomaya.logging.Log;
  * @author beecrofs
  */
 public class Registry {
-    static Hashtable ht = new Hashtable();
+    static Map ht = new HashMap();
     public static void register(String key, Object value)
     {
         ht.put(key,value);

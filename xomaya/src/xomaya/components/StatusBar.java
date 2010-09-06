@@ -8,13 +8,12 @@ package xomaya.components;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Vector;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import xomaya.application.Globals;
 import xomaya.application.Registry;
-import xomaya.application.Xomaya;
 import xomaya.components.datasource.TransferListener;
 import xomaya.logging.Log;
 
@@ -28,13 +27,13 @@ import xomaya.logging.Log;
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
-public class StatusBar extends JPanel implements TransferListener, StatusListener {
+public final class StatusBar extends JPanel implements TransferListener, StatusListener {
     JProgressBar bar = new JProgressBar();
     private final static int MAXIMUM = 100;
     private final static int MINIMUM = 0;
     String statusText = "";
     Status status = Status.READY;
-    Vector<StatusListener> listeners = new Vector<StatusListener>();
+    ArrayList<StatusListener> listeners = new ArrayList<StatusListener>();
 
     public StatusBar()
     {

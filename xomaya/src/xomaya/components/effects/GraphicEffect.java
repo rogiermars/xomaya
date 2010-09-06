@@ -28,7 +28,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
 import xomaya.application.Application;
+import xomaya.application.ExitReason;
 import xomaya.application.Globals;
 import xomaya.logging.Log;
 
@@ -85,10 +87,12 @@ public class GraphicEffect implements Effect {
         try {
             overlay = ImageIO.read(new File("./media/footer-logo.gif"));
         } catch(Exception ex){
-            logger.println("Could not locate xomaya logo");
+            String msg = "Could not locate xomaya logo";
+            JOptionPane.showMessageDialog(null, msg);
+            logger.println(msg);
             logger.println(ex);
             ex.printStackTrace();
-            Application.quit(1);
+            Application.quit(ExitReason.NO_LOGO);
         }
 
     }

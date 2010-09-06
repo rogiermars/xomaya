@@ -48,10 +48,11 @@ import xomaya.util.JNA;
 public class Application extends JFrame {
 
     ImageIcon icon = new ImageIcon("./media/picon-small.png");
+    static Log logger = new Log(Application.class);
 
     public Application() {
         super(Globals.name + " " + Globals.version + " " + Globals.copyright);
-        frame = this;
+        //frame = this;
 
         showFrame();
     }
@@ -60,16 +61,12 @@ public class Application extends JFrame {
         try {
             Properties props = new Properties();
             props.load(new FileInputStream("./application.properties"));
-            String account = props.getProperty("account");
-            String username = props.getProperty("username");
             String licenseKey = props.getProperty("licenseKey");
             String expiryDate = props.getProperty("expiryDate");
             String licenseType = props.getProperty("licenseType");
 
             licenseKey = licenseKey.toUpperCase();
             licenseKey = licenseKey.trim();
-            Globals.account = account;
-            Globals.username = username;
             Globals.licenseKey = licenseKey;
             logger.println("License Key:" + licenseKey);
             Globals.expiryDate = expiryDate;
@@ -100,18 +97,31 @@ public class Application extends JFrame {
         }
     }
 
-    public static void quit(int v) {
-        System.exit(v);
+    public static void quit(ExitReason er) {
+
+        try {
+            URL url = new URL("http://www.xomaya.com/targets/" + er.toString());
+            logger.println("Quit reason:" + url);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+            String b = "";
+            String buffer = "";
+            while ((b = reader.readLine()) != null) {
+                buffer = buffer + b;
+            }
+            reader.close();
+
+        } catch (Exception ex) {
+            logger.println(ex);
+            ex.printStackTrace();
+        }
+        System.exit(-1);
     }
 
     public static void initialize() {
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-        //DirectSoundAudo audo = new DirectSoundAudo();
         long t = System.currentTimeMillis();
-        //Runtime.getRuntime().traceMethodCalls(true);
-
+        
         JNA.initialize();
-        //getIdleTimeMillisWin32();
         Calendar c = Calendar.getInstance();
         c.setTime(new Date(System.currentTimeMillis()));
         Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
@@ -135,7 +145,7 @@ public class Application extends JFrame {
     private void showFrame() {
         int w = Globals.appWidth;
         int h = Globals.appHeight;
-        Controller controller = new Controller(frame);
+        Controller controller = new Controller(this);
         controller.doCaptureInputFormat();
         StatusBar status = new StatusBar();
         xomaya.logging.Console console = new xomaya.logging.Console();
@@ -144,20 +154,20 @@ public class Application extends JFrame {
         Registry.register("Controller", controller);
         Registry.register("Console", console);
         Registry.register("StatusBar", status);
-        Registry.register("Application", frame);
+        Registry.register("Application", this);
         Registry.register("Xomaya", fa);
         ModeSelector ms = new ModeSelector();
-        frame.setIconImage(icon.getImage());
-        frame.add(fa, BorderLayout.WEST);
-        frame.add(ms, BorderLayout.CENTER);
-        frame.add(status, BorderLayout.SOUTH);
-        frame.setJMenuBar(createMenuBar());
-        frame.setSize(w, h);
-        frame.setResizable(false);
-        frame.setDefaultCloseOperation(3);
+        setIconImage(icon.getImage());
+        add(fa, BorderLayout.WEST);
+        add(ms, BorderLayout.CENTER);
+        add(status, BorderLayout.SOUTH);
+        setJMenuBar(createMenuBar());
+        setSize(w, h);
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(d.width / 2 - w / 2, d.height / 2 - h / 2);
-        frame.setVisible(true);
+        setLocation(d.width / 2 - w / 2, d.height / 2 - h / 2);
+        setVisible(true);
     }
 
     private JMenuBar createMenuBar() {
@@ -225,7 +235,13 @@ public class Application extends JFrame {
         about.addActionListener(controller);
         helpMenu.add(about);
 
-
+        JMenuItem licenseKey = new JMenuItem("License Key");
+        licenseKey.setMnemonic('L');
+        licenseKey.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, KeyEvent.SHIFT_DOWN_MASK, true));
+        licenseKey.setToolTipText("Register License Key");
+        licenseKey.setActionCommand(Command.LICENSE_KEY.toString());
+        licenseKey.addActionListener(controller);
+        helpMenu.add(licenseKey);
 
         JMenuItem help = new JMenuItem("Help");
         help.setMnemonic('H');
@@ -254,7 +270,6 @@ public class Application extends JFrame {
             SwingUtilities.invokeLater(new Runnable() {
 
                 public void run() {
-
                     Application app = new Application();
                 }
             });
@@ -267,6 +282,4 @@ public class Application extends JFrame {
             logger.println("-finally-");
         }
     }
-    static Log logger = new Log(Application.class);
-    JFrame frame;
 }

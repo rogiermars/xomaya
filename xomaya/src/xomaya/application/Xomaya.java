@@ -108,7 +108,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             if (original == null) {
                 logger.println("Could not create DS");
                 JOptionPane.showMessageDialog(this, "Xomaya requires a Webcam.\nPlease connect your Webcam and run Xomaya again.\nThis program recommends a capture mode of at least 640x480.\nIf you see this error again, please make sure\nyou have valid drivers for your webcam.\nProgram will now exit.", "No Webcam Detected!", JOptionPane.ERROR_MESSAGE);
-                Application.quit(0);
+                Application.quit(ExitReason.NO_WEBCAM);
             }
 
             // increase our status
@@ -309,7 +309,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             } catch (Exception ex) {
                 ex.printStackTrace();
                 JOptionPane.showMessageDialog(this, "DataSink could not be created", "Could not write to disk", JOptionPane.ERROR_MESSAGE);
-                Application.quit(-1);
+                Application.quit(ExitReason.NO_DATASINK);
             }
         } else if (evt instanceof PrefetchCompleteEvent) {
             synchronized (waitSync) {
@@ -339,11 +339,11 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
         if ((ml = new MediaLocator(url)) == null) {
             JOptionPane.showMessageDialog(this, "Could not build media locator from: " + url, "Could not open", JOptionPane.ERROR_MESSAGE);
             logger.println("Cannot build media locator from: " + url);
-            Application.quit(0);
+            Application.quit(ExitReason.NO_MEDIA_LOCATOR);
         }
         if (!open(ml)) {
             JOptionPane.showMessageDialog(this, "Could not open device(s) for capture", "Could not open", JOptionPane.ERROR_MESSAGE);
-            Application.quit(0);
+            Application.quit(ExitReason.NO_DEVICE);
         }
     }
 

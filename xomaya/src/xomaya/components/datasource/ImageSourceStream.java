@@ -28,10 +28,11 @@ import xomaya.components.events.EventType;
 import xomaya.components.events.Event;
 import java.awt.Dimension;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Vector;
+//import java.util.Vector;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import javax.media.Buffer;
@@ -57,7 +58,7 @@ public class ImageSourceStream implements PushBufferStream, Runnable {
     volatile BufferTransferHandler handler = null;
     volatile boolean started = false;
     Thread thread = null;
-    Vector<TransferListener> listeners = new Vector<TransferListener>();
+    ArrayList<TransferListener> listeners = new ArrayList<TransferListener>();
 
     public ImageSourceStream(int width, int height, int frameRate) {
         this.width = width;
