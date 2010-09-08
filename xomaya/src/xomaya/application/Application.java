@@ -67,11 +67,8 @@ public class Application extends JFrame {
 
             licenseKey = licenseKey.toUpperCase();
             licenseKey = licenseKey.trim();
-            Globals.licenseKey = licenseKey;
             logger.println("License Key:" + licenseKey);
-            Globals.expiryDate = expiryDate;
-            Globals.licenseType = licenseType;
-
+            
             URL url = new URL("http://www.xomaya.com/keys/license." + licenseKey);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";
