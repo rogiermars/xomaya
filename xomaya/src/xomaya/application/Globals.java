@@ -71,8 +71,7 @@ public class Globals
     public static boolean debug = true;
     public static boolean verbose = false;
     public static boolean recording = false;
-    public static long ts = 0;
-
+    
     public static SelectableVideoFormat selectedVideoFormat = null;
 
     final public static String encoding = "RGB";

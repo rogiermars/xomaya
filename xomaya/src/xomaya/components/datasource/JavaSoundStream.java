@@ -145,8 +145,6 @@ public class JavaSoundStream implements PushBufferStream, Runnable {
 
         if (flag == 0) {
             logger.println("JavaSoundStream.read called");
-            //logger.println(System.currentTimeMillis() - Globals.ttga);
-            Globals.ts = System.currentTimeMillis();
             flag++;
         }
         synchronized (this) {

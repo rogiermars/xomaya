@@ -360,9 +360,6 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             status = status.STOPPED;
             Registry.register("Status", status);
             
-            //throw new UnsupportedOperationException("Not supported yet.");
-            logger.println("Total Time:" + (System.currentTimeMillis() - Globals.ts));
-            //Globals.ts = System.currentTimeMillis();
             p.stop();
             p.close();
 
