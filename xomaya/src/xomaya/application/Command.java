@@ -47,4 +47,5 @@ public enum Command
     ABOUT,
     HELP,
     LICENSE_KEY,
+    BUY_LICENSE_KEY,
 }

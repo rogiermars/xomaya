@@ -106,6 +106,8 @@ public class Controller implements ActionListener {
             doHelp();
         } else if (cmd.equals(Command.LICENSE_KEY.toString())) {
             doLicenseKey();
+        } else if (cmd.equals(Command.BUY_LICENSE_KEY.toString())) {
+            doBuyLicenseKey();
         }
     }
 
@@ -252,6 +254,17 @@ public class Controller implements ActionListener {
         } finally {
             writer.flush();
             writer.close();
+        }
+    }
+
+    public void doBuyLicenseKey()
+    {
+        try {
+            Desktop.getDesktop().browse(new URI("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PZB3CGSLWCNBA"));
+        } catch (Exception ex) {
+            logger.println(ex);
+        } finally {
+
         }
     }
 

@@ -232,6 +232,14 @@ public class Application extends JFrame {
         about.addActionListener(controller);
         helpMenu.add(about);
 
+        JMenuItem buyLicenseKey = new JMenuItem("Buy License Key");
+        buyLicenseKey.setMnemonic('L');
+        buyLicenseKey.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, KeyEvent.SHIFT_DOWN_MASK, true));
+        buyLicenseKey.setToolTipText("Register License Key");
+        buyLicenseKey.setActionCommand(Command.BUY_LICENSE_KEY.toString());
+        buyLicenseKey.addActionListener(controller);
+        helpMenu.add(buyLicenseKey);
+
         JMenuItem licenseKey = new JMenuItem("License Key");
         licenseKey.setMnemonic('L');
         licenseKey.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, KeyEvent.SHIFT_DOWN_MASK, true));
