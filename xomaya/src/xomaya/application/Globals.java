@@ -36,7 +36,7 @@ import xomaya.components.SelectableVideoFormat;
 /**
  * This class is used for storing global variables in the application.
  * 
- * This documentation is part of the Xomaya Express software suite.
+ * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture software</A> suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */

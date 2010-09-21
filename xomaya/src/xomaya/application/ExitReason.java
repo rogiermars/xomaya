@@ -10,6 +10,11 @@ package xomaya.application;
  * the application exits.
  * Tracking exit reasons helps in determining user usage patterns, so they can
  * be made more efficient.
+ *
+ * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture software</A> suite.
+ * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
+ * or to download our screen capture / screen recording software.
+
  * @author Sean
  */
 public enum ExitReason {
