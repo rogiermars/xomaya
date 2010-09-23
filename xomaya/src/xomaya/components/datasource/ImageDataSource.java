@@ -34,8 +34,6 @@ import xomaya.application.Registry;
 import xomaya.components.StatusBar;
 import xomaya.logging.Log;
 
-// Inner classes.
-///////////////////////////////////////////////
 /**
  * A DataSource to read from a list of JPEG image files and
  * turn that into a stream of JMF buffers.
