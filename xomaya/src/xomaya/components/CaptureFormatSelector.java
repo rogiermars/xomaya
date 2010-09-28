@@ -114,12 +114,10 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
                 }
             }
         }
-
         if (combo.getItemCount() == 0) {
             // No options available - add a default option.
             combo.addItem(new SelectableVideoFormat("Screen Capture"));
         }
-
     }
 
     public SelectableVideoFormat getSelectedVideoFormat() {
@@ -130,7 +128,7 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
         CaptureFormatSelector sel = new CaptureFormatSelector();
         SelectableVideoFormat svf = sel.getSelectedVideoFormat();
         System.out.println("The selected format was:" + svf);
-        System.exit(-1);
+        Application.quit(ExitReason.DO_EXIT);
     }
 
     public void actionPerformed(ActionEvent e) {
