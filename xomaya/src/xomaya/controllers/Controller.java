@@ -25,17 +25,13 @@ package xomaya.controllers;
 import java.awt.Desktop;
 import java.awt.Dimension;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import xomaya.application.Globals;
-import xomaya.application.State;
 import xomaya.application.Command;
 import xomaya.logging.Log;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URI;
@@ -84,7 +80,7 @@ public class Controller implements ActionListener {
             doStopRecording();
         } else if (cmd.equals(Command.SMOOTH_SWITCH.toString())) {
             doSmoothSwitch();
-        } else if (cmd.equals(Command.VIDEO_ONLY.toString())) {
+        } else if (cmd.equals(Command.WEBCAM_ONLY.toString())) {
             doVideoOnly();
         } else if (cmd.equals(Command.SCREEN_ONLY.toString())) {
             doScreenOnly();
@@ -301,12 +297,9 @@ public class Controller implements ActionListener {
         status = Status.INITIALIZING;
         sb.setStatus(status);
         sb.update();
-
         SwingUtilities.invokeLater(new Runnable() {
-
             public void run() {
                 try {
-
                     Globals.snap = System.currentTimeMillis();
                     Xomaya jmf = (Xomaya) Registry.get("Xomaya");
                     jmf.start();
@@ -335,7 +328,6 @@ public class Controller implements ActionListener {
                 try {
                     Xomaya jmf = (Xomaya) Registry.get("Xomaya");
                     jmf.stop();
-
                     java.util.Timer timer = (java.util.Timer) Registry.get("Timer");
                     TimerTask task = (TimerTask) Registry.get("STimerTask");
                     JButton start = (JButton) Registry.get("StartRecording");
@@ -345,11 +337,9 @@ public class Controller implements ActionListener {
                     Controller.logger.println("Total time:" + (System.currentTimeMillis() - Globals.snap));
                     Globals.tt = System.currentTimeMillis() - Globals.snap;
                     stop.setEnabled(false);
-                    System.out.println("stop");
-
+                    logger.println("stop");
                     JOptionPane.showMessageDialog(null, "Your presentation is finished compiling.");
                     JOptionPane.showMessageDialog(null, "Saved Successfully.\nThe location is:./out/" + Globals.videoName + "." + Globals.videoExt + "\n Application will now exit.");
-
                     // Trigger the action
                     doOpenOutputDirectory();
                     // Register that we completed the application.

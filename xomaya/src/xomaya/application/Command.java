@@ -35,7 +35,7 @@ package xomaya.application;
 public enum Command
 {
     SMOOTH_SWITCH,
-    VIDEO_ONLY,
+    WEBCAM_ONLY,
     SCREEN_ONLY,
     START_RECORDING,
     OPEN_OUTPUT_DIRECTORY,

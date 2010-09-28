@@ -46,12 +46,12 @@ public class ModeSelector extends JPanel {
     public ModeSelector()
     {
         super();
-        JRadioButton radioVideoOnly = new JRadioButton("Video Capture");
+        JRadioButton radioVideoOnly = new JRadioButton("Webcam Capture");
         JRadioButton radioScreenOnly = new JRadioButton("Screen Capture");
         JRadioButton radioSmoothSwitch = new JRadioButton("Smooth Switch");
         JCheckBox checkboxCompression = new JCheckBox("Compress to MOV");
 
-        radioVideoOnly.setActionCommand(Command.VIDEO_ONLY.toString());
+        radioVideoOnly.setActionCommand(Command.WEBCAM_ONLY.toString());
         radioScreenOnly.setActionCommand(Command.SCREEN_ONLY.toString());
         radioSmoothSwitch.setActionCommand(Command.SMOOTH_SWITCH.toString());
         checkboxCompression.setActionCommand(Command.TOGGLE_COMPRESSION.toString());
