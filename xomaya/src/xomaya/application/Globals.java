@@ -50,7 +50,7 @@ public class Globals
     public static boolean logo = true;
     final public static String copyright = "copyright (c) 2010. All Rights Reserved.";
     final public static String name = "xomaya";
-    final public static double version = 1.22D;
+    final public static double version = 1.23D;
     final public static float fps = 8f;
     //final public static Hashtable registry = new Hashtable();
     

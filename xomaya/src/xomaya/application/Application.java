@@ -51,7 +51,7 @@ public class Application extends JFrame {
     static Log logger = new Log(Application.class);
 
     public Application() {
-        super(Globals.name + " " + Globals.version + " " + Globals.copyright);
+        super(Globals.name + " " + Globals.version);
         //frame = this;
 
         showFrame();
