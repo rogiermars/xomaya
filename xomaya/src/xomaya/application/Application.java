@@ -68,7 +68,7 @@ public class Application extends JFrame {
             licenseKey = licenseKey.toUpperCase();
             licenseKey = licenseKey.trim();
             logger.println("License Key:" + licenseKey);
-            
+
             URL url = new URL("http://www.xomaya.com/keys/license." + licenseKey);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";
@@ -88,7 +88,7 @@ public class Application extends JFrame {
                     logger.println(message);
                 }
             }
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             String message = "Invalid License Key: ERROR CODE 5";
             logger.println(message);
         }
