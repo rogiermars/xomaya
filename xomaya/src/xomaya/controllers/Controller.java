@@ -215,7 +215,7 @@ public class Controller implements ActionListener {
                 logger.println(ex);
             }
         } else {
-            JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.html");
+            JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/xomaya-web/FAQ.jsp");
         }
     }
 
