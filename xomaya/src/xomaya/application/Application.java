@@ -69,7 +69,7 @@ public class Application extends JFrame {
             licenseKey = licenseKey.trim();
             logger.println("License Key:" + licenseKey);
 
-            URL url = new URL("http://www.xomaya.com/keys/license." + licenseKey);
+            URL url = new URL("http://www.xomaya.com/xomaya-web/keys/license." + licenseKey);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";
             String buffer = "";
@@ -97,7 +97,7 @@ public class Application extends JFrame {
     public static void quit(ExitReason er) {
 
         try {
-            URL url = new URL("http://www.xomaya.com/targets/" + er.toString());
+            URL url = new URL("http://www.xomaya.com/xomaya-web/targets/" + er.toString());
             logger.println("Quit reason:" + url);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";

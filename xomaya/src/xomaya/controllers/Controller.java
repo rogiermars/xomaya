@@ -114,7 +114,7 @@ public class Controller implements ActionListener {
             File file = new File(f);
             if (file.length() > 5000) {
                 logger.println("Checked file:" + f + " status success:" + file.length());
-                URL url = new URL("http://www.xomaya.com/targets/Success");
+                URL url = new URL("http://www.xomaya.com/xomaya-web/targets/Success");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
                 String b = "";
                 String buffer = "";
@@ -124,7 +124,7 @@ public class Controller implements ActionListener {
                 reader.close();
             } else {
                 logger.println("Checked file:" + f + " status failure" + file.length());
-                URL url = new URL("http://www.xomaya.com/targets/Failure");
+                URL url = new URL("http://www.xomaya.com/xomaya-web/targets/Failure");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
                 String b = "";
                 String buffer = "";
@@ -209,9 +209,9 @@ public class Controller implements ActionListener {
     public void doHelp() {
         if (Desktop.isDesktopSupported()) {
             try {
-                Desktop.getDesktop().browse(new URI("http://www.xomaya.com/FAQ.html"));
+                Desktop.getDesktop().browse(new URI("http://www.xomaya.com/xomaya-web/FAQ.jsp"));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.html");
+                JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/xomaya-web/FAQ.jsp");
                 logger.println(ex);
             }
         } else {
