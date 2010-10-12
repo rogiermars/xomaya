@@ -256,7 +256,7 @@ public class Controller implements ActionListener {
     public void doBuyLicenseKey()
     {
         try {
-            Desktop.getDesktop().browse(new URI("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PZB3CGSLWCNBA"));
+            Desktop.getDesktop().browse(new URI("https://www.regnow.com/softsell/nph-softsell.cgi?item=30082-1"));
         } catch (Exception ex) {
             logger.println(ex);
         } finally {
