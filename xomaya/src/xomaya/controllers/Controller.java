@@ -209,13 +209,13 @@ public class Controller implements ActionListener {
     public void doHelp() {
         if (Desktop.isDesktopSupported()) {
             try {
-                Desktop.getDesktop().browse(new URI("http://www.xomaya.com/xomaya-web/FAQ.jsp"));
+                Desktop.getDesktop().browse(new URI("http://www.xomaya.com/FAQ.jsp"));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/xomaya-web/FAQ.jsp");
+                JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.jsp");
                 logger.println(ex);
             }
         } else {
-            JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/xomaya-web/FAQ.jsp");
+            JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.jsp");
         }
     }
 
