@@ -98,6 +98,9 @@ public class Application extends JFrame {
             String expiryDate = props.getProperty("expiryDate");
             String licenseType = props.getProperty("licenseType");
 
+            Properties userProps = new Properties();
+            userProps.load(new FileInputStream("./user.properties"));
+            Globals.userid = userProps.getProperty("userid");
             licenseKey = licenseKey.toUpperCase();
             licenseKey = licenseKey.trim();
             logger.println("License Key:" + licenseKey);
@@ -130,7 +133,7 @@ public class Application extends JFrame {
     public static void quit(ExitReason er) {
 
         try {
-            URL url = new URL("http://www.xomaya.com/targets/" + er.toString());
+            URL url = new URL("http://www.xomaya.com/targets.php?er=" + er.toString() + "&userid=" + Globals.userid);
             logger.println("Quit reason:" + url);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";
