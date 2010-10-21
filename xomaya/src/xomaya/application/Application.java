@@ -65,11 +65,11 @@ public class Application extends JFrame {
             do {
                 String email = JOptionPane.showInputDialog(null, "Please enter your email address.");
                 if (email != null && !email.equals("") && email.indexOf("@") != -1 && email.indexOf(".") != -1) {
-                    JOptionPane.showMessageDialog(null, "Thank you for registering.\nAn email has been sent to confirm your address.\n");
+                    JOptionPane.showMessageDialog(null, "Thank you for registering.\n");
                     email = email.toLowerCase();
                     Globals.userid = email;
                     try {
-                        URL url = new URL("http://www.xomaya.com/register.jsp?spamtest=4&email=" + email);
+                        URL url = new URL("http://www.xomaya.com/register.php?spamtest=4&email=" + email);
                         BufferedReader r = new BufferedReader(new InputStreamReader(url.openStream()));
                         while( r.readLine() != null ){}
                         FileWriter writer = new FileWriter(file);
