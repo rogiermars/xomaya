@@ -29,6 +29,8 @@ import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 import xomaya.controllers.Controller;
 import xomaya.components.ModeSelector;
@@ -52,13 +54,44 @@ public class Application extends JFrame {
 
     public Application() {
         super(Globals.name + " " + Globals.version);
-        //frame = this;
-
         showFrame();
+    }
+
+    private static void registerUserID() {
+        String file = "./user.properties";
+        File u = new File(file);
+        if (!u.exists()) {
+            boolean done = false;
+            do {
+                String email = JOptionPane.showInputDialog(null, "Please enter your email address.");
+                if (email != null && !email.equals("") && email.indexOf("@") != -1 && email.indexOf(".") != -1) {
+                    JOptionPane.showMessageDialog(null, "Thank you for registering.\nAn email has been sent to confirm your address.\n");
+                    email = email.toLowerCase();
+                    Globals.userid = email;
+                    try {
+                        URL url = new URL("http://www.xomaya.com/register.jsp?spamtest=4&email=" + email);
+                        BufferedReader r = new BufferedReader(new InputStreamReader(url.openStream()));
+                        while( r.readLine() != null ){}
+                        FileWriter writer = new FileWriter(file);
+                        writer.write("userid=" + email);
+                        writer.flush();
+                        writer.close();
+                    } catch (IOException ex) {
+                        logger.println(ex);
+                    }
+                    done = true;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Format");
+                }
+            } while ( !done );
+        }
+
     }
 
     private static void register() {
         try {
+            registerUserID();
+
             Properties props = new Properties();
             props.load(new FileInputStream("./application.properties"));
             String licenseKey = props.getProperty("licenseKey");
@@ -117,7 +150,7 @@ public class Application extends JFrame {
     public static void initialize() {
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
         long t = System.currentTimeMillis();
-        
+
         JNA.initialize();
         Calendar c = Calendar.getInstance();
         c.setTime(new Date(System.currentTimeMillis()));
@@ -261,17 +294,13 @@ public class Application extends JFrame {
 
     public static void main(String args[]) {
         try {
-            String key = "EXPRESS";
-            if (args.length > 0) {
-                key = args[0];
-            }
 
             logger.println("System starting...");
             logger.println(Globals.name + " " + Globals.version + " " + Globals.copyright);
             logger.println("--------------------------");
             Application.register();
             Application.initialize();
-            logger.println("Application validated:" + key);
+            logger.println("Application initialized");
             SwingUtilities.invokeLater(new Runnable() {
 
                 public void run() {

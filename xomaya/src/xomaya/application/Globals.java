@@ -51,6 +51,7 @@ public class Globals
     final public static String copyright = "copyright (c) 2010. All Rights Reserved.";
     final public static String name = "xomaya";
     final public static double version = 1.23D;
+    public static String userid = "";
     final public static float fps = 8f;
     //final public static Hashtable registry = new Hashtable();
     
