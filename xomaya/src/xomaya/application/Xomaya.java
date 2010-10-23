@@ -299,8 +299,12 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             Application.quit(ExitReason.NO_MEDIA_LOCATOR);
         }
         if (!open(ml)) {
-            JOptionPane.showMessageDialog(this, "Could not open device(s) for capture", "Could not open", JOptionPane.ERROR_MESSAGE);
-            Application.quit(ExitReason.NO_DEVICE);
+            ////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////
+            //JOptionPane.showMessageDialog(this, "Could not open device(s) for capture", "Could not open", JOptionPane.ERROR_MESSAGE);
+            //Application.quit(ExitReason.NO_DEVICE);
         }
     }
 

@@ -48,7 +48,7 @@ public class ImageDataSource extends PushBufferDataSource {
     public ImageDataSource(int width, int height, int frameRate) {
         streams = new ImageSourceStream[1];
         streams[0] = new ImageSourceStream(width, height, frameRate);
-        StatusBar status = (StatusBar)Registry.get("Status");
+        StatusBar status = (StatusBar)Registry.get("StatusBar");
         if( status != null ){
             streams[0].addTransferListener(status);
         }

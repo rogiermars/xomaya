@@ -69,7 +69,7 @@ public class Application extends JFrame {
                     email = email.toLowerCase();
                     Globals.userid = email;
                     try {
-                        URL url = new URL("http://www.xomaya.com/register.php?spamtest=4&email=" + email);
+                        URL url = new URL("http://" + Globals.domain + "/register.php?spamtest=4&email=" + email);
                         BufferedReader r = new BufferedReader(new InputStreamReader(url.openStream()));
                         while( r.readLine() != null ){}
                         FileWriter writer = new FileWriter(file);
@@ -105,7 +105,7 @@ public class Application extends JFrame {
             licenseKey = licenseKey.trim();
             logger.println("License Key:" + licenseKey);
 
-            URL url = new URL("http://www.xomaya.com/keys/license." + licenseKey);
+            URL url = new URL("http://" + Globals.domain + "/keys/license." + licenseKey);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";
             String buffer = "";
@@ -133,7 +133,7 @@ public class Application extends JFrame {
     public static void quit(ExitReason er) {
 
         try {
-            URL url = new URL("http://www.xomaya.com/targets.php?er=" + er.toString() + "&userid=" + Globals.userid);
+            URL url = new URL("http://" + Globals.domain + "/targets.php?er=" + er.toString() + "&userid=" + Globals.userid);
             logger.println("Quit reason:" + url);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             String b = "";

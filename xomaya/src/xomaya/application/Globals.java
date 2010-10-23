@@ -48,6 +48,7 @@ public class Globals
     }
 
     public static boolean logo = true;
+    final public static String domain = "www.xomaya.com";
     final public static String copyright = "copyright (c) 2010. All Rights Reserved.";
     final public static String name = "xomaya";
     final public static double version = 1.23D;

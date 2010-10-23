@@ -109,7 +109,7 @@ public class Utility {
         //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + null);
-            JOptionPane.showMessageDialog(null, "Could not detect a compatible device");
+            JOptionPane.showMessageDialog(null, "Could not detect a compatible device for your webcam.\nXomaya will try to use screen capture only.\nTo use webcam please reinstall your drivers and Java Media Framework (JMF).");
             return null;
         }
         return devices;
@@ -210,7 +210,7 @@ public class Utility {
         }
         if (devices.size() < 1) {
             logger.println("! No Devices for " + format);
-            JOptionPane.showMessageDialog(null, "Could not find a compatible device.");
+            //JOptionPane.showMessageDialog(null, "Could not find a compatible device.");
             return null;
         }
         // Pick the first device

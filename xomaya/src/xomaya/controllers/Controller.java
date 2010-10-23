@@ -114,7 +114,7 @@ public class Controller implements ActionListener {
             File file = new File(f);
             if (file.length() > 5000) {
                 logger.println("Checked file:" + f + " status success:" + file.length());
-                URL url = new URL("http://www.xomaya.com/xomaya-web/targets/Success");
+                URL url = new URL("http://" + Globals.domain + "/targets.php?er=Success&userid=" + Globals.userid);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
                 String b = "";
                 String buffer = "";
@@ -124,7 +124,7 @@ public class Controller implements ActionListener {
                 reader.close();
             } else {
                 logger.println("Checked file:" + f + " status failure" + file.length());
-                URL url = new URL("http://www.xomaya.com/xomaya-web/targets/Failure");
+                URL url = new URL("http://" + Globals.domain + "/targets.php?er=Failure&userid=" + Globals.userid);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
                 String b = "";
                 String buffer = "";
@@ -203,19 +203,19 @@ public class Controller implements ActionListener {
     }
 
     public void doAbout() {
-        JOptionPane.showMessageDialog(frame, "This application is Xomaya [version " + Globals.version + "]\nPlease visit http://www.xomaya.com for more details\n" + Globals.copyright);
+        JOptionPane.showMessageDialog(frame, "This application is Xomaya [version " + Globals.version + "]\nPlease visit http://" + Globals.domain + " for more details\n" + Globals.copyright);
     }
 
     public void doHelp() {
         if (Desktop.isDesktopSupported()) {
             try {
-                Desktop.getDesktop().browse(new URI("http://www.xomaya.com/FAQ.jsp"));
+                Desktop.getDesktop().browse(new URI("http://" + Globals.domain + "/FAQ.jsp"));
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.jsp");
+                JOptionPane.showMessageDialog(frame, "Please visit http://" + Globals.domain + "/FAQ.jsp");
                 logger.println(ex);
             }
         } else {
-            JOptionPane.showMessageDialog(frame, "Please visit http://www.xomaya.com/FAQ.jsp");
+            JOptionPane.showMessageDialog(frame, "Please visit http://" + Globals.domain + "/FAQ.jsp");
         }
     }
 
