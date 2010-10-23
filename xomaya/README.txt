@@ -32,10 +32,10 @@ much easier to create and reduces the amount of editing and "post" a
 presentation must endure. This saves time and headaches and money.
 
 Version: 
-xomaya 1.22
+xomaya 1.23
 
 Limitations:
-The current system (version 1.22) does not support linux or MacOS. Future
+The current system (version 1.23) does not support linux or MacOS. Future
 editions may include full support if enough interest warrants the effort.
 
 Requirements:
