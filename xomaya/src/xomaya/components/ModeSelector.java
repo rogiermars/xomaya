@@ -78,7 +78,7 @@ public class ModeSelector extends JPanel {
         //setBackground(Color.pink);
 
         // Setup with default setup, therefor disable the other modes.
-        if( Globals.defaultSetup ){
+        if( Globals.noDevice ){
             radioWebcamOnly.setEnabled(false);
             radioSmoothSwitch.setEnabled(false);
         }

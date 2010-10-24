@@ -54,7 +54,7 @@ public class Globals
     final public static double version = 1.23D;
     public static String userid = "";
     final public static float fps = 8f;
-    public static boolean defaultSetup = false;
+    public static boolean noDevice = false;
     //final public static Hashtable registry = new Hashtable();
     
     public static long ttga = 0;

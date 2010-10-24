@@ -119,7 +119,7 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
             // No options available - add a default option.
             combo.addItem(new SelectableVideoFormat("Screen Capture"));
             //remove option to use webcam or smooth switch.
-            Globals.defaultSetup = true;
+            Globals.noDevice = true;
         }
     }
 
