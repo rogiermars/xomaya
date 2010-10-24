@@ -180,7 +180,7 @@ public class Application extends JFrame {
         StatusBar status = new StatusBar();
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
-        ModeSelector ms = new ModeSelector();
+        ModeSelector ms = new ModeSelector(controller);
 
         Registry.register("Controller", controller);
         Registry.register("Console", console);

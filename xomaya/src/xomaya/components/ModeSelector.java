@@ -31,6 +31,7 @@ import xomaya.application.Command;
 import xomaya.application.Globals;
 import xomaya.application.Registry;
 import xomaya.controllers.Controller;
+import xomaya.logging.Log;
 
 /**
  * This JPanel is the View component which enables the user to make
@@ -46,41 +47,49 @@ public class ModeSelector extends JPanel {
     private JRadioButton radioScreenOnly = new JRadioButton("Screen Capture");
     private JRadioButton radioSmoothSwitch = new JRadioButton("Smooth Switch");
     private JCheckBox checkboxCompression = new JCheckBox("Compress to MOV");
-    public ModeSelector() {
+
+    public ModeSelector(Controller controller) {
         super();
 
-        radioWebcamOnly.setActionCommand(Command.WEBCAM_ONLY.toString());
-        radioScreenOnly.setActionCommand(Command.SCREEN_ONLY.toString());
-        radioSmoothSwitch.setActionCommand(Command.SMOOTH_SWITCH.toString());
-        checkboxCompression.setActionCommand(Command.TOGGLE_COMPRESSION.toString());
 
-        radioScreenOnly.setSelected(true);
-        Registry.get("Controller");
-        Registry.register("Compression", checkboxCompression);
-        Controller controller = (Controller) Registry.get("Controller");
+        try {
 
-        radioSmoothSwitch.addActionListener(controller);
-        radioWebcamOnly.addActionListener(controller);
-        radioScreenOnly.addActionListener(controller);
-        checkboxCompression.addActionListener(controller);
+            System.out.println("ModeSelector");
+            radioWebcamOnly.setActionCommand(Command.WEBCAM_ONLY.toString());
+            radioScreenOnly.setActionCommand(Command.SCREEN_ONLY.toString());
+            radioSmoothSwitch.setActionCommand(Command.SMOOTH_SWITCH.toString());
+            checkboxCompression.setActionCommand(Command.TOGGLE_COMPRESSION.toString());
 
-        ButtonGroup gp = new ButtonGroup();
-        gp.add(radioWebcamOnly);
-        gp.add(radioScreenOnly);
-        gp.add(radioSmoothSwitch);
+            radioScreenOnly.setSelected(true);
+            Registry.get("Controller");
+            Registry.register("Compression", checkboxCompression);
 
-        setLayout(new GridLayout(0, 1));
+            radioSmoothSwitch.addActionListener(controller);
+            radioWebcamOnly.addActionListener(controller);
+            radioScreenOnly.addActionListener(controller);
+            checkboxCompression.addActionListener(controller);
 
-        add(radioWebcamOnly);
-        add(radioScreenOnly);
-        add(radioSmoothSwitch);
-        add(checkboxCompression);
-        //setBackground(Color.pink);
+            ButtonGroup gp = new ButtonGroup();
+            gp.add(radioWebcamOnly);
+            gp.add(radioScreenOnly);
+            gp.add(radioSmoothSwitch);
 
-        // Setup with default setup, therefor disable the other modes.
-        if( Globals.noDevice ){
-            radioWebcamOnly.setEnabled(false);
-            radioSmoothSwitch.setEnabled(false);
+            setLayout(new GridLayout(0, 1));
+
+            add(radioWebcamOnly);
+            add(radioScreenOnly);
+            add(radioSmoothSwitch);
+            add(checkboxCompression);
+            //setBackground(Color.pink);
+
+            // Setup with default setup, therefor disable the other modes.
+            if (Globals.noDevice) {
+                radioWebcamOnly.setEnabled(false);
+                radioSmoothSwitch.setEnabled(false);
+            }
+
+        } catch (Exception ex) {
+            logger.println(ex);
         }
 
     }
@@ -140,4 +149,5 @@ public class ModeSelector extends JPanel {
     public void setCheckboxCompression(JCheckBox checkboxCompression) {
         this.checkboxCompression = checkboxCompression;
     }
+    static Log logger = new Log(Controller.class);
 }
