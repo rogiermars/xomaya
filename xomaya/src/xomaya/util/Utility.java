@@ -80,14 +80,13 @@ public class Utility {
         return null;
     }
 
-    public static boolean isValidKey(String key)
-    {
+    public static boolean isValidKey(String key) {
         UUID uuid = UUID.randomUUID();
-        if( key == null ){
+        if (key == null) {
             return false;
-        } else if( key.equals("EXPRESS")){
+        } else if (key.equals("EXPRESS")) {
             return true;
-        } else if( key.length() == uuid.toString().length() ){
+        } else if (key.length() == uuid.toString().length()) {
             return true;
         }
         return false;
@@ -160,6 +159,7 @@ public class Utility {
                 }
             }
         }
+
         try {
             dsAudio = new JavaSoundDataSource();
             dsAudio.connect();
@@ -267,7 +267,7 @@ public class Utility {
             try {
                 in.close();
                 out.close();
-            } catch(Exception ex){
+            } catch (Exception ex) {
                 logger.println(ex);
             }
         }
