@@ -225,7 +225,7 @@ public class Controller implements ActionListener {
         if( key == null ){
             return;
         }
-        key = key.toUpperCase();
+        key = key.toLowerCase();
         key = key.trim();
         if( !Utility.isValidKey(key)){
             JOptionPane.showMessageDialog(frame, "The key [" + key + "] is invalid.");

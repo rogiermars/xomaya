@@ -27,7 +27,7 @@ package xomaya.application;
  * This enum is used to create State variables for the Mode of the application.
  * The mode can be run in video only, screen only, and smooth switch.
  *
- * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture software</A> suite.
+ * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">desktop capture</A> suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */

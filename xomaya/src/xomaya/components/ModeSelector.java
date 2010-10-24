@@ -20,7 +20,6 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-
 package xomaya.components;
 
 import java.awt.GridLayout;
@@ -43,42 +42,102 @@ import xomaya.controllers.Controller;
  */
 public class ModeSelector extends JPanel {
 
-    public ModeSelector()
-    {
+    private JRadioButton radioWebcamOnly = new JRadioButton("Webcam Capture");
+    private JRadioButton radioScreenOnly = new JRadioButton("Screen Capture");
+    private JRadioButton radioSmoothSwitch = new JRadioButton("Smooth Switch");
+    private JCheckBox checkboxCompression = new JCheckBox("Compress to MOV");
+    public ModeSelector() {
         super();
-        JRadioButton radioVideoOnly = new JRadioButton("Webcam Capture");
-        JRadioButton radioScreenOnly = new JRadioButton("Screen Capture");
-        JRadioButton radioSmoothSwitch = new JRadioButton("Smooth Switch");
-        JCheckBox checkboxCompression = new JCheckBox("Compress to MOV");
 
-        radioVideoOnly.setActionCommand(Command.WEBCAM_ONLY.toString());
+        radioWebcamOnly.setActionCommand(Command.WEBCAM_ONLY.toString());
         radioScreenOnly.setActionCommand(Command.SCREEN_ONLY.toString());
         radioSmoothSwitch.setActionCommand(Command.SMOOTH_SWITCH.toString());
         checkboxCompression.setActionCommand(Command.TOGGLE_COMPRESSION.toString());
-        
+
         radioScreenOnly.setSelected(true);
         Registry.get("Controller");
         Registry.register("Compression", checkboxCompression);
-        Controller controller = (Controller)Registry.get("Controller");
+        Controller controller = (Controller) Registry.get("Controller");
 
         radioSmoothSwitch.addActionListener(controller);
-        radioVideoOnly.addActionListener(controller);
+        radioWebcamOnly.addActionListener(controller);
         radioScreenOnly.addActionListener(controller);
         checkboxCompression.addActionListener(controller);
 
         ButtonGroup gp = new ButtonGroup();
-        gp.add(radioVideoOnly);
+        gp.add(radioWebcamOnly);
         gp.add(radioScreenOnly);
         gp.add(radioSmoothSwitch);
-        
-        setLayout(new GridLayout(0,1));
-        
-        add(radioVideoOnly);
+
+        setLayout(new GridLayout(0, 1));
+
+        add(radioWebcamOnly);
         add(radioScreenOnly);
         add(radioSmoothSwitch);
         add(checkboxCompression);
         //setBackground(Color.pink);
 
+        // Setup with default setup, therefor disable the other modes.
+        if( Globals.defaultSetup ){
+            radioWebcamOnly.setEnabled(false);
+            radioSmoothSwitch.setEnabled(false);
+        }
 
+    }
+
+    /**
+     * @return the radioWebcamOnly
+     */
+    public JRadioButton getRadioWebcamOnly() {
+        return radioWebcamOnly;
+    }
+
+    /**
+     * @param radioWebcamOnly the radioWebcamOnly to set
+     */
+    public void setRadioWebcamOnly(JRadioButton radioWebcamOnly) {
+        this.radioWebcamOnly = radioWebcamOnly;
+    }
+
+    /**
+     * @return the radioScreenOnly
+     */
+    public JRadioButton getRadioScreenOnly() {
+        return radioScreenOnly;
+    }
+
+    /**
+     * @param radioScreenOnly the radioScreenOnly to set
+     */
+    public void setRadioScreenOnly(JRadioButton radioScreenOnly) {
+        this.radioScreenOnly = radioScreenOnly;
+    }
+
+    /**
+     * @return the radioSmoothSwitch
+     */
+    public JRadioButton getRadioSmoothSwitch() {
+        return radioSmoothSwitch;
+    }
+
+    /**
+     * @param radioSmoothSwitch the radioSmoothSwitch to set
+     */
+    public void setRadioSmoothSwitch(JRadioButton radioSmoothSwitch) {
+        this.radioSmoothSwitch = radioSmoothSwitch;
+    }
+
+    /**
+     * @return the checkboxCompression
+     */
+    public JCheckBox getCheckboxCompression() {
+        return checkboxCompression;
+    }
+
+    /**
+     * @param checkboxCompression the checkboxCompression to set
+     */
+    public void setCheckboxCompression(JCheckBox checkboxCompression) {
+        this.checkboxCompression = checkboxCompression;
     }
 }

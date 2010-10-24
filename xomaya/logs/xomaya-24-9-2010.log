@@ -1,0 +1,156 @@
+2010-10-24:09:09:22:xomaya.application.Application:System starting...
+2010-10-24:09:09:22:xomaya.application.Application:xomaya 1.23 copyright (c) 2010. All Rights Reserved.
+2010-10-24:09:09:22:xomaya.application.Application:--------------------------
+2010-10-24:09:09:35:xomaya.application.Application:License Key:EXPRESS
+2010-10-24:09:09:35:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-10-24:09:09:36:xomaya.util.JNA:Idle time:3401
+2010-10-24:09:09:36:xomaya.application.Application:Loaded DLL:194
+2010-10-24:09:09:36:xomaya.application.Application:Could not create directory ./out
+2010-10-24:09:09:36:xomaya.application.Application:Could not create directory ./logs
+2010-10-24:09:09:36:xomaya.application.Application:Application initialized
+2010-10-24:09:09:36:xomaya.application.Application:-finally-
+2010-10-24:09:09:36:xomaya.util.Utility:Found:2
+2010-10-24:09:09:36:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-10-24:09:09:36:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-10-24:09:24:03:xomaya.application.Application:System starting...
+2010-10-24:09:24:03:xomaya.application.Application:xomaya 1.23 copyright (c) 2010. All Rights Reserved.
+2010-10-24:09:24:03:xomaya.application.Application:--------------------------
+2010-10-24:09:24:03:xomaya.application.Application:License Key:EXPRESS
+2010-10-24:09:24:03:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-10-24:09:24:03:xomaya.util.JNA:Idle time:2949
+2010-10-24:09:24:03:xomaya.application.Application:Loaded DLL:464
+2010-10-24:09:24:03:xomaya.application.Application:Could not create directory ./out
+2010-10-24:09:24:03:xomaya.application.Application:Could not create directory ./logs
+2010-10-24:09:24:03:xomaya.application.Application:Application initialized
+2010-10-24:09:24:03:xomaya.application.Application:-finally-
+2010-10-24:09:24:04:xomaya.util.Utility:Found:2
+2010-10-24:09:24:04:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-10-24:09:24:04:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+
+2010-10-24:09:30:13:xomaya.application.Application:System starting...
+2010-10-24:09:30:13:xomaya.application.Application:xomaya 1.23 copyright (c) 2010. All Rights Reserved.
+2010-10-24:09:30:13:xomaya.application.Application:--------------------------
+2010-10-24:09:30:13:xomaya.application.Application:License Key:EXPRESS
+2010-10-24:09:30:13:xomaya.application.Application:Invalid License Key: ERROR CODE 5
+2010-10-24:09:30:14:xomaya.util.JNA:Idle time:2106
+2010-10-24:09:30:14:xomaya.application.Application:Loaded DLL:199
+2010-10-24:09:30:14:xomaya.application.Application:Could not create directory ./out
+2010-10-24:09:30:14:xomaya.application.Application:Could not create directory ./logs
+2010-10-24:09:30:14:xomaya.application.Application:Application initialized
+2010-10-24:09:30:14:xomaya.application.Application:-finally-
+2010-10-24:09:30:14:xomaya.util.Utility:Found:2
+2010-10-24:09:30:14:xomaya.util.Utility:DirectSoundCapture : dsound://
+LINEAR, 48000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 48000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 48000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 44100.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 32000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 32000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 32000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 22050.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 16000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 16000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 16000.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 11025.0 Hz, 8-bit, Mono, Unsigned
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 8-bit, Stereo, Unsigned
+LINEAR, 8000.0 Hz, 8-bit, Mono, Unsigned
+
+2010-10-24:09:30:14:xomaya.util.Utility:JavaSound audio capture : javasound://44100
+LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 22050.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 11025.0 Hz, 16-bit, Mono, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+

@@ -29,8 +29,6 @@ import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.*;
 import xomaya.controllers.Controller;
 import xomaya.components.ModeSelector;
@@ -43,7 +41,7 @@ import xomaya.util.JNA;
  * This class is responsible for setting up the application main frame,
  * displaying buttons and initial loading procedures.
  *
- * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture software</A> suite.
+ * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen recorder</A> suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
@@ -54,7 +52,6 @@ public class Application extends JFrame {
 
     public Application() {
         super(Globals.name + " " + Globals.version);
-        showFrame();
     }
 
     private static void registerUserID() {
@@ -183,13 +180,14 @@ public class Application extends JFrame {
         StatusBar status = new StatusBar();
         xomaya.logging.Console console = new xomaya.logging.Console();
         Xomaya fa = new Xomaya(controller);
+        ModeSelector ms = new ModeSelector();
 
         Registry.register("Controller", controller);
         Registry.register("Console", console);
         Registry.register("StatusBar", status);
         Registry.register("Application", this);
         Registry.register("Xomaya", fa);
-        ModeSelector ms = new ModeSelector();
+        Registry.register("ModeSelector", ms);
         setIconImage(icon.getImage());
         add(fa, BorderLayout.WEST);
         add(ms, BorderLayout.CENTER);
@@ -276,7 +274,7 @@ public class Application extends JFrame {
         buyLicenseKey.addActionListener(controller);
         helpMenu.add(buyLicenseKey);
 
-        JMenuItem licenseKey = new JMenuItem("License Key");
+        JMenuItem licenseKey = new JMenuItem("Enter License Key");
         licenseKey.setMnemonic('L');
         licenseKey.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, KeyEvent.SHIFT_DOWN_MASK, true));
         licenseKey.setToolTipText("Register License Key");
@@ -308,6 +306,7 @@ public class Application extends JFrame {
 
                 public void run() {
                     Application app = new Application();
+                    app.showFrame();
                 }
             });
 

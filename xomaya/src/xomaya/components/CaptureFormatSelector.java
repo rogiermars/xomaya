@@ -43,6 +43,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.border.TitledBorder;
 import xomaya.application.Application;
 import xomaya.application.ExitReason;
@@ -117,6 +118,8 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
         if (combo.getItemCount() == 0) {
             // No options available - add a default option.
             combo.addItem(new SelectableVideoFormat("Screen Capture"));
+            //remove option to use webcam or smooth switch.
+            Globals.defaultSetup = true;
         }
     }
 

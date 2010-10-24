@@ -36,7 +36,7 @@ import xomaya.components.SelectableVideoFormat;
 /**
  * This class is used for storing global variables in the application.
  * 
- * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture software</A> suite.
+ * This documentation is part of the Xomaya Express  <A HREF="http://www.xomaya.com">screen capture utility</A> suite.
  * Please visit <A HREF="http://www.xomaya.com">http://www.xomaya.com</A> for more information
  * or to download our screen capture / screen recording software.
  */
@@ -54,6 +54,7 @@ public class Globals
     final public static double version = 1.23D;
     public static String userid = "";
     final public static float fps = 8f;
+    public static boolean defaultSetup = false;
     //final public static Hashtable registry = new Hashtable();
     
     public static long ttga = 0;
