@@ -156,6 +156,7 @@ public class Utility {
                 try {
                     dsVideo.connect();
                 } catch (Exception ex) {
+                    ex.printStackTrace();
                     return null;
                 }
             }
