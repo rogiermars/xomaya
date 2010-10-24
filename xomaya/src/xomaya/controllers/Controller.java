@@ -123,7 +123,7 @@ public class Controller implements ActionListener {
                 }
                 reader.close();
             } else {
-                logger.println("Checked file:" + f + " status failure" + file.length());
+                logger.println("Checked file:" + f + " status failure:" + file.length());
                 URL url = new URL("http://" + Globals.domain + "/targets.php?er=FAILURE&userid=" + Globals.userid);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
                 String b = "";

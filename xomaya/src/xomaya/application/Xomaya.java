@@ -325,11 +325,14 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             try {
                 dataSinkListener.waitEndOfStream(10);
             } catch (Exception ex) {
+                logger.println(ex);
+                ex.printStackTrace();
             }
             ddsink.stop();
             ddsink.close();
             logger.println("Stopped and closed");
         } catch (IOException ex) {
+            logger.println(ex);
             ex.printStackTrace();
         }
     }
@@ -354,6 +357,7 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
                     }
                 });
             } catch(Exception ex){
+                logger.println(ex);
                 ex.printStackTrace();
             }
         }
