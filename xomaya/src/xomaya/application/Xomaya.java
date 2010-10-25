@@ -26,6 +26,8 @@ import xomaya.controllers.Controller;
 import xomaya.components.effects.GraphicEffect;
 import java.awt.*;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Timer;
 import javax.media.*;
 import javax.media.control.TrackControl;
@@ -263,6 +265,10 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
                 waitSync.notifyAll();
             }
             try {
+                Calendar c = Calendar.getInstance();
+                c.setTime(new Date(System.currentTimeMillis()));
+                Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
+
                 DataSink sink = createDataSink(p, new MediaLocator("file:./out/" + Globals.videoName + "." + Globals.videoExt));
                 sink.open();
                 sink.start();

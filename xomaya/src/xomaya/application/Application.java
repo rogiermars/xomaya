@@ -52,6 +52,20 @@ public class Application extends JFrame {
 
     public Application() {
         super(Globals.name + " " + Globals.version);
+
+        controller = new Controller(this);
+        status = new StatusBar();
+        console = new xomaya.logging.Console();
+        fa = new Xomaya(controller);
+        ms = new ModeSelector(controller);
+
+        Registry.register("Controller", controller);
+        Registry.register("Console", console);
+        Registry.register("StatusBar", status);
+        Registry.register("Application", this);
+        Registry.register("Xomaya", fa);
+        Registry.register("ModeSelector", ms);
+
     }
 
     private static void registerUserID() {
@@ -152,9 +166,6 @@ public class Application extends JFrame {
         long t = System.currentTimeMillis();
 
         JNA.initialize();
-        Calendar c = Calendar.getInstance();
-        c.setTime(new Date(System.currentTimeMillis()));
-        Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
         long tl = System.currentTimeMillis() - t;
         logger.println("Loaded DLL:" + tl);
 
@@ -172,22 +183,17 @@ public class Application extends JFrame {
         }
     }
 
+    Xomaya fa = null;
+    ModeSelector ms = null;
+    xomaya.logging.Console console = null;
+    StatusBar status = null;
+    Controller controller = null;
+
     private void showFrame() {
         int w = Globals.appWidth;
         int h = Globals.appHeight;
-        Controller controller = new Controller(this);
-        controller.doCaptureInputFormat();
-        StatusBar status = new StatusBar();
-        xomaya.logging.Console console = new xomaya.logging.Console();
-        Xomaya fa = new Xomaya(controller);
-        ModeSelector ms = new ModeSelector(controller);
 
-        Registry.register("Controller", controller);
-        Registry.register("Console", console);
-        Registry.register("StatusBar", status);
-        Registry.register("Application", this);
-        Registry.register("Xomaya", fa);
-        Registry.register("ModeSelector", ms);
+
         setIconImage(icon.getImage());
         add(fa, BorderLayout.WEST);
         add(ms, BorderLayout.CENTER);
@@ -306,6 +312,8 @@ public class Application extends JFrame {
 
                 public void run() {
                     Application app = new Application();
+                    Controller controller = (Controller)Registry.get("Controller");
+                    controller.doCaptureInputFormat();
                     app.showFrame();
                 }
             });
