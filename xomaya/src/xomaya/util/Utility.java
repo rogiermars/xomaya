@@ -122,6 +122,7 @@ public class Utility {
         SelectableVideoFormat svf = Globals.selectedVideoFormat;
         logger.println("Selected format:" + svf);
         // REFACTOR
+
         if (!svf.isDefault()) {
             vf = (VideoFormat) svf.getFormat();
         }

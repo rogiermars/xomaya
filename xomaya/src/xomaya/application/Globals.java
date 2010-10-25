@@ -75,7 +75,7 @@ public class Globals
     public static boolean verbose = false;
     public static boolean recording = false;
     
-    public static SelectableVideoFormat selectedVideoFormat = null;
+    public static SelectableVideoFormat selectedVideoFormat = new SelectableVideoFormat("Screen Capture");
 
     final public static String encoding = "RGB";
     public static String videoExt = "avi";

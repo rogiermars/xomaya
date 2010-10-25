@@ -1577,3 +1577,113 @@ MJPG, 352x288, Length=304128 0 extra bytes
 2010-10-25:12:32:51:xomaya.components.StatusBar:Setting bar to 0
 2010-10-25:12:32:56:xomaya.components.StatusBar:Setting bar to 0
 2010-10-25:12:33:00:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:12:58:30:xomaya.util.Utility:TRYING:YUV
+2010-10-25:12:58:30:xomaya.util.Utility:Selected format:null
+2010-10-25:12:58:30:xomaya.util.Utility:TRYING:YUV
+2010-10-25:12:58:30:xomaya.util.Utility:Selected format:null
+2010-10-25:13:09:29:xomaya.util.Utility:TRYING:YUV
+2010-10-25:13:09:29:xomaya.util.Utility:Selected format:Screen Capture
+2010-10-25:13:09:29:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+MJPG, 640x480, Length=921600 0 extra bytes
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+
+2010-10-25:13:09:29:xomaya.util.Utility:Create Data Source:vfw://0
+2010-10-25:13:09:36:xomaya.util.Utility:createDataSource:javax.media.NoDataSourceException: Error instantiating class: com.sun.media.protocol.vfw.DataSource : java.io.IOException: Could not connect to capture device
+2010-10-25:13:09:36:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-10-25:13:09:37:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-10-25:13:09:37:xomaya.util.Utility:Created merging data source
+2010-10-25:13:09:37:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-10-25:13:09:37:xomaya.components.datasource.ImageSourceStream:Start called
+2010-10-25:13:09:37:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-10-25:13:09:59:xomaya.util.Utility:TRYING:YUV
+2010-10-25:13:09:59:xomaya.util.Utility:Selected format:Screen Capture
+2010-10-25:13:09:59:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+MJPG, 640x480, Length=921600 0 extra bytes
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+
+2010-10-25:13:09:59:xomaya.util.Utility:Create Data Source:vfw://0
+2010-10-25:13:10:02:xomaya.util.Utility:createDataSource:javax.media.NoDataSourceException: Error instantiating class: com.sun.media.protocol.vfw.DataSource : java.io.IOException: Could not connect to capture device
+2010-10-25:13:10:02:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-10-25:13:10:02:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-10-25:13:10:02:xomaya.util.Utility:Created merging data source
+2010-10-25:13:10:02:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-10-25:13:10:02:xomaya.components.datasource.ImageSourceStream:Start called
+2010-10-25:13:10:02:xomaya.components.datasource.JavaSoundStream:JavaSoundStream.read called
+2010-10-25:13:10:02:xomaya.application.Xomaya:Middle-
+2010-10-25:13:10:02:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-10-25:13:10:02:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-10-25:13:10:02:xomaya.application.Xomaya:Realized
+2010-10-25:13:10:02:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-10-25:13:10:02:xomaya.components.effects.GraphicEffect:GraphicsEffect.process called
+2010-10-25:13:10:05:xomaya.application.Xomaya:Timers initialized
+2010-10-25:13:10:06:xomaya.components.STimerTask:Delay:266|0
+2010-10-25:13:10:10:xomaya.application.Xomaya:TT GA:4229
+2010-10-25:13:10:10:xomaya.application.Xomaya:Stop enabled
+2010-10-25:13:10:10:xomaya.application.Xomaya:Waiting to start...
+2010-10-25:13:10:10:xomaya.application.Xomaya:State code:600
+2010-10-25:13:10:10:xomaya.application.Xomaya:Returned true
+2010-10-25:13:10:10:xomaya.util.Utility:TRYING:YUV
+2010-10-25:13:10:10:xomaya.util.Utility:Selected format:Screen Capture
+2010-10-25:13:10:10:xomaya.util.Utility:vfw:Microsoft WDM Image Capture (Win32):0 : vfw://0
+MJPG, 640x480, Length=921600 0 extra bytes
+YUV Video Format: Size = java.awt.Dimension[width=160,height=120] MaxDataLength = 38400 DataType = class [B yuvType = 32 StrideY = 320 StrideUV = 320 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=176,height=144] MaxDataLength = 50688 DataType = class [B yuvType = 32 StrideY = 352 StrideUV = 352 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=320,height=240] MaxDataLength = 153600 DataType = class [B yuvType = 32 StrideY = 640 StrideUV = 640 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=352,height=288] MaxDataLength = 202752 DataType = class [B yuvType = 32 StrideY = 704 StrideUV = 704 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+YUV Video Format: Size = java.awt.Dimension[width=640,height=480] MaxDataLength = 614400 DataType = class [B yuvType = 32 StrideY = 1280 StrideUV = 1280 OffsetY = 0 OffsetU = 1 OffsetV = 3
+
+MJPG, 160x120, Length=57600 0 extra bytes
+MJPG, 176x144, Length=76032 0 extra bytes
+MJPG, 320x240, Length=230400 0 extra bytes
+MJPG, 352x288, Length=304128 0 extra bytes
+
+2010-10-25:13:10:10:xomaya.util.Utility:Create Data Source:vfw://0
+2010-10-25:13:10:11:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:13:10:16:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:13:10:21:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:13:10:26:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:13:10:31:xomaya.components.StatusBar:Setting bar to 0
+2010-10-25:13:10:31:xomaya.util.Utility:createDataSource:javax.media.NoDataSourceException: Error instantiating class: com.sun.media.protocol.vfw.DataSource : java.io.IOException: Could not connect to capture device
+2010-10-25:13:10:31:xomaya.util.Utility:Unable to create dsVideo from VideoFormat
+2010-10-25:13:10:31:xomaya.components.datasource.JavaSoundStream:PCM_SIGNED 8000.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+2010-10-25:13:10:31:xomaya.util.Utility:Created merging data source
+2010-10-25:13:10:31:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-10-25:13:10:31:xomaya.components.datasource.ImageSourceStream:Start called
+2010-10-25:13:10:31:xomaya.application.Xomaya:Middle-
+2010-10-25:13:10:31:xomaya.components.effects.GraphicEffect:setOutputFormat
+2010-10-25:13:10:31:xomaya.components.effects.GraphicEffect:RGB, 640x480, Length=921600, 24-bit, Masks=3:2:1, PixelStride=3, LineStride=1920, Flipped
+2010-10-25:13:10:31:xomaya.application.Xomaya:Realized
+2010-10-25:13:10:31:xomaya.components.datasource.ImageDataSource:ImageDataSource started
+2010-10-25:13:10:31:xomaya.application.Xomaya:Cannot create the DataSink: java.io.IOException: Existing file .\out\xomaya-13-10-25-9.avi cannot be deleted
+2010-10-25:13:10:33:xomaya.application.Application:Quit reason:http://www.xomaya.com/targets.php?er=NO_DATASINK&userid=
+2010-10-25:13:10:33:xomaya.components.StatusBar:Setting bar to 0

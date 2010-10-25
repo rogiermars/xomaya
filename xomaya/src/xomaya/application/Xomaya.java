@@ -259,7 +259,6 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             }
         } else if (evt instanceof RealizeCompleteEvent) {
             synchronized (waitSync) {
-                //JOptionPane.showConfirmDialog(this, "Realized");
                 logger.println("Realized");
                 stateTransitionOK = true;
                 waitSync.notifyAll();
@@ -268,14 +267,13 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
                 Calendar c = Calendar.getInstance();
                 c.setTime(new Date(System.currentTimeMillis()));
                 Globals.videoName = "xomaya-" + c.get(Calendar.HOUR_OF_DAY) + "-" + c.get(Calendar.MINUTE) + "-" + c.get(Calendar.DAY_OF_MONTH) + "-" + c.get(Calendar.MONTH);
-
                 DataSink sink = createDataSink(p, new MediaLocator("file:./out/" + Globals.videoName + "." + Globals.videoExt));
                 sink.open();
                 sink.start();
             } catch (Exception ex) {
-                ex.printStackTrace();
                 JOptionPane.showMessageDialog(this, "DataSink could not be created", "Could not write to disk", JOptionPane.ERROR_MESSAGE);
                 Application.quit(ExitReason.NO_DATASINK);
+                ex.printStackTrace();
             }
         } else if (evt instanceof PrefetchCompleteEvent) {
             synchronized (waitSync) {
@@ -305,9 +303,6 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             Application.quit(ExitReason.NO_MEDIA_LOCATOR);
         }
         if (!open(ml)) {
-            ////////////////////////////////////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////////////////
             //JOptionPane.showMessageDialog(this, "Could not open device(s) for capture", "Could not open", JOptionPane.ERROR_MESSAGE);
             //Application.quit(ExitReason.NO_DEVICE);
