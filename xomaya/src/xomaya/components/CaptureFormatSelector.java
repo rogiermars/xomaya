@@ -98,6 +98,7 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
 
     public void populate() {
         Vector v = Utility.getVideoFormats();
+        
         if (v != null) {
             Enumeration e = v.elements();
             while (e.hasMoreElements()) {
@@ -115,6 +116,7 @@ public final class CaptureFormatSelector extends JDialog implements ActionListen
                 }
             }
         }
+         
         if (combo.getItemCount() == 0) {
             // No options available - add a default option.
             combo.addItem(new SelectableVideoFormat("Screen Capture"));
