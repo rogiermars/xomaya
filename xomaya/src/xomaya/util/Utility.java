@@ -105,6 +105,7 @@ public class Utility {
         for (int i = 0; i < devices.size(); i++) {
             logger.println(devices.get(i));
         }
+
         //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + null);
@@ -225,8 +226,8 @@ public class Utility {
                 setCaptureFormat((CaptureDevice) ds, format);
             }
         } catch (Exception e) {
-            e.printStackTrace();
             logger.println("createDataSource:" + e);
+            e.printStackTrace();
             return null;
         }
         return ds;

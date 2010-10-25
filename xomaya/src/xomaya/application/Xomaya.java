@@ -324,7 +324,9 @@ public class Xomaya extends JPanel implements ControllerListener, Runnable {
             // Closing the processor will end the data stream to the data sink.
             // Wait for the end of stream to occur before closing the datasink
             try {
-                dataSinkListener.waitEndOfStream(10);
+                if( dataSinkListener != null ){
+                    dataSinkListener.waitEndOfStream(10);
+                }
             } catch (Exception ex) {
                 logger.println(ex);
                 ex.printStackTrace();
