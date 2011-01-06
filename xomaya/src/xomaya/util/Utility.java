@@ -106,7 +106,6 @@ public class Utility {
             logger.println(devices.get(i));
         }
 
-        //devices = CaptureDeviceManager.getDeviceList(null);
         if (devices.size() < 1) {
             logger.println("! No Devices for " + null);
             JOptionPane.showMessageDialog(null, "Could not detect a compatible device for your webcam.\nXomaya will try to use screen capture only.\nTo use webcam please reinstall your drivers and Java Media Framework (JMF).");
