@@ -168,6 +168,7 @@ public class Application extends JFrame {
         JNA.initialize();
         long tl = System.currentTimeMillis() - t;
         logger.println("Loaded DLL:" + tl);
+        
 
         try {
             File out = new File("./out");
